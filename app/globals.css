@@ -2,32 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Fontspring' !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Fontspring-black.otf') format('OTF');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Fontspring-bold.otf') format('OTF');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Fontspring-light.otf') format('OTF');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Fontspring-medium.otf') format('OTF');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Fontspring-regular.otf') format('OTF');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/fonts/Gordita-Black.otf') format('OTF');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url('/fonts/Gordita-Bold.otf') format('OTF');
+  font-weight: Bold;
+}
+
+
+@font-face {
+  font-family: 'Gordita';
+  src: url('/fonts/Gordita-Bold.otf') format('OTF');
+  font-weight: Bold;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url('/fonts/Gordita-Light.otf') format('OTF');
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url('/fonts/Gordita-Medium.otf') format('OTF');
+  font-weight: Medium;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url('/fonts/Gordita-Regular.otf') format('OTF');
+  font-weight: Medium;
 }
