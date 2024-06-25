@@ -53,57 +53,64 @@ export const HeroSlider = () => {
 
   const sliderData: SliderItemType[] = [
     {
-      preTitle: "Envisining the future",
-      title: "Crafting Tomarrow's Digital Narratives",
-      description: `Dorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of`,
+      preTitle: "Envisioning the future",
+      title: "Empowering India's Future",
+      description: `Unlocking Potential, Empowering Dreams. Join the Skilline Revolution.`,
       button: {
         label: "Explore Solution",
         links: "",
         target: "_self",
       },
       image: {
-        src: "/images/home-01-hero-image.png",
+        src: "/images/banner-1.png",
         width: 400,
         height: 428,
         alt: "",
       },
     },
     {
-      preTitle: "Envisining the future",
-      title: "Crafting Tomarrow's Digital Narratives",
-      description: `Dorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of`,
+      preTitle: "Envisioning the future",
+      title: "AI-Driven Education",
+      description: `Where AI Meets Education, Creating Opportunities for All.`,
       button: {
         label: "Explore Solution",
         links: "",
         target: "_self",
       },
       image: {
-        src: "/images/home-01-hero-image.png",
+        src: "/images/banner-2.png",
         width: 400,
         height: 428,
         alt: "",
       },
     },
     {
-      preTitle: "Envisining the future",
-      title: "Crafting Tomarrow's Digital Narratives",
-      description: `Dorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of`,
+      preTitle: "Envisioning the future",
+      title: "Industry-Ready Skills",
+      description: `Bridging the Skill Gap, Empowering India's Workforce.`,
       button: {
         label: "Explore Solution",
         links: "",
         target: "_self",
       },
       image: {
-        src: "/images/home-01-hero-image.png",
+        src: "/images/banner-3.png",
+        width: 400,
+        height: 428,
+        alt: "",
+      },
+    },
+    {
+      preTitle: "Envisioning the future",
+      title: "Cultural & Policy Awareness",
+      description: `Nurturing Minds, Building a Better India.`,
+      button: {
+        label: "Explore Solution",
+        links: "",
+        target: "_self",
+      },
+      image: {
+        src: "/images/banner-4.png",
         width: 400,
         height: 428,
         alt: "",
@@ -121,11 +128,13 @@ export const HeroSlider = () => {
     <div className="w-full inline-block">
       <Carousel
         setApi={setApi}
-        plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]}
+        plugins={
+          [
+            // Autoplay({
+            //   delay: 5000,
+            // }),
+          ]
+        }
         opts={OPTIONS}
       >
         <CarouselContent>
@@ -133,17 +142,17 @@ export const HeroSlider = () => {
             const { preTitle, title, description, button, image } = item;
             return (
               <CarouselItem key={index}>
-                <div className="h-[700px] bg-gray-50 flex items-center py-10 md:py-0">
+                <div className="md:h-[700px] h-[500px] bg-gradient-to-b  from-gray-50 via-white to-gray-50 flex items-center py-10 md:py-0">
                   <div className="container">
-                    <div className="flex justify-between md:flex-row flex-col gap-10 md:gap-0">
-                      <div className="md:w-[40%] px-10 md:px-0 md:text-left text-center flex flex-col gap-5 md:items-start items-center">
+                    <div className="flex justify-between md:flex-row flex-col gap-10 md:gap-0 items-center">
+                      <div className="md:w-[40%] px-5 md:px-0 md:text-left text-center flex flex-col gap-5 md:items-start items-center">
                         <h3 className="proxima uppercase text-[13px] tracking-[5px] leading-[26px] text-gray-400">
                           {preTitle}
                         </h3>
                         <h2 className="md:text-[45px] leading-[35px] text-[30px] font-[600]  md:leading-[55px] text-slate-800 ">
                           {title}
                         </h2>
-                        <div className="text-[15px] leading-[28px] md:text-[17px] md:leading-[32px] proxima text-slate-700">
+                        <div className="text-[15px] leading-[28px] md:text-[17px] md:leading-[32px] proxima text-slate-700 text-balance">
                           {description}
                         </div>
                         <Button
@@ -172,7 +181,7 @@ export const HeroSlider = () => {
                           width={image.width}
                           height={image.height}
                           alt={image.alt}
-                          className="relative md:w-auto md:h-auto w-[60%]"
+                          className="relative md:w-auto md:h-auto w-[80%]"
                         />
                       </div>
                     </div>

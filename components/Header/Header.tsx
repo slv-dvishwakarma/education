@@ -31,7 +31,7 @@ export const Header = () => {
   ];
   return (
     <>
-      <div className="bg-white sticky top-0 z-[999] bg-opacity-75 backdrop-blur-[15px]">
+      <div className="bg-white sticky top-0 z-[1] bg-opacity-75 backdrop-blur-[15px] shadow-md">
         <div className="container">
           <div className="flex justify-between items-center lg:py-5 py-5">
             <div>
