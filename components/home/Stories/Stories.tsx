@@ -1,0 +1,149 @@
+"use client";
+import {
+  Paragraph,
+  StoryItem,
+  Heading,
+  type StoryItemtype,
+} from "@/components/core";
+import Autoplay from "embla-carousel-autoplay";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  EmblaOptionsType,
+} from "@/components/ui/carousel";
+
+import React from "react";
+
+export const Stories = () => {
+  const data: StoryItemtype[] = [
+    {
+      name: "Maharaju",
+      city: "Hyderabad",
+      image: "/images/profile.png",
+      story:
+        "Maharaju was working with Genpact and was in operations, data entry. With our offline program he is now tripled his salary in a year and a efficient react developer.",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+    {
+      name: "Kishore ",
+      city: "Andhra Pradesh",
+      image: "/images/profile.png",
+      story:
+        "Kishore was from Andhra, pass-out with 2 years gap, working with Mindmaster Singapore in operations job as he is not meant for programming. Pass-outs got Job working for Mindmaster Singapore",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+    {
+      name: "Avinesh  ",
+      city: "Hyderabad",
+      image: "/images/profile.png",
+      story:
+        "8 years of gap, not meant for programming skilled and working in operations job in Singapore ",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+    {
+      name: "Sonu",
+      city: "Indore",
+      image: "/images/profile.png",
+      story:
+        "Son of a labour, was not able to complete his degree. Working in Indore in Php HTML. Now he is full stack developer and created proprietary state of the art document processing modules matching international standards and best software products using cutting edge Next JS ",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+    {
+      name: "Dilip",
+      city: "Indore",
+      image: "/images/profile.png",
+      story:
+        "Same as Sonu, his colleague, working on primitive technology now upskilled and groomed as one of the industry best.",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+    {
+      name: "Deepti",
+      city: "Hyderabad",
+      image: "/images/profile.png",
+      story:
+        "10 years gaps after motherhood from underconfident to a confident python developer. 	",
+      link: {
+        label: "Read more",
+        url: "/#",
+        target: "_self",
+      },
+    },
+  ];
+  const OPTIONS: EmblaOptionsType = { loop: true };
+
+  return (
+    <div className="container bg-[#fae5d1] rounded-xl my-[80px]">
+      <div className="pt-10 px-10">
+        <div className="flex items-center">
+          <div className="w-[50%] pb-10">
+            <Heading>Stories</Heading>
+            <Paragraph>
+              {`Skilline revolutionizes Bharat's education with affordable, AI-driven,
+          job-guaranteed courses in technology and high-demand sectors,
+          empowering learners and fostering national skill development.`}
+            </Paragraph>
+          </div>
+          <div className="w-[50%] relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              orientation="vertical"
+              className="w-full "
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+            >
+              <CarouselContent className="-mt-1 h-[400px]">
+                {data.map((item, index) => {
+                  const { name, city, image, story, link } = item;
+                  return (
+                    <CarouselItem key={index} className="pt-1 md:basis-1/2">
+                      <div className="p-1 mb-4">
+                        <StoryItem
+                          city={city}
+                          image={image}
+                          link={link}
+                          name={name}
+                          story={story}
+                        />
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
+            <div className="pt-1 h-[40%] w-full bg-gradient-to-t  from-[#fae5d1]  to-transparent bottom-0 left-0 absolute "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
