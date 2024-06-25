@@ -4,6 +4,8 @@ import {
   OurVision,
   About,
   OurApproach,
+  Policies,
+  GuidingPrinciple,
 } from "@/components/home";
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <OurVision />
       <OurApproach />
       <OurImpact />
+      <Policies />
+      <GuidingPrinciple />
     </main>
   );
 }
