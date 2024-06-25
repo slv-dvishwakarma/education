@@ -1,17 +1,16 @@
-import classNames from "classnames";
+import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 
 type ColumnType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 type ColSpan = ColumnType;
 
-
 export type GridItemProps = {
   children: ReactNode;
   className?: string;
   columnMerge?: ColSpan;
-  colMargeTablet?: ColumnType,
-  colMargeLaptop?: ColumnType,
-  colMargeDesktop?: ColumnType,
+  colMargeTablet?: ColumnType;
+  colMargeLaptop?: ColumnType;
+  colMargeDesktop?: ColumnType;
 };
 
 type GridCols = Record<ColSpan, string>;
@@ -85,9 +84,9 @@ export const GridItem = ({
   };
   return (
     <div
-      className={classNames(
+      className={cn(
         "grid-item",
-        columnMerge && COLS_SPAN[columnMerge], 
+        columnMerge && COLS_SPAN[columnMerge],
         colMargeTablet && ITEM_TABLET[colMargeTablet],
         colMargeLaptop && ITEM_LAPTOP[colMargeLaptop],
         colMargeDesktop && ITEM_DESKTOP[colMargeDesktop],

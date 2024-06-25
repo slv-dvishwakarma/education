@@ -1,6 +1,6 @@
-import classNames from "classnames";
 import React, { ReactNode } from "react";
 import { GridItem } from "./GridItem";
+import { cn } from "@/lib/utils";
 type ColumnType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 type GridGapType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
@@ -121,8 +121,8 @@ export const GridBox = ({
 
   return (
     <div
-      className={classNames(
-        'sm:grid',
+      className={cn(
+        "sm:grid",
         columns && GRID_COLS[columns],
         rows && ` grid-rows-${rows}`,
         GRID_GAP[gap],
