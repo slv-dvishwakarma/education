@@ -21,7 +21,7 @@ export const ImageWithText: React.FC<ImageWithTextProps> = ({ imageText }) => {
     //     title: "About Us",
     //     description: "Skilline is more than just an education platform. It's a movement aimed at transforming the landscape of education and skill development in India. We believe in the power of technology, particularly AI, to democratize access to quality education and skills. Our mission is to empower rural youth, job seekers, corporate employees, and educational institutions by providing affordable, gamified, and industry-relevant training courses. We also support policymakers in enhancing governance and scaling education policies for the betterment of society."
     // }
-
+ 
     return (
         <div className='relative' id='about-us'>
             <GridBox gap={10} className='container  xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 items-center xl:bg-transparent lg:bg-transparent md:bg-[#F8F8F8] bg-[#F8F8F8]  xl:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] lg:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] md:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] pt-[50px] pb-[70px] mt-10' columns={2}>
