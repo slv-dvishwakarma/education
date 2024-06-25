@@ -1,5 +1,5 @@
 import { ImageText, ImageWithText } from "@/components/ImageWithText";
-import { HeroSlider } from "@/components/home";
+import { HeroSlider, OurImpact } from "@/components/home";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <HeroSlider />
       <ImageWithText />
       <ImageText />
+      <OurImpact />
     </main>
     </>
   );
