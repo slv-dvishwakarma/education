@@ -128,13 +128,11 @@ export const HeroSlider = () => {
     <div className="w-full inline-block">
       <Carousel
         setApi={setApi}
-        plugins={
-          [
-            // Autoplay({
-            //   delay: 5000,
-            // }),
-          ]
-        }
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
         opts={OPTIONS}
       >
         <CarouselContent>
