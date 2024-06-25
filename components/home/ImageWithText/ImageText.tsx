@@ -1,5 +1,6 @@
+import { GridBox } from '@/components/core/GridBox'
 import React from 'react'
-import { GridBox } from '../GridBox'
+
 
 export const ImageText = () => {
 
