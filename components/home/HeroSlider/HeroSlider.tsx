@@ -140,7 +140,7 @@ export const HeroSlider = () => {
             const { preTitle, title, description, button, image } = item;
             return (
               <CarouselItem key={index}>
-                <div className="md:h-[700px] h-[500px] bg-gradient-to-b  from-gray-50 via-white to-white flex items-center py-10 md:py-0">
+                <div className="md:h-[600px] md:pb-[80px] h-[500px] bg-gradient-to-b  from-gray-50 via-white to-gray-100 flex items-center py-10 md:py-0">
                   <div className="container">
                     <div className="flex justify-between md:flex-row flex-col gap-10 md:gap-0 items-center">
                       <div className="md:w-[40%] px-5 md:px-0 md:text-left text-center flex flex-col gap-5 md:items-start items-center">

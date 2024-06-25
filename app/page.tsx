@@ -7,6 +7,7 @@ import {
   Stories,
   Policies,
   GuidingPrinciple,
+  OurRoadmap,
 } from "@/components/home";
 
 export default function Home() {
@@ -17,9 +18,10 @@ export default function Home() {
       <OurVision />
       <OurApproach />
       <OurImpact />
-      <Stories />
       <Policies />
       <GuidingPrinciple />
+      <Stories />
+      <OurRoadmap />
     </main>
   );
 }

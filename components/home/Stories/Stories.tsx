@@ -9,6 +9,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -16,9 +17,25 @@ import {
   EmblaOptionsType,
 } from "@/components/ui/carousel";
 
-import React from "react";
+import React, { useState } from "react";
 
 export const Stories = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
   const data: StoryItemtype[] = [
     {
       name: "Maharaju",
@@ -96,19 +113,20 @@ export const Stories = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <div className="container bg-[#fae5d1] rounded-xl my-[80px]">
-      <div className="pt-10 px-10">
-        <div className="flex items-center">
-          <div className="w-[50%] pb-10">
-            <Heading>Stories</Heading>
+    <div className="container bg-[#fae5d1] md:rounded-xl md:my-[80px]">
+      <div className="pt-10 md:px-10">
+        <div className="flex items-center flex-col md:flex-row">
+          <div className="md:w-[50%] w-full pb-10">
+            <Heading className="mb-5">Stories</Heading>
             <Paragraph>
               {`Skilline revolutionizes Bharat's education with affordable, AI-driven,
           job-guaranteed courses in technology and high-demand sectors,
           empowering learners and fostering national skill development.`}
             </Paragraph>
           </div>
-          <div className="w-[50%] relative">
+          <div className="md:w-[50%] w-full relative">
             <Carousel
+              setApi={setApi}
               opts={{
                 align: "start",
                 loop: true,
@@ -139,8 +157,15 @@ export const Stories = () => {
                   );
                 })}
               </CarouselContent>
+              <div className="absolute hidden md:flex flex-col right-[-40px]  items-center justify-center h-full top-0 ml-[-120px] gap-2 mt-[-20px]">
+                <CarouselNext className="relative -rotate-90" />
+                <div className="flex text-slate-500 text-xs py-2">
+                  <span>{current}</span> <span>/</span> <span>{count}</span>
+                </div>
+                <CarouselPrevious className="relative -rotate-90" />
+              </div>
             </Carousel>
-            <div className="pt-1 h-[40%] w-full bg-gradient-to-t  from-[#fae5d1]  to-transparent bottom-0 left-0 absolute "></div>
+            <div className="pt-1 h-[40%] w-full bg-gradient-to-t  from-[#fae5d1]  to-transparent bottom-0 left-0 absolute hidden md:block"></div>
           </div>
         </div>
       </div>
