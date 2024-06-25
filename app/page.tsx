@@ -5,6 +5,8 @@ import {
   About,
   OurApproach,
   Stories,
+  Policies,
+  GuidingPrinciple,
 } from "@/components/home";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
       <OurApproach />
       <OurImpact />
       <Stories />
+      <Policies />
+      <GuidingPrinciple />
     </main>
   );
 }

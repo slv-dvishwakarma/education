@@ -1,13 +1,23 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { GridBox } from "@/components/core/GridBox";
 import { Heading } from "@/components/core/Heading/Heading";
 import { Paragraph } from "@/components/core/Paragraph";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+interface ButtonItem {
+  label: string;
+  links: string;
+  target: "_blank" | "_self";
+}
 
 interface ImageWithTextItem {
   image: string;
   title: string;
   description: string;
+  button?: ButtonItem;
 }
 
 interface ImageWithTextProps {
@@ -16,6 +26,7 @@ interface ImageWithTextProps {
 }
 
 export const ImageBoxStyleOne = ({ data }: ImageWithTextProps) => {
+
   return (
     <div className="relative" id="about-us">
       <GridBox
@@ -42,10 +53,14 @@ export const ImageBoxStyleOne = ({ data }: ImageWithTextProps) => {
         </GridBox.GridItem>
         <GridBox.GridItem
           columnMerge={1}
-          className="xl:px-px-[30px] lg:px-[30px] md:px-[30px]"
+          className="xl:px-px-[30px] lg:px-[30px] md:px-[30px] space-y-5"
         >
           <Heading>{data.title}</Heading>
           <Paragraph>{data.description}</Paragraph>
+
+          {data.button && (
+            <Link href={data.button.links} target={data.button.target} className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-buttonBg text-secondary-foreground hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]">{data.button.label}</Link>
+          )}
         </GridBox.GridItem>
       </GridBox>
     </div>

@@ -30,7 +30,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Skilline - Transforming Education and Skill Development for an Empowered India",
+    "Skilline - Education",
   description:
     "Transforming Education and Skill Development for an Empowered India",
 };
