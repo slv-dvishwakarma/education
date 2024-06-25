@@ -1,14 +1,13 @@
+import { ImageText, ImageWithText } from "@/components/core/ImageWithText";
 import { HeroSlider, OurImpact } from "@/components/home";
-import { ImageText, ImageWithText } from "@/components/home/ImageWithText";
-import Image from "next/image";
+import { About } from "@/components/home/About";
 
 export default function Home() {
   return (
     <>
       <main>
         <HeroSlider />
-        <ImageWithText />
-        <ImageText />
+        <About />
         <OurImpact />
       </main>
     </>
