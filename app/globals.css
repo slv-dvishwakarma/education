@@ -78,7 +78,7 @@
 }
 
 .container {
-  @apply px-2 lg:px-3 xl:max-w-[1325px];
+  @apply px-2 lg:px-3 2xl:max-w-[1325px] xl:max-w-[1225px];
 }
 
 .proxima {
