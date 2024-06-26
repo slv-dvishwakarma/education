@@ -10,6 +10,7 @@ import {
   JoinUs,
   OurRoadmap,
   Blog,
+  Courses,
 } from "@/components/home";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Stories />
       <OurRoadmap />
       <Blog />
+      <Courses />
     </main>
   );
 }
