@@ -15,8 +15,8 @@ export const GuidingPrinciple = () => {
             <div className='container '>
                 <div className='flex flex-wrap items-center'>
                     <div className='space-y-9 xl:w-6/12 lg:w-6/12 md:w-6/12 w-full text-center'>
-                        <h2 className='text-[30px] leading-[29px] md:text-[50px] md:leading-[40px] text-white font-[500]'>{data.title}</h2>
-                        <div className='text-[20px] leading-[34px] font-light text-white tracking-[_0.4px]'>{data.description}</div>
+                        <h2 className='text-[30px] leading-[29px] xl:text-[50px] lg:text-[40px] md:text-[35px] md:leading-[40px] text-white font-[500]'>{data.title}</h2>
+                        <div className='text-[20px] xl:text-[20px] lg:text-[20px] md:text-[16px] leading-[34px] font-light text-white tracking-[_0.4px]'>{data.description}</div>
                     </div>
                     <div className='xl:w-6/12 lg:w-6/12 md:w-6/12 w-full'>
                         <Image className='float-left relative z-[1] w-full pt-10' src={data.image} alt={data.title} width={1200} height={894} />

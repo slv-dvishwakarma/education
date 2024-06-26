@@ -6,3 +6,4 @@ export * from "./OurApproach";
 export * from "./Stories";
 export * from "./Policies";
 export * from "./GuidingPrinciple";
+export * from "./JoinUs"
