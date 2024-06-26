@@ -7,7 +7,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 type IconType = "cog" | "rocket" | "graph";
 type VariantType = "purple" | "green" | "orange";
-type RoadmapItem = {
+export type RoadmapItemType = {
   year: string;
   heading: string;
   description: string;
@@ -21,7 +21,7 @@ export const RoadmapItem = ({
   variant,
   heading,
   icon,
-}: RoadmapItem) => {
+}: RoadmapItemType) => {
   const iconStyle: Record<VariantType, string> = {
     purple: "bg-purple-500 text-white",
     green: "bg-green-500 text-white",

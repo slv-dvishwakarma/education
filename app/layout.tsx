@@ -29,8 +29,7 @@ const gorditaFont = localFont({
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title:
-    "Skilline - Education",
+  title: "Skilline - Education",
   description:
     "Transforming Education and Skill Development for an Empowered India",
 };
