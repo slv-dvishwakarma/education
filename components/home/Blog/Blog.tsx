@@ -64,7 +64,7 @@ export const Blog = () => {
                     </div>
                 </div>
                 <div className="text-center flex">
-                    <Link href="/blogs" className="text-primary flex items-center gap-3 text-center m-auto hover:text-[#FFC221]"><span>View All Posts</span> <span><FaArrowRightLong /></span></Link>
+                    <Link href="/blogs" className="text-primary flex items-center gap-3 text-center m-auto"><span>View All Posts</span> <span><FaArrowRightLong /></span></Link>
                 </div>
             </div>
         </div>

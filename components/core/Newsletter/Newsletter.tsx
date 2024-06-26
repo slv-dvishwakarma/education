@@ -23,7 +23,7 @@ export const Newsletter = () => {
                         rules={{ required: true }}
                         render={({ field: { onChange, value } }) => (
                             <input
-                                type="text"
+                                type="email"
                                 className="w-full border-none rounded-[8px_0px_0px_8px] focus:outline-none focus:shadow-none shadow-none h-[50px] placeholder:text-[#9D9D9D] placeholder:text-[16px] text-[16px] px-3"
                                 placeholder="Enter Your Email"
                                 autoComplete="off"

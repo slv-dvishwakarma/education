@@ -27,11 +27,11 @@ export default function Home() {
       <GuidingPrinciple />
       <Stories />
       <OurRoadmap />
-      <JoinUs />
       <Ventures />
-      <Blog />
       <Courses />
+      <Blog />
       <Contact />
+      <JoinUs />
     </main>
   );
 }

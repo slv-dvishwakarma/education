@@ -11,3 +11,4 @@ export * from "./TeamCard";
 export * from "./Cookies";
 export * from "./CardBox";
 export * from "./SocialIcon";
+export * from "./ContactForm";
