@@ -1,15 +1,18 @@
 import { FaCog } from "react-icons/fa";
+import { IoRocketSharp } from "react-icons/io5";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { PiGraphBold } from "react-icons/pi";
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Paragraph } from "../Paragraph";
-
+type IconType = "cog" | "rocket" | "graph";
 type VariantType = "purple" | "green" | "orange";
 type RoadmapItem = {
   year: string;
   heading: string;
   description: string;
   variant: VariantType;
+  icon: IconType;
 };
 
 export const RoadmapItem = ({
@@ -17,6 +20,7 @@ export const RoadmapItem = ({
   description,
   variant,
   heading,
+  icon,
 }: RoadmapItem) => {
   const iconStyle: Record<VariantType, string> = {
     purple: "bg-purple-500 text-white",
@@ -35,12 +39,21 @@ export const RoadmapItem = ({
     green: "bg-green-500",
     orange: "bg-orange-500",
   };
+
+  const Icons: Record<IconType, any> = {
+    cog: FaCog,
+    rocket: IoRocketSharp,
+    graph: PiGraphBold,
+  };
+
+  const ItemIcon = Icons[icon];
+
   return (
     <div className="relative mb-6 sm:mb-0">
       <div className="md:h-[149px] md:w-auto w-[149px] relative">
         <div className="absolute w-full h-[10px] bg-gray-200 top-[85px] hidden md:inline-block"></div>
         <div className="w-max relative rotate-[-90deg] lg:rotate-0">
-          <FaCog
+          <ItemIcon
             size={20}
             className={cn(
               "w-[50px] h-[50px] p-3.5 rounded-full inline-flex items-center justify-center",

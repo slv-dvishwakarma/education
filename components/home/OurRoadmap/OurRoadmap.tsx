@@ -11,18 +11,21 @@ export const OurRoadmap = () => {
             variant="orange"
             year="2023"
             heading="Establishing"
+            icon="cog"
             description="Establishing our offline presence, building a strong advisory board, and laying the foundation for our tech platform."
           />
           <RoadmapItem
             variant="purple"
             year="2024"
             heading="Launching"
+            icon="rocket"
             description="Launching our online platform with a focus on low-code/no-code development, AI/ML integration, and beta testing with a wide audience."
           />
           <RoadmapItem
             variant="green"
             year="2025"
             heading="Expanding"
+            icon="graph"
             description="Expanding our course offerings, forging strategic partnerships with educational institutions, and reaching out to a broader demographic, including rural areas and schools."
           />
         </div>
