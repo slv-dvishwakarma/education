@@ -7,6 +7,7 @@ import {
   Stories,
   Policies,
   GuidingPrinciple,
+  JoinUs,
   OurRoadmap,
 } from "@/components/home";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <OurImpact />
       <Policies />
       <GuidingPrinciple />
+      <JoinUs />
       <Stories />
       <OurRoadmap />
     </main>
