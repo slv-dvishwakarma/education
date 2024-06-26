@@ -9,6 +9,7 @@ import {
   GuidingPrinciple,
   JoinUs,
   OurRoadmap,
+  Blog,
 } from "@/components/home";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <JoinUs />
       <Stories />
       <OurRoadmap />
+      <Blog />
     </main>
   );
 }
