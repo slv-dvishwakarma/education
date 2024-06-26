@@ -17,11 +17,11 @@ const proximaNovaFont = localFont({
 
 const gorditaFont = localFont({
   src: [
-    { path: "../public/fonts/Gordita-light.otf", weight: "200" },
-    { path: "../public/fonts/Gordita-regular.otf", weight: "300" },
-    { path: "../public/fonts/Gordita-medium.otf", weight: "400" },
-    { path: "../public/fonts/Gordita-bold.otf", weight: "600" },
-    { path: "../public/fonts/Gordita-black.otf", weight: "900" },
+    { path: "../public/fonts/Gordita-Light.otf", weight: "200" },
+    { path: "../public/fonts/Gordita-Regular.otf", weight: "300" },
+    { path: "../public/fonts/Gordita-Medium.otf", weight: "400" },
+    { path: "../public/fonts/Gordita-Bold.otf", weight: "600" },
+    { path: "../public/fonts/Gordita-Black.otf", weight: "900" },
   ],
   variable: "--spring-font",
 });
