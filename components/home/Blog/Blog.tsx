@@ -36,12 +36,12 @@ export const Blog = () => {
                     <div className="grid-item xl:col-span-2 lg:col-span-2 md:col-span-2">
                         <Link href="/" className="relative">
                             <div className="flex-shrink-0 relative overflow-hidden w-full before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
-                                <Image src="/blogs/AI_Generated.jpg" alt="Blog" className="h-[352px]" width={1400} height={900} />
+                                <Image src="/blogs/AI_Generated.jpg" alt="Blog" className="xl:h-[352px] lg:h-[352px] md:h-[352px]" width={1400} height={900} />
                             </div>
                             <div className="absolute bottom-0 inset-x-0 z-[1]">
                                 <div className="flex flex-col h-full p-4 sm:p-6">
                                     <p className="text-base font-extralight text-white">Latest News</p>
-                                    <h3 className="text-[35px] font-normal leading-[48px] text-white">
+                                    <h3 className="xl:text-[35px] lg:text-[35px] md:text-[35px] text-[25px] font-normal xl:leading-[48px] lg:leading-[48px] md:leading-[48px] leading-[32px] text-white">
                                     The Future of Education: AI and Gamification at Skilline
                                     </h3>
                                 </div>

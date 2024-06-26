@@ -7,3 +7,6 @@ export * from "./StoryItem";
 export * from "./RoadmapItem";
 export * from "./CardBox"
 export * from "./CourseCard"
+export * from "./TeamCard";
+export * from "./Cookies";
+export * from "./CardBox";
