@@ -8,6 +8,7 @@ import {
   Policies,
   GuidingPrinciple,
   JoinUs,
+  OurRoadmap,
 } from "@/components/home";
 
 export default function Home() {
@@ -18,10 +19,11 @@ export default function Home() {
       <OurVision />
       <OurApproach />
       <OurImpact />
-      <Stories />
       <Policies />
       <GuidingPrinciple />
       <JoinUs />
+      <Stories />
+      <OurRoadmap />
     </main>
   );
 }

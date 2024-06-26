@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { GridBox } from "@/components/core/GridBox";
@@ -6,6 +6,7 @@ import { Heading } from "@/components/core/Heading/Heading";
 import { Paragraph } from "@/components/core/Paragraph";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface ButtonItem {
   label: string;
@@ -26,12 +27,13 @@ interface ImageWithTextProps {
 }
 
 export const ImageBoxStyleOne = ({ data }: ImageWithTextProps) => {
-
   return (
     <div className="relative" id="about-us">
       <GridBox
         gap={10}
-        className="container  xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 items-center xl:bg-transparent lg:bg-transparent md:bg-[#F8F8F8] bg-[#F8F8F8]  xl:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] lg:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] md:bg-[linear-gradient(90deg,#FFFFFF00_30%,#F8F8F8_30%)] pt-[50px] pb-[70px] mt-10"
+        className={cn(
+          "container  xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 items-center xl:bg-transparent lg:bg-transparent pt-[50px] pb-[70px] mt-10"
+        )}
         columns={2}
       >
         <GridBox.GridItem columnMerge={1} className="relative">
@@ -59,7 +61,13 @@ export const ImageBoxStyleOne = ({ data }: ImageWithTextProps) => {
           <Paragraph>{data.description}</Paragraph>
 
           {data.button && (
-            <Link href={data.button.links} target={data.button.target} className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-buttonBg text-secondary-foreground hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]">{data.button.label}</Link>
+            <Link
+              href={data.button.links}
+              target={data.button.target}
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-buttonBg text-secondary-foreground hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
+            >
+              {data.button.label}
+            </Link>
           )}
         </GridBox.GridItem>
       </GridBox>
