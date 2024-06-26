@@ -9,3 +9,5 @@ export * from "./GuidingPrinciple";
 export * from "./JoinUs";
 export * from "./OurRoadmap";
 export * from "./Ventures";
+export * from "./Blog";
+export * from "./Courses";

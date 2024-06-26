@@ -10,6 +10,8 @@ import {
   JoinUs,
   OurRoadmap,
   Ventures,
+  Blog,
+  Courses,
 } from "@/components/home";
 
 export default function Home() {
@@ -26,6 +28,8 @@ export default function Home() {
       <OurRoadmap />
       <JoinUs />
       <Ventures />
+      <Blog />
+      <Courses />
     </main>
   );
 }
