@@ -29,7 +29,7 @@ export const OurRoadmap = () => {
     },
   ];
   return (
-    <div className="pb-[80px]">
+    <div className="pb-[50px] pt-[40px]">
       <div className="container">
         <Heading className="mb-10">Our Roadmap</Heading>
         <div className=" grid xl:grid-cols-3 grid-cols-1">

@@ -12,7 +12,7 @@ export const JoinUs = () => {
 
 
     return (
-        <div className='JoinUs'>
+        <div className='JoinUs xl:mx-0 lg:mx-0 md:mx-0 mx-3'>
             <div className='container bg-black rounded-[20px] py-10 relative'>
                 <Image src="/images/half-circle.png" className='xl:block lg:block md:block hidden absolute w-[65px] left-[0px] z-[1]' alt={data.title} width={176} height={312}></Image>
                 <div className='absolute right-0 top-[9px] xl:block lg:block md:block hidden'>
