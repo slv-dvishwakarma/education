@@ -157,12 +157,12 @@ export const Stories = () => {
                   );
                 })}
               </CarouselContent>
-              <div className="absolute hidden md:flex flex-col right-[-40px]  items-center justify-center h-full top-0 ml-[-120px] gap-2 mt-[-20px]">
-                <CarouselNext className="relative -rotate-90" />
-                <div className="flex text-slate-500 text-xs py-2">
+              <div className="absolute hidden md:flex flex-col right-[-30px]  items-center justify-center h-full top-0 ml-[-120px] gap-2 mt-[-20px]">
+                {/* <CarouselNext className="relative -rotate-90" /> */}
+                <div className="flex flex-col text-slate-500 text-xs py-2 items-center justify-center w-full">
                   <span>{current}</span> <span>/</span> <span>{count}</span>
                 </div>
-                <CarouselPrevious className="relative -rotate-90" />
+                {/* <CarouselPrevious className="relative -rotate-90" /> */}
               </div>
             </Carousel>
             <div className="pt-1 h-[40%] w-full bg-gradient-to-t  from-[#fae5d1]  to-transparent bottom-0 left-0 absolute hidden md:block"></div>
