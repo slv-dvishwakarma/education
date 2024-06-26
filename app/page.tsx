@@ -12,6 +12,7 @@ import {
   Ventures,
   Blog,
   Courses,
+  Contact,
 } from "@/components/home";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
       <Ventures />
       <Blog />
       <Courses />
+      <Contact />
     </main>
   );
 }

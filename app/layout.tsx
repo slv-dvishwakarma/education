@@ -27,7 +27,7 @@ const gorditaFont = localFont({
 });
 
 import "./globals.css";
-import { Cookies } from "@/components/core";
+import { Cookies, ScrollToTop } from "@/components/core";
 
 export const metadata: Metadata = {
   title: "Skilline - Education",
@@ -45,8 +45,9 @@ export default function RootLayout({
       <body className={cn(gorditaFont.className, proximaNovaFont.className)}>
         <Header />
         {children}
-        <Cookies />
         <Footer />
+        <Cookies />
+        <ScrollToTop />
       </body>
     </html>
   );

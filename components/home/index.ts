@@ -11,3 +11,4 @@ export * from "./OurRoadmap";
 export * from "./Ventures";
 export * from "./Blog";
 export * from "./Courses";
+export * from "./Contact";
