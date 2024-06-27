@@ -11,7 +11,7 @@ export const Heading = ({
   return (
     <h2
       className={cn(
-        "text-[25px] leading-[29px] text-balance md:text-[40px] md:leading-[50px] text-[rgb(37,37,37)] font-[500]",
+        "text-[25px] leading-[29px] text-balance md:text-[40px] md:leading-[50px] text-[rgb(37,37,37)] font-[800]",
         className
       )}
     >
