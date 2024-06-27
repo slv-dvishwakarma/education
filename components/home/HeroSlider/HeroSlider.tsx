@@ -5,7 +5,7 @@ type SliderItemType = {
   preTitle: string;
   title: string;
   description: string;
-  button: {
+  button?: {
     label: string;
     links: string;
     target: "_blank" | "_self";
@@ -56,11 +56,11 @@ export const HeroSlider = () => {
       preTitle: "Envisioning the future",
       title: "Empowering India's Future",
       description: `Unlocking Potential, Empowering Dreams. Join the Skilline Revolution.`,
-      button: {
-        label: "Explore Solution",
-        links: "",
-        target: "_self",
-      },
+      // button: {
+      //   label: "Explore Solution",
+      //   links: "",
+      //   target: "_self",
+      // },
       image: {
         src: "/images/banner-1.png",
         width: 400,
@@ -72,11 +72,11 @@ export const HeroSlider = () => {
       preTitle: "Envisioning the future",
       title: "AI-Driven Education",
       description: `Where AI Meets Education, Creating Opportunities for All.`,
-      button: {
-        label: "Explore Solution",
-        links: "",
-        target: "_self",
-      },
+      // button: {
+      //   label: "Explore Solution",
+      //   links: "",
+      //   target: "_self",
+      // },
       image: {
         src: "/images/banner-2.png",
         width: 400,
@@ -88,11 +88,11 @@ export const HeroSlider = () => {
       preTitle: "Envisioning the future",
       title: "Industry-Ready Skills",
       description: `Bridging the Skill Gap, Empowering India's Workforce.`,
-      button: {
-        label: "Explore Solution",
-        links: "",
-        target: "_self",
-      },
+      // button: {
+      //   label: "Explore Solution",
+      //   links: "",
+      //   target: "_self",
+      // },
       image: {
         src: "/images/banner-3.png",
         width: 400,
@@ -104,11 +104,11 @@ export const HeroSlider = () => {
       preTitle: "Envisioning the future",
       title: "Cultural & Policy Awareness",
       description: `Nurturing Minds, Building a Better India.`,
-      button: {
-        label: "Explore Solution",
-        links: "",
-        target: "_self",
-      },
+      // button: {
+      //   label: "Explore Solution",
+      //   links: "",
+      //   target: "_self",
+      // },
       image: {
         src: "/images/banner-4.png",
         width: 400,
@@ -153,18 +153,20 @@ export const HeroSlider = () => {
                         <div className="text-[15px] leading-[28px] md:text-[17px] md:leading-[32px] proxima text-slate-700 text-balance">
                           {description}
                         </div>
-                        <Button
-                          onClick={() =>
-                            redirect({
-                              label: button.label,
-                              href: button.links,
-                              target: button.target,
-                            })
-                          }
-                          type="button"
-                        >
-                          {button.label}
-                        </Button>
+                        {button ? (
+                          <Button
+                            onClick={() =>
+                              redirect({
+                                label: button.label,
+                                href: button.links,
+                                target: button.target,
+                              })
+                            }
+                            type="button"
+                          >
+                            {button.label}
+                          </Button>
+                        ) : null}
                       </div>
                       <div className="flex justify-center relative">
                         <Image

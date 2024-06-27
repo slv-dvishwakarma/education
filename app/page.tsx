@@ -13,6 +13,7 @@ import {
   Blog,
   Courses,
   Contact,
+  Pillars,
 } from "@/components/home";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <OurImpact />
       <Policies />
       <GuidingPrinciple />
+      <Pillars />
       <Stories />
       <OurRoadmap />
       <JoinUs />
