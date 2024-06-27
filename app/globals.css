@@ -84,3 +84,37 @@
 .proxima {
   font-family: var(--proxima-nova-font);
 }
+
+.number {
+  -webkit-text-stroke-width: 0.5px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 110px;
+  color: transparent;
+}
+
+.blue .number {
+  -webkit-text-stroke-color: #bcbcff;
+}
+.orange .number {
+  -webkit-text-stroke-color: #ffc6c6;
+}
+
+.pulse-2 {
+  --float-animation-ease: ease;
+  --float-animate-from: 0%;
+  --float-animate-to: 3%;
+  --float-delay: 0s;
+  animation: pulse-anim 1s ease infinite alternate;
+  animation-delay: 0s;
+}
+
+@keyframes pulse-anim {
+  0% {
+    transform: translateY(var(--float-animate-from, 0));
+  }
+
+  100% {
+    transform: translateY(var(--float-animate-to, 3%));
+  }
+}

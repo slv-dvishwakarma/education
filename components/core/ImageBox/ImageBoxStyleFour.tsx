@@ -1,0 +1,107 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import { GridBox } from "@/components/core/GridBox";
+import { Heading } from "@/components/core/Heading/Heading";
+import { Paragraph } from "@/components/core/Paragraph";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+
+interface ButtonItem {
+  label: string;
+  links: string;
+  target: "_blank" | "_self";
+}
+
+interface ImageWithTextItem {
+  image: string;
+  title: string;
+  description: string;
+  button?: ButtonItem;
+}
+
+export type ColorStyleType = "blue" | "orange";
+
+interface ImageWithTextProps {
+  data: ImageWithTextItem;
+  imageAlign?: "left" | "right";
+  color: ColorStyleType;
+  seqNumber?: string;
+}
+
+export const ImageBoxStyleFour = ({
+  data,
+  imageAlign = "left",
+  color = "blue",
+  seqNumber,
+}: ImageWithTextProps) => {
+  const description = data.description.split("\n");
+
+  const BorderColor = {
+    orange: "border-orange-500",
+    blue: "border-blue-500",
+  };
+  const backgroundColor = {
+    orange: "bg-[#FFF2F2]",
+    blue: "bg-[#F2F2FF]",
+  };
+
+  return (
+    <div className="container">
+      <div
+        className={cn(
+          "flex items-center flex-wrap rounded-xl pt-[74px] md:pb-[74px] pb-[20px]",
+          "flex-col",
+          imageAlign === "right" ? "flex-row-reverse" : "flex-row",
+          backgroundColor[color],
+          color
+        )}
+      >
+        <div className="md:w-[54%] w-full pl-5 md:pl-0">
+          <div className="w-auto h-auto relative mx-auto max-w-[80%]">
+            <div
+              className={cn(
+                "absolute left-[-30px] w-full h-full border-2 opacity-20  border-dashed top-[-30px] inline-block",
+                BorderColor[color]
+              )}
+            ></div>
+            <Image
+              className=" z-[1] relative w-full  bg-white rounded-xl p-10 md:h-[400px] object-contain"
+              src={data.image}
+              alt={data.title}
+              width={1500}
+              height={1000}
+            />
+          </div>
+        </div>
+        <div className="md:w-[46%] w-full">
+          <div
+            className={cn(
+              imageAlign === "left" ? "px-8 md:pr-5" : "px-8 md:pl-[80px]"
+            )}
+          >
+            {seqNumber ? <h1 className="number">{seqNumber}</h1> : null}
+
+            <Heading className="pb-4">{data.title}</Heading>
+
+            <Paragraph className="flex flex-col gap-5   pb-4 ">
+              {description.map((item: string, index) => {
+                return <span key={index}>{item}</span>;
+              })}
+            </Paragraph>
+            {data.button && (
+              <Link
+                href={data.button.links}
+                target={data.button.target}
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
+              >
+                {data.button.label}
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

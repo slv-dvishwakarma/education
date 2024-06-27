@@ -26,14 +26,14 @@ export default function Home() {
       <OurImpact />
       <Policies />
       <GuidingPrinciple />
-      <Pillars />
+      {/* <Pillars /> */}
       <Stories />
       <OurRoadmap />
-      <JoinUs />
       <Ventures />
-      <Blog />
       <Courses />
+      <Blog />
       <Contact />
+      <JoinUs />
     </main>
   );
 }

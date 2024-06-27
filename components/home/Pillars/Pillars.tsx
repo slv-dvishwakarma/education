@@ -38,7 +38,7 @@ export const Pillars = () => {
     <div>
       <div className="container">
         <Heading>Fulfilling Atma-Nirbhar 5 Pillars</Heading>
-        <div className="space-y-10 mt-10">
+        <div className="mt-10">
           {data.map((item: any, index) => {
             const { title, description, icon } = item;
             return (

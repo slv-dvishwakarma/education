@@ -1,39 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { IconBoxType, IconBoxStyle1 } from "./IconBoxStyle1";
+import { IconBoxStyle2 } from "./IconBoxStyle2";
 
-type IconBox = {
-  title: string;
-  description: string;
-  image: string;
-  link: {
-    url: string;
-    target: "_blank" | "_self";
+type MainItemType = {
+  type?: "style-1" | "style-2";
+} & IconBoxType;
+
+export const IconBox = ({
+  title,
+  description,
+  icon,
+  link,
+  type = "style-1",
+}: MainItemType) => {
+  const IconType = {
+    "style-1": IconBoxStyle1,
+    "style-2": IconBoxStyle2,
   };
-};
 
-export const IconBox = ({ title, description, image, link }: any) => {
+  const MainIconBox = IconType[type] || <div>{type} is not valid type</div>;
   return (
-    <div className=" bg-white rounded-md p-10 hover:shadow-xl transition-all group h-full">
-      <Link
-        className="flex flex-col gap-3"
-        href={link.url}
-        target={link.target}
-      >
-        <Image
-          src={image}
-          width={100}
-          className="w-[52px] h-[52px]"
-          height={100}
-          alt={title}
-        />
-        <h3 className="text-[17px] leading-[28px] mt-3 group-hover:text-primary">
-          {title}
-        </h3>
-        <div className="text-[15px] text-[rgb(105,105,105)] leading-[28px] font-[300]">
-          {description}
-        </div>
-      </Link>
-    </div>
+    <MainIconBox
+      title={title}
+      description={description}
+      icon={icon}
+      link={link}
+    />
   );
 };

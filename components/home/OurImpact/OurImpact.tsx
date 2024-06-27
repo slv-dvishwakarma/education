@@ -66,7 +66,7 @@ export const OurImpact = () => {
                 key={index}
                 title={title}
                 description={description}
-                image={image}
+                icon={image}
                 link={link}
               />
             );

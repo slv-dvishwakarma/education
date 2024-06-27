@@ -12,3 +12,5 @@ export * from "./Cookies";
 export * from "./CardBox";
 export * from "./SocialIcon";
 export * from "./PillarsItem";
+export * from "./ContactForm";
+export * from "./Slider";
