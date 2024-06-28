@@ -14,3 +14,5 @@ export * from "./SocialIcon";
 export * from "./PillarsItem";
 export * from "./ContactForm";
 export * from "./Slider";
+export * from "./Breadcrumb";
+export * from "./IconBoxV2";

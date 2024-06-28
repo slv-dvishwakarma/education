@@ -22,7 +22,7 @@ export const Header = () => {
     },
     {
       label: "Blog",
-      link: "/blog",
+      link: "/blogs",
     },
     {
       label: "Contact Us",
@@ -35,7 +35,9 @@ export const Header = () => {
         <div className="container">
           <div className="flex justify-between items-center lg:py-5 py-5">
             <div>
-              <h1 className="text-2xl text-primary uppercase">Skilline</h1>
+              <h1 className="text-2xl uppercase font-[900]">
+                <Link href={"/"}>Skilline</Link>
+              </h1>
             </div>
             <div className="flex lg:gap-5 items-center">
               <div className="hidden lg:flex gap-10 mr-3 items-center">

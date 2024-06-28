@@ -1,34 +1,106 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { Button } from "@/components/ui/button";
 type CardBox = {
-    title: string;
-    description: string;
-    image: string;
-    link: {
-        url: string;
-        target: "_blank" | "_self";
-    };
+  title: string;
+  description: string;
+  image: string;
+  link: {
+    url: string;
+    target: "_blank" | "_self";
+  };
+  isFeatured?: boolean;
 };
 
-export const CardBox = ({ title, description, image, link }: any) => {
-    return (
-        <div className="bg-white shadow-[rgba(149,157,165,0.2)_0px_8px_24px] hover:shadow-none transition-all group">
-            <Link
-                className="flex flex-col"
-                href={link.url}
-                target={link.target}
-            >
-                <div className="relative pt-[50%] sm:pt-[70%] overflow-hidden xl:h-[203px] lg:h-[203px] md:h-[267px]">
-                    <Image src={image} alt={title} width={400} height={400} className="w-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
-                </div>
+export const CardBox = ({
+  title,
+  description,
+  image,
+  link,
+  isFeatured,
+}: any) => {
+  return (
+    <div
+      className={cn(
+        "bg-white shadow-[rgba(149,157,165,0.2)_0px_8px_24px]  transition-all group",
+        isFeatured ? "rounded-2xl overflow-hidden" : "hover:shadow-none"
+      )}
+    >
+      {isFeatured ? (
+        <div className="flex flex-col">
+          <div className="relative pt-[50%] sm:pt-[70%] overflow-hidden xl:h-[203px] lg:h-[203px] md:h-[267px]">
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={400}
+              className="w-full aspect-[1.4] absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
+          </div>
 
-                <div className="mt-4 mb-6 px-4">
-                    <h3 className="text-md font-normal group-hover:text-primary line-clamp-1 ">{title}</h3>
-                    <p className="mt-3 text-gray-500 font-light line-clamp-3">{description}</p>   
-                </div>
-            </Link>
+          <div className="mt-4 mb-6 px-4">
+            <h3
+              className={cn(
+                "text-md font-normal  line-clamp-2 ",
+                isFeatured ? "text-xl" : "group-hover:text-primary"
+              )}
+            >
+              {title}
+            </h3>
+            <p
+              className={cn(
+                "mt-3 text-gray-500 font-light line-clamp-3",
+                isFeatured ? "tracking-wide leading-7" : ""
+              )}
+            >
+              {description}
+            </p>
+            <Button size="default" asChild={true} className="mt-3 py-1">
+              <Link href={link.url} target={link.target}>
+                Read More
+              </Link>
+            </Button>
+          </div>
         </div>
-    );
+      ) : (
+        <Link className="flex flex-col" href={link.url} target={link.target}>
+          <div className="relative pt-[50%] sm:pt-[70%] overflow-hidden xl:h-[203px] lg:h-[203px] md:h-[267px]">
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={400}
+              className="w-full aspect-[1.4] absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
+          </div>
+
+          <div className="mt-4 mb-6 px-4">
+            <h3
+              className={cn(
+                "text-md font-normal  line-clamp-2 ",
+                isFeatured ? "text-xl" : "group-hover:text-primary"
+              )}
+            >
+              {title}
+            </h3>
+            <p
+              className={cn(
+                "mt-3 text-gray-500 font-light line-clamp-3",
+                isFeatured ? "tracking-wide leading-7" : ""
+              )}
+            >
+              {description}
+            </p>
+            {isFeatured ? (
+              <Button size="default" asChild={true} className="mt-3 py-1">
+                <Link href={link.url}>Read More</Link>
+              </Button>
+            ) : null}
+          </div>
+        </Link>
+      )}
+    </div>
+  );
 };

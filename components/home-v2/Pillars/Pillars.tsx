@@ -1,5 +1,7 @@
 import { Heading, Paragraph, PillarsItem } from "@/components/core";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoMdRibbon } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";
@@ -45,7 +47,10 @@ export const Pillars = () => {
           <div className="bg-[#e9ecfb] w-[60px] h-[60px] hidden md:inline-flex items-center justify-center rounded-full ">
             <IoMdRibbon className="text-[#3750e0]" size={30} />
           </div>
-          <Heading>Achieving 5 Pillars of Atma-Nirbhar </Heading>
+          <Heading>
+            Fulfilling Atma <br />
+            Nirbhar 5 Pillars{" "}
+          </Heading>
           <Paragraph>
             Skilline aims to foster national self-reliance and economic growth
             through upskilling, improving employment and self-employment
@@ -62,6 +67,11 @@ export const Pillars = () => {
                 </div>
               );
             })}
+          </div>
+          <div className="mt-10">
+            <Button asChild={true}>
+              <Link href={"/fulfilling-atma-nirbhar-5-pillars"}>Read More</Link>
+            </Button>
           </div>
         </div>
         <div className="md:w-1/2 w-full">

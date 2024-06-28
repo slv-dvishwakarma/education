@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { SocialIcon } from "../core";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export const Footer = () => {
+  const pathname = usePathname();
   const footerMenu = [
     {
       label: "Home",
@@ -13,23 +17,11 @@ export const Footer = () => {
       link: "",
     },
     {
-      label: "Course",
-      link: "",
-    },
-    {
-      label: "Team",
-      link: "",
-    },
-    {
       label: "Blog",
       link: "",
     },
     {
       label: "Contact",
-      link: "",
-    },
-    {
-      label: "Teams",
       link: "",
     },
     {
@@ -60,11 +52,16 @@ export const Footer = () => {
     },
   ];
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer
+      className={cn(
+        " dark:bg-gray-900  ",
+        pathname === "/" ? "bg-white" : "bg-gray-50"
+      )}
+    >
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
           <a href="#">
-            <h2 className="text-2xl uppercase">Skilline</h2>
+            <h2 className="text-2xl uppercase font-[900]">Skilline</h2>
           </a>
 
           <div className="flex flex-wrap justify-center mt-6 -mx-4">

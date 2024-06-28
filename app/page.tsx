@@ -13,8 +13,8 @@ import {
   Blog,
   Courses,
   Contact,
-  Pillars,
 } from "@/components/home";
+import { Pillars } from "@/components/home-v2";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       <OurImpact />
       <Policies />
       <GuidingPrinciple />
-      {/* <Pillars /> */}
+      <Pillars />
       <Stories />
       <OurRoadmap />
       <Ventures />

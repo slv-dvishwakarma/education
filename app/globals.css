@@ -118,3 +118,22 @@
     transform: translateY(var(--float-animate-to, 3%));
   }
 }
+
+.blog-details {
+  blockquote {
+    color: inherit;
+    background: rgb(255 240 211 / 50%);
+    font-size: 19px;
+    padding: 31px 48px;
+    border-radius: 15px;
+    border-left: 11px solid #ede2cf;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 21px;
+  }
+}

@@ -5,7 +5,7 @@ import { Paragraph } from "../Paragraph";
 
 type CourseCard = {
   image: string;
-  price: string;
+  price?: string;
   language: string;
   title: string;
   label: string;
@@ -38,15 +38,17 @@ export const CourseCard = ({
         />
       </div>
       <div className="absolute left-0 top-0 z-[1]">
-        <div
-          className={` ${
-            price === "Free"
-              ? "bg-[#6cbd7e] text-white font-normal"
-              : "bg-[#F7BF27] text-black font-semibold"
-          }   text-base  uppercase text-sm px-[13px] py-1.5 rounded-[5px_0px_0px_0px]`}
-        >
-          {price}
-        </div>
+        {price ? (
+          <div
+            className={` ${
+              price === "Free"
+                ? "bg-[#6cbd7e] text-white font-normal"
+                : "bg-[#F7BF27] text-black font-semibold"
+            }   text-base  uppercase text-sm px-[13px] py-1.5 rounded-[5px_0px_0px_0px]`}
+          >
+            {price}
+          </div>
+        ) : null}
       </div>
       <div className="pt-4 pb-[22px] px-[30px] ">
         <div
@@ -59,8 +61,8 @@ export const CourseCard = ({
           {level}
         </div>
         <div className="space-y-1 mt-3">
-          <div className="text-primary">{language}</div>
-          <h2 className="text-lg leading-[1.67] text-[#252525] line-clamp-2 group-hover:text-primary">
+          <div className="text-slate-400">{language}</div>
+          <h2 className="text-lg leading-[1.67] text-black line-clamp-2 ">
             {title}
           </h2>
           <div className="line-clamp-3 text-balance md:text-[15px] md:leading-[1.86] text-[15px] font-light text-[rgb(105,105,105)] tracking-normal">

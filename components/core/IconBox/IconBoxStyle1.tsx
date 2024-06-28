@@ -20,10 +20,10 @@ export const IconBoxStyle1 = ({
 }: IconBoxType) => {
   return (
     <div className=" bg-white rounded-md p-10 hover:shadow-xl transition-all group h-full">
-      <Link
+      <div
         className="flex flex-col gap-3"
-        href={link.url}
-        target={link.target}
+        // href={link.url}
+        // target={link.target}
       >
         <Image
           src={icon}
@@ -38,7 +38,7 @@ export const IconBoxStyle1 = ({
         <div className="text-[15px] text-[rgb(105,105,105)] leading-[28px] font-[300]">
           {description}
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
