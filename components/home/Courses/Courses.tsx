@@ -8,57 +8,68 @@ export const Courses = () => {
       "Join us on the Skilline journey. Together, we can create a skilled and empowered India. Whether you're a learner seeking new opportunities, an institution aiming to enhance education, or a policymaker striving to improve governance, Skilline is here to support you.",
     course: [
       {
-        image: "/course/python.jpg",
+        image: "/course/pu-02.jpg",
         price: "Free",
         language: "Python",
-        title: "Learn Python: Beginner to Expert",
+        title: "Python for AI & Machine learning",
         label:
           "This comprehensive Python course covers fundamentals to advanced concepts, enabling you to develop powerful applications and automate tasks efficiently.",
-        level: "Beginner",
+        level: "Very High",
         link: {
           url: "/",
           target: "_self",
         },
       },
       {
-        image: "/course/react.jpg",
+        image: "/course/py-04.png",
         price: "₹2,500",
-        language: "React.js",
-        title: "Mastering React.js for Frontend Development",
+        language: "Python",
+        title: "Mastering Machine learning Library",
         label:
-          "Dive deep into React.js, the popular JavaScript library, and learn to create dynamic and responsive user interfaces for modern web applications.",
-        level: "Expert",
+          "Mastering Machine learning Library(e.g. TensorFlow, PyTorch scikit-learn)",
+        level: "High",
         link: {
           url: "/",
           target: "_self",
         },
       },
       {
-        image: "/course/html-css.jpg",
+        image: "/course/py-03.jpg",
         price: "₹1,800",
-        language: "HTML, CSS, PHP",
-        title: "Web Development with HTML, CSS, and PHP",
-        label:
-          "Gain essential web development skills by mastering HTML, CSS, and PHP to build and style robust and interactive websites from scratch.",
-        level: "Expert",
+        language: "Python",
+        title: "Deep Learning Fundamentals with TensorFlow/PyTorch",
+        label: "Deep Learning Fundamentals (e.g. TensorFlow, PyTorch, Keras)",
+        level: "High",
         link: {
           url: "/",
           target: "_self",
         },
       },
       {
-        image: "/course/react-native.jpg",
+        image: "/course/py-ai-1.jpg",
         price: "₹2,200",
-        language: "React Native",
-        title: "React Native: Build Mobile Apps with JavaScript",
-        label:
-          "Learn to create high-performance mobile applications for iOS and Android using React Native and JavaScript, leveraging a single codebase for both platforms.",
+        language: "Python",
+        title: "Data structures & Algorithms for ai",
+        label: "Data structures & Algorithms",
         level: "Expert",
         link: {
           url: "/",
           target: "_self",
         },
       },
+      // {
+      //   image: "/course/py-04.png",
+      //   price: "₹2,200",
+      //   language: "Python",
+      //   title: "Mathematics & Statistics for Machine Learning",
+      //   label:
+      //     "Mathematics & Statistics (Calculus, Linear Algebra, Probability & Statistics)",
+      //   level: "Expert",
+      //   link: {
+      //     url: "/",
+      //     target: "_self",
+      //   },
+      // },
     ],
   };
 

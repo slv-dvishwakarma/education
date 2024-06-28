@@ -24,7 +24,7 @@ const AboutUs = () => {
       </Breadcrumb>
       <About />
       <div className="container ">
-        <div className="text-center px-[15%] py-[100px] space-y-6">
+        <div className="text-center md:px-[15%] md:py-[100px] space-y-6">
           <Heading>
             The Leading Global Marketplace for Learning and Instruction
           </Heading>
@@ -35,7 +35,7 @@ const AboutUs = () => {
             cras semper atincidunt egetnval
           </Paragraph>
         </div>
-        <div className="grid grid-cols-4 justify-center">
+        <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-2 grid-cols-1 justify-center">
           <ExperienceIcon
             title="15"
             description="Years of Language Education Experience"

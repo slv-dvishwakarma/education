@@ -30,7 +30,7 @@ export const CourseCard = ({
       {/* <Link href={link.url} target={link.target}> */}
       <div className="relative pt-[50%] sm:pt-[70%] overflow-hidden xl:h-[203px] lg:h-[203px] md:h-[267px] rounded-[5px_5px_0px_0px]">
         <Image
-          className="w-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-[5px_5px_0px_0px]"
+          className="w-full aspect-[1.4] absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-[5px_5px_0px_0px]"
           src={image}
           alt={language}
           width={400}
@@ -44,7 +44,7 @@ export const CourseCard = ({
               price === "Free"
                 ? "bg-[#6cbd7e] text-white font-normal"
                 : "bg-[#F7BF27] text-black font-semibold"
-            }   text-base  uppercase text-sm px-[13px] py-1.5 rounded-[5px_0px_0px_0px]`}
+            }     uppercase text-sm px-[13px] py-1.5 rounded-[5px_0px_0px_0px]`}
           >
             {price}
           </div>
@@ -53,9 +53,9 @@ export const CourseCard = ({
       <div className="pt-4 pb-[22px] px-[30px] ">
         <div
           className={` ${
-            level == "Beginner"
-              ? "bg-[rgba(91,99,254,0.15)] text-[#5b63fe]"
-              : "bg-[rgba(108,189,126,0.15)] text-[#6cbd7e]"
+            level == "High"
+              ? "bg-[rgba(254,137,91,0.15)] text-[#feb55b]"
+              : "bg-[rgba(247,105,105,0.15)] text-[#d33434]"
           }  text-[13px] leading-[1.38] w-[35%] text-center px-2.5 py-0.5 rounded-sm`}
         >
           {level}

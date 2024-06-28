@@ -1,14 +1,12 @@
-
 import { GridBox } from "@/components/core/GridBox";
 import { FaPhone, FaRegEnvelope, FaFacebookF } from "react-icons/fa";
 import { LiaFaxSolid } from "react-icons/lia";
 import React from "react";
 import Link from "next/link";
 import { Heading } from "@/components/core";
+import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
-
-
   const data = {
     cnt_icon: [
       {
@@ -16,19 +14,19 @@ export const Contact = () => {
         title: "Call Us",
         link: {
           label: "+91 12345-67890",
-          url: "tel:+91 12345-67890"
-        }
+          url: "tel:+91 12345-67890",
+        },
       },
       {
         icon: FaRegEnvelope,
         title: "Mail Us",
         link: {
           label: "info@gmail.com",
-          url: "mailto:info@gmail.com"
-        }
-      }
-    ]
-  }
+          url: "mailto:info@gmail.com",
+        },
+      },
+    ],
+  };
 
   return (
     // <section className="container my-10">
@@ -69,65 +67,146 @@ export const Contact = () => {
               <div className="grid gap-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="hs-firstname-contacts-1" className="sr-only">First Name</label>
-                    <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" className="py-3 px-4 focus:outline-none border-[#BEBEBE] border border-solid block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="First Name" />
+                    <label
+                      htmlFor="hs-firstname-contacts-1"
+                      className="sr-only"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      name="hs-firstname-contacts-1"
+                      id="hs-firstname-contacts-1"
+                      className="py-3 px-4 focus:outline-none border-[#BEBEBE] border border-solid block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      placeholder="First Name"
+                    />
                   </div>
 
                   <div>
-                    <label htmlFor="hs-lastname-contacts-1" className="sr-only">Last Name</label>
-                    <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" className="py-3 px-4 focus:outline-none border-[#BEBEBE] border border-solid block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Last Name" />
+                    <label htmlFor="hs-lastname-contacts-1" className="sr-only">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      name="hs-lastname-contacts-1"
+                      id="hs-lastname-contacts-1"
+                      className="py-3 px-4 focus:outline-none border-[#BEBEBE] border border-solid block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      placeholder="Last Name"
+                    />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="hs-email-contacts-1" className="sr-only">Email</label>
-                  <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" className="py-3 px-4 block focus:outline-none border-[#BEBEBE] border border-solid w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Email" />
+                  <label htmlFor="hs-email-contacts-1" className="sr-only">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="hs-email-contacts-1"
+                    id="hs-email-contacts-1"
+                    className="py-3 px-4 block focus:outline-none border-[#BEBEBE] border border-solid w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    placeholder="Email"
+                  />
                 </div>
 
                 <div>
-                  <label htmlFor="hs-phone-number-1" className="sr-only">Phone Number</label>
-                  <input type="text" name="hs-phone-number-1" id="hs-phone-number-1" className="py-3 px-4 block focus:outline-none w-full border-[#BEBEBE] border border-solid border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Phone Number" />
+                  <label htmlFor="hs-phone-number-1" className="sr-only">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    name="hs-phone-number-1"
+                    id="hs-phone-number-1"
+                    className="py-3 px-4 block focus:outline-none w-full border-[#BEBEBE] border border-solid border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    placeholder="Phone Number"
+                  />
                 </div>
 
                 <div>
-                  <label htmlFor="hs-about-contacts-1" className="sr-only">Details</label>
-                  <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" className="py-3 px-4 block w-full focus:outline-none border-[#BEBEBE] border border-solid h-[200px] border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Details"></textarea>
+                  <label htmlFor="hs-about-contacts-1" className="sr-only">
+                    Details
+                  </label>
+                  <textarea
+                    id="hs-about-contacts-1"
+                    name="hs-about-contacts-1"
+                    className="py-3 px-4 block w-full focus:outline-none border-[#BEBEBE] border border-solid h-[200px] border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                    placeholder="Details"
+                  ></textarea>
                 </div>
               </div>
 
               <div className="mt-4 grid">
-                <button type="submit" className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]">Send inquiry</button>
+                <Button type="submit">Send inquiry</Button>
               </div>
             </form>
           </div>
           <div className="divide-y divide-gray-200 dark:divide-neutral-800">
             <div className=" flex gap-x-7 py-6">
-              <div className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200"><FaPhone /></div>
+              <div className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200">
+                <FaPhone />
+              </div>
               <div className="grow">
-                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">Contact us by Phone</h3>
-                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">If you wish to Call us</p>
-                <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" href="/">
+                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
+                  Contact us by Phone
+                </h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+                  If you wish to Call us
+                </p>
+                <a
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  href="/"
+                >
                   +91 1234567890
                 </a>
               </div>
             </div>
 
             <div className=" flex gap-x-7 py-6">
-              <svg className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" /><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" /></svg>
+              <svg
+                className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
+                <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+              </svg>
               <div className="grow">
-                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">Contact us by email</h3>
-                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">If you wish to write us an email instead please use</p>
-                <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">
+                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
+                  Contact us by email
+                </h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+                  If you wish to write us an email instead please use
+                </p>
+                <a
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  href="#"
+                >
                   example@site.com
                 </a>
               </div>
             </div>
             <div className=" flex gap-x-7 py-6">
-              <div className="flex-shrink-0 text-[30px] mt-1.5 text-gray-800 dark:text-neutral-200"><LiaFaxSolid /></div>
+              <div className="flex-shrink-0 text-[30px] mt-1.5 text-gray-800 dark:text-neutral-200">
+                <LiaFaxSolid />
+              </div>
               <div className="grow">
-                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">Contact us by Fax</h3>
-                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">If you wish to Send Fax</p>
-                <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200" href="/">
+                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
+                  Contact us by Fax
+                </h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+                  If you wish to Send Fax
+                </p>
+                <a
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  href="/"
+                >
                   info@gmail.com
                 </a>
               </div>

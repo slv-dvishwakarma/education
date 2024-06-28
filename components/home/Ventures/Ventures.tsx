@@ -125,7 +125,7 @@ export const Ventures = () => {
           solutions to every project. Meet the team that's committed to
           excellence and ready to help you achieve your goals.`}
         </Paragraph>
-        <div className="-mx-4 grid grid-cols-4 gap-10 mt-3">
+        <div className=" grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-10 mt-3">
           {data.map((item: any, index: number) => {
             const { src, name, profession, social } = item;
             return (

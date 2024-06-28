@@ -70,7 +70,7 @@ export const Pillars = () => {
           </div>
           <div className="mt-10">
             <Button asChild={true}>
-              <Link href={"/fulfilling-atma-nirbhar-5-pillars"}>Read More</Link>
+              <Link href={""}>Read More</Link>
             </Button>
           </div>
         </div>

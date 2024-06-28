@@ -15,7 +15,7 @@ export const MobileMenu = ({ menu, active, toggleMenu }: any) => {
     <Sheet open={active} onOpenChange={toggleMenu}>
       <SheetContent side="left" className="p-0">
         <SheetHeader>
-          <SheetTitle className="text-2xl text-primary text-left uppercase pt-3 pb-2 pl-5">
+          <SheetTitle className="text-2xl font-[800] text-left uppercase pt-3 pb-2 pl-5">
             Skilline
           </SheetTitle>
         </SheetHeader>
@@ -26,7 +26,7 @@ export const MobileMenu = ({ menu, active, toggleMenu }: any) => {
                 <Link
                   href={item.link}
                   className={cn(
-                    " hover:text-primary px-2 w-full text-left py-3",
+                    "py-5 text-xl hover:text-primary px-2 w-full text-left",
                     pathName === item.link ? "text-primary" : ""
                   )}
                   key={index}

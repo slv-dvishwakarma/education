@@ -2,6 +2,7 @@ import { Breadcrumb, Heading, IconBoxV2 } from "@/components/core";
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const ContactUs = () => {
   const breadcrumb = [
@@ -24,7 +25,7 @@ const ContactUs = () => {
     <>
       <Breadcrumb data={breadcrumb}>Contact us</Breadcrumb>
       <div className="container py-[80px]">
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="md:w-[30%] w-full pt-6">
             <Heading>Keep In Touch With Us.</Heading>
             <div className="divide-y divide-gray-200">
@@ -128,12 +129,13 @@ const ContactUs = () => {
                 </div>
 
                 <div className="mt-4 grid">
-                  <button
+                  <Button
                     type="submit"
-                    className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
+                    className="w-max"
+                    // className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
                   >
                     Send inquiry
-                  </button>
+                  </Button>
                 </div>
               </form>
             </Card>

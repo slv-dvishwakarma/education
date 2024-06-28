@@ -33,7 +33,7 @@ const Blog = () => {
       </Breadcrumb>
       <div className="container pb-[70px]">
         <Heading className="py-5">News & Article</Heading>
-        <div className={cn("py-4 grid grid-cols-3 gap-10")}>
+        <div className={cn("py-4 grid md:grid-cols-3 grid-cols-1 gap-10")}>
           {data.map((item: ItemType, index: number) => {
             const { link, description, image, title } = item;
             return (

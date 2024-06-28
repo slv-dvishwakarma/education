@@ -6,6 +6,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { MobileMenu } from "./MobileMenu";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 
 export const Header = () => {
   const pathName = usePathname();
@@ -31,6 +32,12 @@ export const Header = () => {
   ];
   return (
     <>
+      <ProgressBar
+        color="hsl(var(--primary))"
+        height="4px"
+        options={{ showSpinner: false }}
+      />
+
       <div className="bg-white sticky top-0 z-[2] bg-opacity-75 backdrop-blur-[15px] shadow-md">
         <div className="container">
           <div className="flex justify-between items-center lg:py-5 py-5">
@@ -56,7 +63,9 @@ export const Header = () => {
                   );
                 })}
               </div>
-              <Button>Enquiry Now</Button>
+              <Button asChild={true}>
+                <Link href={"/contact-us"}>Enquiry Now</Link>
+              </Button>
               <div className="lg:hidden">
                 <Button variant="ghost" onClick={() => setMenuStatus(true)}>
                   <IoMenuOutline size={30} />
