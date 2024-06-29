@@ -44,7 +44,7 @@ const Stories = () => {
                       alt={item.name}
                       className=" rounded-full md:w-[150px] md:h-[150px] w-[70px] h-[70px]"
                     />
-                    <div className="md:pt-5 text-left pl-5">
+                    <div className="md:pt-5 text-left md:text-center md:pl-0 pl-5">
                       <h2 className="text-xl">{item.name}</h2>
                       <h2 className="text-slate-500">{item.city}</h2>
                     </div>
