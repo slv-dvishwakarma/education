@@ -1,4 +1,7 @@
+import { Paragraph } from "@/components/core";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const GuidingPrinciple = () => {
@@ -10,21 +13,25 @@ export const GuidingPrinciple = () => {
   };
 
   return (
-    <div className="bg-[#121B32] md:my-[100px] relative xl:pt-0 lg:pt-0 md:pt-0 pt-[50px]">
+    <div className="bg-gray-100 md:my-[100px] relative xl:pt-0 lg:pt-0 md:pt-0 pt-[50px]">
       <div className="container ">
         <div className="flex flex-wrap items-center">
           <div className="space-y-9 xl:w-6/12 lg:w-6/12 md:w-6/12 w-full text-center">
-            <h2 className="text-[30px] leading-[29px] md:text-[50px] md:leading-[40px] text-white font-[500]">
+            <h2 className="text-[30px] leading-[29px] md:text-[50px] md:leading-[40px]  font-[500]">
               {data.title}
             </h2>
-            <div className="md:text-[20px] text-[15px] leading-[28px] md:leading-[34px] font-light text-white tracking-[_0.4px]">
+            <Paragraph className="md:text-[20px] text-[15px] leading-[28px] md:leading-[34px] font-light  tracking-[_0.4px]">
               {data.description}
-            </div>
+            </Paragraph>
+            <Button asChild={true}>
+              <Link href="/challenges-and-strategies">Read More</Link>
+            </Button>
           </div>
-          <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full">
+          <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex">
             <Image
-              className="float-left relative z-[1] w-full pt-10"
-              src={data.image}
+              className="float-left relative z-[1] pt-10 w-[300px] mx-auto"
+              // src={data.image}
+              src={"/images/vission.png"}
               alt={data.title}
               width={1200}
               height={894}

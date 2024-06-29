@@ -26,8 +26,8 @@ export const MobileMenu = ({ menu, active, toggleMenu }: any) => {
                 <Link
                   href={item.link}
                   className={cn(
-                    "py-5 text-xl hover:text-primary px-2 w-full text-left",
-                    pathName === item.link ? "text-primary" : ""
+                    "py-5 text-xl text-slate-500 hover:text-black px-2 w-full text-left",
+                    pathName === item.link ? "text-black" : ""
                   )}
                   key={index}
                   onClick={() => toggleMenu(false)}

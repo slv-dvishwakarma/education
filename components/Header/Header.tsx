@@ -53,8 +53,8 @@ export const Header = () => {
                     <Link
                       href={item.link}
                       className={cn(
-                        "text-gray-800 hover:text-primary",
-                        pathName === item.link ? "text-primary" : ""
+                        "text-gray-500 hover:text-black",
+                        pathName === item.link ? "text-black" : ""
                       )}
                       key={index}
                     >
@@ -63,9 +63,9 @@ export const Header = () => {
                   );
                 })}
               </div>
-              <Button asChild={true}>
+              {/* <Button asChild={true}>
                 <Link href={"/contact-us"}>Enquiry Now</Link>
-              </Button>
+              </Button> */}
               <div className="lg:hidden">
                 <Button variant="ghost" onClick={() => setMenuStatus(true)}>
                   <IoMenuOutline size={30} />

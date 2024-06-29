@@ -1,4 +1,9 @@
-import { Heading, Paragraph, PillarsItem } from "@/components/core";
+import {
+  Heading,
+  Paragraph,
+  PillarsItem,
+  UnorderedList,
+} from "@/components/core";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,21 +61,18 @@ export const Pillars = () => {
             through upskilling, improving employment and self-employment
             opportunities, and establishing itself as a global brand.
           </Paragraph>
-          <div className="space-y-4 text-slate-600">
+          <UnorderedList className="space-y-6 text-slate-600 mb-3 inline-block">
             {data.map((item: any, index) => {
               return (
-                <div key={index}>
-                  <span className="bg-[#e9ecfb] mr-3 w-[30px] h-auto aspect-square inline-flex items-center justify-center rounded-full">
-                    <IoCheckmark className="text-[#3750e0]" size={15} />
-                  </span>
+                <UnorderedList.Item key={index}>
                   {item.title}
-                </div>
+                </UnorderedList.Item>
               );
             })}
-          </div>
-          <div className="mt-10">
+          </UnorderedList>
+          <div className="pt-5">
             <Button asChild={true}>
-              <Link href={""}>Read More</Link>
+              <Link href={"/fulfilling-atma-nirbhar-5-pillars"}>Read More</Link>
             </Button>
           </div>
         </div>

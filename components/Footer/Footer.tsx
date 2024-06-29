@@ -70,7 +70,7 @@ export const Footer = () => {
                 <a
                   key={index}
                   href={item.link}
-                  className="mx-4 font-[300]  text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+                  className="md:mx-4 mx-2 font-[300] text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 >
                   {item.label}
                 </a>
@@ -82,11 +82,11 @@ export const Footer = () => {
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-          <p className="text-balance   text-[14px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
-            © Copyright 2021. All Rights Reserved.
+          <p className="text-balance text-[14px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
+            © Copyright 2024. All Rights Reserved.
           </p>
 
-          <div className="flex -mx-2 gap-3">
+          <div className="flex mt-3 md:mt-0 gap-3">
             {social.map((item, index) => {
               const { icon, label, link } = item;
               return (

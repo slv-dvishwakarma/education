@@ -57,7 +57,7 @@ export const OurImpact = () => {
   return (
     <div className="py-[70px] bg-[#F5F5F5]">
       <div className="container space-y-10">
-        <Heading>Our Impact</Heading>
+        <Heading className="text-center">Our Impact</Heading>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
           {data.map((item: ItemType, index: number) => {
             const { link, description, image, title } = item;

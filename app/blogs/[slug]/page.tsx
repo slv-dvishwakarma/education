@@ -18,7 +18,7 @@ const BlogDetails = ({ params: { slug } }: any) => {
     <div className="container blog-details">
       <div className="flex py-10">
         <div className="">
-          <div className="font-[300]  text-center md:text-left">
+          <div className="font-[300]">
             {[
               {
                 label: "Home",

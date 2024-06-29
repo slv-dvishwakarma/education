@@ -17,7 +17,7 @@ export const Breadcrumb = ({ data, children }: BreadcrumbType) => {
   return (
     <div className="bg-gray-100">
       <div className="container">
-        <div className="font-[300] md:pb-4 pt-5 md:pt-4 text-center md:text-left">
+        <div className="font-[300] md:pb-4 pt-5 md:pt-4 md:text-left">
           {data.map((item, index) => {
             if (item.isActive) {
               return <span key={index}> {item.label}</span>;
@@ -36,7 +36,7 @@ export const Breadcrumb = ({ data, children }: BreadcrumbType) => {
             );
           })}
         </div>
-        <Heading className="text-center md:pt-[20px] md:pb-[80px] pt-[1px] pb-[29px]">
+        <Heading className="md:text-center md:pt-[20px] md:pb-[80px] pt-[1px] pb-[29px]">
           {children}
         </Heading>
       </div>

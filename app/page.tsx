@@ -31,9 +31,9 @@ export default function Home() {
       <OurRoadmap />
       <Ventures />
       <Courses />
-      <Blog />
-      <Contact />
       <JoinUs />
+      <Blog />
+      {/* <Contact /> */}
     </main>
   );
 }

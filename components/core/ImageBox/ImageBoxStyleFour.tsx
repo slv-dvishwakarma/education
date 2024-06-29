@@ -39,12 +39,18 @@ export const ImageBoxStyleFour = ({
   const description = data.description.split("\n");
 
   const BorderColor = {
-    orange: "border-orange-500",
-    blue: "border-blue-500",
+    orange: "border-orange-500/20",
+    blue: "border-blue-500/20",
+    green: "border-green-500/20",
+    yellow: "border-yellow-500/20",
+    gray: "border-gray-500/20",
   };
   const backgroundColor = {
-    orange: "bg-[#FFF2F2]",
-    blue: "bg-[#F2F2FF]",
+    orange: "bg-orange-500/5",
+    blue: "bg-blue-500/5",
+    green: "bg-green-500/5",
+    yellow: "bg-yellow-500/5",
+    gray: "bg-gray-500/5",
   };
 
   return (
@@ -62,7 +68,7 @@ export const ImageBoxStyleFour = ({
           <div className="w-auto h-auto relative mx-auto max-w-[80%]">
             <div
               className={cn(
-                "absolute  w-full h-full border-2 opacity-20  border-dashed  inline-block",
+                "absolute  w-full h-full border-2   border-dashed  inline-block",
                 BorderColor[color]
               )}
             ></div>

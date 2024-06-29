@@ -31,7 +31,7 @@ export const OurRoadmap = () => {
   return (
     <div className="pb-[50px] pt-[40px]">
       <div className="container">
-        <Heading className="mb-10">Our Roadmap</Heading>
+        <Heading className="mb-10 text-center">Our Roadmap</Heading>
         <div className=" grid xl:grid-cols-3 grid-cols-1">
           {data.map((item, index: number) => {
             const { variant, heading, description, icon, year } = item;

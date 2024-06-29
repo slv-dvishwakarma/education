@@ -16,3 +16,4 @@ export * from "./ContactForm";
 export * from "./Slider";
 export * from "./Breadcrumb";
 export * from "./IconBoxV2";
+export * from "./UnorderedList";

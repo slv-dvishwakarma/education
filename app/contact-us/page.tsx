@@ -24,7 +24,7 @@ const ContactUs = () => {
   return (
     <>
       <Breadcrumb data={breadcrumb}>Contact us</Breadcrumb>
-      <div className="container py-[80px]">
+      <div className="container py-[20px]  md:py-[80px]">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="md:w-[30%] w-full pt-6">
             <Heading>Keep In Touch With Us.</Heading>

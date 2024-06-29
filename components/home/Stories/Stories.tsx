@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/carousel";
 
 import React, { useState } from "react";
+import { storiesData } from "@/components/content";
 
 export const Stories = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -36,81 +37,7 @@ export const Stories = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
-  const data: StoryItemtype[] = [
-    {
-      name: "Maharaju",
-      city: "Hyderabad",
-      image: "/images/profile.png",
-      story:
-        "Maharaju was working with Genpact and was in operations, data entry. With our offline program he is now tripled his salary in a year and a efficient react developer.",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-    {
-      name: "Kishore ",
-      city: "Andhra Pradesh",
-      image: "/images/profile.png",
-      story:
-        "Kishore was from Andhra, pass-out with 2 years gap, working with Mindmaster Singapore in operations job as he is not meant for programming. Pass-outs got Job working for Mindmaster Singapore",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-    {
-      name: "Avinesh  ",
-      city: "Hyderabad",
-      image: "/images/profile.png",
-      story:
-        "8 years of gap, not meant for programming skilled and working in operations job in Singapore ",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-    {
-      name: "Sonu",
-      city: "Indore",
-      image: "/images/profile.png",
-      story:
-        "Son of a labour, was not able to complete his degree. Working in Indore in Php HTML. Now he is full stack developer and created proprietary state of the art document processing modules matching international standards and best software products using cutting edge Next JS ",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-    {
-      name: "Dilip",
-      city: "Indore",
-      image: "/images/profile.png",
-      story:
-        "Same as Sonu, his colleague, working on primitive technology now upskilled and groomed as one of the industry best.",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-    {
-      name: "Deepti",
-      city: "Hyderabad",
-      image: "/images/profile.png",
-      story:
-        "10 years gaps after motherhood from underconfident to a confident python developer. 	",
-      link: {
-        label: "Read more",
-        url: "/#",
-        target: "_self",
-      },
-    },
-  ];
-  const OPTIONS: EmblaOptionsType = { loop: true };
+  const data: StoryItemtype[] = storiesData as StoryItemtype[];
 
   return (
     <div className="container bg-[#fae5d1] md:rounded-xl md:my-[80px]">
@@ -141,7 +68,7 @@ export const Stories = () => {
             >
               <CarouselContent className="-mt-1 h-[400px]">
                 {data.map((item, index) => {
-                  const { name, city, image, story, link } = item;
+                  const { name, city, image, story, link, id } = item;
                   return (
                     <CarouselItem key={index} className="pt-1 md:basis-1/2">
                       <div className="p-1 mb-4">
@@ -151,6 +78,7 @@ export const Stories = () => {
                           link={link}
                           name={name}
                           story={story}
+                          id={id}
                         />
                       </div>
                     </CarouselItem>

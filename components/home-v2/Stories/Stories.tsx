@@ -48,6 +48,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
     {
       name: "Kishore ",
@@ -60,6 +61,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
     {
       name: "Avinesh  ",
@@ -72,6 +74,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
     {
       name: "Sonu",
@@ -84,6 +87,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
     {
       name: "Dilip",
@@ -96,6 +100,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
     {
       name: "Deepti",
@@ -108,6 +113,7 @@ export const Stories = () => {
         url: "/#",
         target: "_self",
       },
+      id: "",
     },
   ];
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -151,6 +157,7 @@ export const Stories = () => {
                           link={link}
                           name={name}
                           story={story}
+                          id={item.id}
                         />
                       </div>
                     </CarouselItem>
