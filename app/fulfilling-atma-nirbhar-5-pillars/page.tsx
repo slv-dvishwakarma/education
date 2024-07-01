@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/core";
 import { ImageBox } from "@/components/core";
 import React from "react";
 
-const page = () => {
+const FulfillingAtmaNirbhar5Pillars = () => {
   const data = [
     {
       title: "Economy",
@@ -83,8 +83,4 @@ const page = () => {
   );
 };
 
-export default page;
-
-const PillarTab = () => {
-  return <></>;
-};
+export default FulfillingAtmaNirbhar5Pillars;

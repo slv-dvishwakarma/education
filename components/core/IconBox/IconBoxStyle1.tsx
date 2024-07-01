@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,6 +11,7 @@ export type IconBoxType = {
     url: string;
     target: "_blank" | "_self";
   };
+  isBordered?: boolean;
 };
 
 export const IconBoxStyle1 = ({
@@ -17,13 +19,19 @@ export const IconBoxStyle1 = ({
   description,
   icon,
   link,
+  isBordered,
 }: IconBoxType) => {
   return (
-    <div className=" bg-white rounded-md p-10 hover:shadow-xl transition-all group h-full">
-      <div
+    <div
+      className={cn(
+        " bg-white rounded-md p-10 hover:shadow-xl transition-all group h-full",
+        isBordered ? "border" : ""
+      )}
+    >
+      <Link
         className="flex flex-col gap-3"
-        // href={link.url}
-        // target={link.target}
+        href={link.url}
+        target={link.target}
       >
         <Image
           src={icon}
@@ -38,7 +46,7 @@ export const IconBoxStyle1 = ({
         <div className="text-[15px] text-[rgb(105,105,105)] leading-[28px] font-[300]">
           {description}
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { IconBoxStyle2 } from "./IconBoxStyle2";
 
 type MainItemType = {
   type?: "style-1" | "style-2";
+  isBordered?: boolean;
 } & IconBoxType;
 
 export const IconBox = ({
@@ -14,6 +15,7 @@ export const IconBox = ({
   icon,
   link,
   type = "style-1",
+  isBordered = false,
 }: MainItemType) => {
   const IconType = {
     "style-1": IconBoxStyle1,
@@ -27,6 +29,7 @@ export const IconBox = ({
       description={description}
       icon={icon}
       link={link}
+      isBordered={isBordered}
     />
   );
 };

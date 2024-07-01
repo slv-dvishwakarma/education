@@ -13,3 +13,4 @@ export * from "./Blog";
 export * from "./Courses";
 export * from "./Contact";
 export * from "./Pillars";
+export * from "./HomeContactUs";

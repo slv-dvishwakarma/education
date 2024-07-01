@@ -17,6 +17,7 @@ export type IconBoxType = {
     url: string;
     target: "_blank" | "_self";
   };
+  isBordered?: boolean;
 };
 
 export const IconBoxStyle2 = ({

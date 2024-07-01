@@ -13,6 +13,7 @@ import {
   Blog,
   Courses,
   Contact,
+  HomeContactUs,
 } from "@/components/home";
 import { Pillars } from "@/components/home-v2";
 
@@ -30,8 +31,9 @@ export default function Home() {
       <Stories />
       <OurRoadmap />
       <Ventures />
-      <Courses />
       <JoinUs />
+      <Courses />
+      <HomeContactUs />
       <Blog />
       {/* <Contact /> */}
     </main>

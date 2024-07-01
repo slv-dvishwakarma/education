@@ -10,7 +10,7 @@ export const JoinUs = () => {
   };
 
   return (
-    <div className="JoinUs xl:mx-0 lg:mx-0 md:mx-0 mx-3 mb-10">
+    <div className="JoinUs mt-[70px] xl:mx-0 lg:mx-0 md:mx-0 mx-3 md:mb-5 mb-0">
       <div className="container bg-black rounded-[20px] py-10 relative">
         <Image
           src="/images/half-circle.png"

@@ -11,7 +11,7 @@ export const Paragraph = ({
   return (
     <div
       className={cn(
-        "text-balance md:text-[18px] md:leading-[34px] text-[14px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]",
+        "text-balance md:text-[18px] md:leading-[34px] text-[14px] leading-[28px] font-light text-black tracking-[_0.4px] !whitespace-normal",
         className
       )}
     >
