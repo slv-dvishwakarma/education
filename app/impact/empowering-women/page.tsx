@@ -37,7 +37,7 @@ const EmpoweringWomen = () => {
               src="/impact/women-empowering.jpg"
               width={700}
               height={700}
-              alt=""
+              alt="Empowering Women"
               className="rounded-xl"
             />
           </div>
@@ -83,7 +83,7 @@ const EmpoweringWomen = () => {
               src="/impact/women-empoerment-3.jpg"
               width={700}
               height={700}
-              alt="The Importance of Economic Independence"
+              alt="Our initiatives focus on"
               className="rounded-xl"
             />
           </div>

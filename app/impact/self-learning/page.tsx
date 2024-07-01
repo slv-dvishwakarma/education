@@ -22,19 +22,19 @@ const SelfLearning = () => {
             link: "/impact",
           },
           {
-            label: "Economic Independence",
+            label: "Self Learning",
             link: "/",
             isActive: true,
           },
         ]}
       >
-        Economic Independence
+        Self Learning
       </Breadcrumb>
       <div className="container md:py-10 py-0">
         <div className="flex py-10 items-center md:flex-row flex-col gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <Image
-              src="/impact/economic-independence-0.jpg"
+              src="/impact/selft-learing-00.jpg"
               width={700}
               height={700}
               alt=""
@@ -43,19 +43,21 @@ const SelfLearning = () => {
           </div>
           <div className="md:w-1/2 w-full">
             <div className="space-y-5 md:pl-[50px]">
-              <Heading>Economic Independence</Heading>
+              <Heading>Self-Directed Education</Heading>
               <Paragraph>
-                Economic independence is the state of having sufficient personal
-                resources to live without financial assistance. This crucial
-                aspect of life empowers individuals and communities to make
-                choices that lead to sustainable development, improved quality
-                of life, and overall well-being.
+                Self learning, also known as autonomous learning or
+                self-directed education, empowers individuals to take control of
+                their own learning journey. It is a proactive approach where
+                learners independently seek knowledge, skills, and understanding
+                without direct instruction from a teacher or formal classroom
+                setting.
               </Paragraph>
 
               <Paragraph>
-                Achieving economic independence involves various factors,
-                including education, employment opportunities, financial
-                literacy, and supportive policies.
+                {`This method of learning is increasingly valuable in
+                today's rapidly changing world, where the ability to adapt and
+                acquire new knowledge independently is crucial for personal and
+                professional growth.`}
               </Paragraph>
             </div>
           </div>
@@ -63,13 +65,16 @@ const SelfLearning = () => {
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
-              <Heading>The Importance of Economic Independence</Heading>
+              <Heading>Strategies for Effective Self Learning</Heading>
+
               <UnorderedList>
                 {[
-                  "Personal Freedom and Security",
-                  "Improved Quality of Life",
-                  "Empowerment and Confidence",
-                  "Social and Economic Contributions",
+                  "Set Clear Goals",
+                  "Utilize Diverse Resources",
+                  "Create a Learning Schedule",
+                  "Practice Active Learning",
+                  "Join Learning Communities",
+                  "Seek Feedback",
                 ].map((item: string, index: number) => {
                   return (
                     <UnorderedList.Item key={index}>{item}</UnorderedList.Item>
@@ -80,7 +85,7 @@ const SelfLearning = () => {
           </div>
           <div className="md:w-1/2 w-full">
             <Image
-              src="/impact/economic-independence.jpg"
+              src="/impact/selft-learing-01.jpg"
               width={700}
               height={700}
               alt="The Importance of Economic Independence"

@@ -34,28 +34,32 @@ const EnhancePersonalSkills = () => {
         <div className="flex py-10 items-center md:flex-row flex-col gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <Image
-              src="/impact/economic-independence-0.jpg"
+              src="/impact/enhance-personal-skills-01.jpg"
               width={700}
               height={700}
-              alt=""
+              alt="Master Your Personal Skillset"
               className="rounded-xl"
             />
           </div>
           <div className="md:w-1/2 w-full">
             <div className="space-y-5 md:pl-[50px]">
-              <Heading>Economic Independence</Heading>
+              <Heading>Master Your Personal Skillset</Heading>
               <Paragraph>
-                Economic independence is the state of having sufficient personal
-                resources to live without financial assistance. This crucial
-                aspect of life empowers individuals and communities to make
-                choices that lead to sustainable development, improved quality
-                of life, and overall well-being.
+                {`In today's competitive world, enhancing personal skills is not
+                just an advantage; it's a necessity. Whether you're aiming for
+                career advancement, personal growth, or improved social
+                interactions, developing your skills can open doors to new
+                opportunities and a more fulfilling life.`}
               </Paragraph>
 
               <Paragraph>
-                Achieving economic independence involves various factors,
-                including education, employment opportunities, financial
-                literacy, and supportive policies.
+                The rapidly evolving job market demands a versatile skill set
+                that goes beyond technical expertise, emphasizing the importance
+                of adaptability and continuous learning. Personal skills such as
+                effective communication, emotional intelligence, and
+                problem-solving not only make you a valuable asset in
+                professional settings but also enrich your personal
+                relationships and overall well-being.
               </Paragraph>
             </div>
           </div>
@@ -63,13 +67,17 @@ const EnhancePersonalSkills = () => {
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
-              <Heading>The Importance of Economic Independence</Heading>
+              <Heading>Steps to Enhance Personal Skills</Heading>
               <UnorderedList>
                 {[
-                  "Personal Freedom and Security",
-                  "Improved Quality of Life",
-                  "Empowerment and Confidence",
-                  "Social and Economic Contributions",
+                  "Identify Your Strengths and Weaknesses",
+                  "Set Clear Goals",
+                  "Pursue Continuous Learning",
+                  "Practice, Practice, Practice",
+                  "Seek Feedback and Mentorship",
+                  "Embrace Challenges and Step Out of Your Comfort Zone",
+                  "Cultivate Soft Skills",
+                  "Reflect and Adjust",
                 ].map((item: string, index: number) => {
                   return (
                     <UnorderedList.Item key={index}>{item}</UnorderedList.Item>
@@ -80,10 +88,10 @@ const EnhancePersonalSkills = () => {
           </div>
           <div className="md:w-1/2 w-full">
             <Image
-              src="/impact/economic-independence.jpg"
+              src="/impact/enhance-personal-skills-02.jpg"
               width={700}
               height={700}
-              alt="The Importance of Economic Independence"
+              alt="Steps to Enhance Personal Skills"
               className="rounded-xl"
             />
           </div>
