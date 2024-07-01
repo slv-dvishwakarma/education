@@ -5,6 +5,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TeamCardType } from "./TeamCard";
 import { Card } from "@/components/ui/card";
+import { Paragraph } from "../Paragraph";
 
 export const TeamCardStyleTwo = ({
   src,
@@ -29,14 +30,12 @@ export const TeamCardStyleTwo = ({
             <h3 className="text-[20px] font-semibold text-dark dark:text-white">
               {name}
             </h3>
-            <p className="text-sm leading-5 text-black/70 text-body-color dark:text-dark-6">
-              {profession}
-            </p>
+            <Paragraph className="!leading-7">{profession}</Paragraph>
           </div>
         </div>
 
         <div className="border flex justify-between border-l-0 border-r-0 border-b-0 border-slate-100 px-3 py-3 mt-3">
-          <div className="text-xs text-slate-500 font-[300]">
+          <div className="text-md text-slate-500 font-[300]">
             Experience : <span className="text-black font-[500]">3+ Years</span>
           </div>
           <Link

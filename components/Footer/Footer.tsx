@@ -71,7 +71,7 @@ export const Footer = () => {
                 <Link
                   key={index}
                   href={item.link}
-                  className="md:mx-4 mx-2 font-[300] text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+                  className="md:mx-4 text-[18px] mx-2 font-[300] text-black transition-colors duration-300 hover:text-black dark:text-gray-300 dark:hover:text-black"
                 >
                   {item.label}
                 </Link>

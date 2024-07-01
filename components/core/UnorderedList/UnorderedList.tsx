@@ -9,10 +9,10 @@ type UnorderedListType = {
 
 const Item = ({ children, className }: UnorderedListType) => {
   return (
-    <div className="relative pl-[45px]">
+    <div className="relative text-[18px] pl-[45px]">
       <span
         className={cn(
-          "bg-[#e9ecfb] mr-3 w-[30px] h-auto aspect-square inline-flex items-center justify-center rounded-full absolute left-0",
+          "bg-[#e9ecfb] mr-3  w-[30px] h-auto aspect-square inline-flex items-center justify-center rounded-full absolute left-0",
           className
         )}
       >

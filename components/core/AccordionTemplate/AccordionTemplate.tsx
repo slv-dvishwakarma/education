@@ -1,11 +1,12 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
+import { Paragraph } from "../Paragraph";
 
 type Accordion = {
   question: string;
@@ -22,13 +23,21 @@ export const AccordionTemplate = ({ content }: AccordionTemplateProps) => {
   return (
     <Accordion type="single" collapsible className="w-full">
       {content.map((item, index) => (
-        <AccordionItem key={index} value={String(index)} onClick={() => setActiveIndex(index)}>
+        <AccordionItem
+          key={index}
+          value={String(index)}
+          onClick={() => setActiveIndex(index)}
+        >
           <AccordionTrigger
-            className={`text-[16px] hover:no-underline text-left ${activeIndex === index ? 'text-primary' : ''}`}
+            className={`text-[18px] font-[600] hover:no-underline text-left ${
+              activeIndex === index ? "text-black" : ""
+            }`}
           >
             {item.question}
           </AccordionTrigger>
-          <AccordionContent>{item.answer}</AccordionContent>
+          <AccordionContent>
+            <Paragraph>{item.answer}</Paragraph>
+          </AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>

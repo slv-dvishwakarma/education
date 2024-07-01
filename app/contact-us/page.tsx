@@ -43,7 +43,11 @@ const ContactUs = () => {
               >
                 Mobile: <b>(+91) - xxxx - xxx - xxx</b>
               </IconBoxV2>
-              <IconBoxV2 className="py-6" icon="/images/map.png" title="Email">
+              <IconBoxV2
+                className="py-6"
+                icon="/images/email-1.png"
+                title="Email"
+              >
                 info@skilline.ai
               </IconBoxV2>
             </div>

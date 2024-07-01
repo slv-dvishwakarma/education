@@ -71,7 +71,7 @@ export const ContactIconBox = ({
 
   return (
     <div className="md:my-8 my-5 rounded-md p-5 border border-slate-200  flex w-full bg-white shadow-[2.8px_2.8px_2.2px_rgba(0,0,0,0.02),6.7px_6.7px_5.3px_rgba(0,0,0,0.028),12.5px_12.5px_10px_rgba(0,0,0,0.035),22.3px_22.3px_17.9px_rgba(0,0,0,0.042),41.8px_41.8px_33.4px_rgba(0,0,0,0.05),100px_100px_80px_rgba(0,0,0,0.07)]">
-      <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+      <div className="bg-primary/5  text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
         {Icons[icon]}
       </div>
       <div className="w-full">

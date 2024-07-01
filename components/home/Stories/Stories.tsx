@@ -44,7 +44,7 @@ export const Stories = () => {
       <div className="pt-10 md:px-10">
         <div className="flex items-center flex-col md:flex-row">
           <div className="md:w-[50%] w-full pb-10">
-            <Heading className="mb-5">Stories</Heading>
+            <Heading className="mb-5">Success Stories</Heading>
             <Paragraph>
               {`Skilline revolutionizes Bharat's education with affordable, AI-driven,
           job-guaranteed courses in technology and high-demand sectors,

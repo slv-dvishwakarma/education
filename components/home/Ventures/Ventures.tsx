@@ -115,8 +115,8 @@ export const Ventures = () => {
         />
       </div>
       <div className="container relative">
-        <Heading className="mb-5 text-center">Out Team</Heading>
-        <Paragraph className="text-center mb-10">
+        <Heading className="mb-5 text-center">Our Team</Heading>
+        <Paragraph className="text-center mb-10 md:px-10">
           {`At Skilline, our team is the driving force behind our success.
           With over 200 years of combined experience across multiple domains, we
           are a diverse and talented group dedicated to delivering exceptional

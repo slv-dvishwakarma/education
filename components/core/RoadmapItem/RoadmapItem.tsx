@@ -5,6 +5,7 @@ import { PiGraphBold } from "react-icons/pi";
 
 import React from "react";
 import { cn } from "@/lib/utils";
+import { Paragraph } from "../Paragraph";
 type IconType = "cog" | "rocket" | "graph";
 type VariantType = "purple" | "green" | "orange";
 export type RoadmapItemType = {
@@ -87,10 +88,10 @@ export const RoadmapItem = ({
         </h3>
       </div>
       <div className="lg:pr-[36px] pr-0 lg:mt-0 mt-[-37px] lg:pl-[5px] pl-[50px]">
-        <h3 className="text-[18px]">{heading}</h3>
-        <div className="text-gray-500 font-[300] mt-2  inline-block leading-[25px] text-[15px]">
+        <h3 className="text-[24px]">{heading}</h3>
+        <Paragraph className="text-black font-[300] text-[]  mt-2  inline-block leading-[25px] text-[15px]">
           {description}
-        </div>
+        </Paragraph>
       </div>
     </div>
   );
