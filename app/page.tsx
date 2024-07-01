@@ -12,7 +12,7 @@ import {
   Ventures,
   Blog,
   Courses,
-  Contact,
+  AccordionPageTemplate,
 } from "@/components/home";
 import { Pillars } from "@/components/home-v2";
 
@@ -33,6 +33,7 @@ export default function Home() {
       <Courses />
       <JoinUs />
       <Blog />
+      <AccordionPageTemplate />
       {/* <Contact /> */}
     </main>
   );

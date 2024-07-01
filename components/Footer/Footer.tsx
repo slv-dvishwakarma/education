@@ -4,50 +4,51 @@ import React from "react";
 import { SocialIcon } from "../core";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const Footer = () => {
   const pathname = usePathname();
   const footerMenu = [
     {
       label: "Home",
-      link: "",
+      link: "/",
     },
     {
       label: "About",
-      link: "",
+      link: "/about",
     },
     {
       label: "Blog",
-      link: "",
+      link: "/blogs",
     },
     {
       label: "Contact",
-      link: "",
+      link: "/contact-us",
     },
     {
       label: "Privacy",
-      link: "",
+      link: "/privacy",
     },
     {
       label: "Cookies",
-      link: "",
+      link: "/cookies",
     },
   ];
 
   const social = [
     {
       label: "Facebook",
-      link: "",
+      link: "https://www.facebook.com/",
       icon: "facebook",
     },
     {
       label: "Linkedin",
-      link: "",
+      link: "https://in.linkedin.com/",
       icon: "linkedin",
     },
     {
       label: "Instagram",
-      link: "",
+      link: "https://www.instagram.com/",
       icon: "instagram",
     },
   ];
@@ -60,20 +61,20 @@ export const Footer = () => {
     >
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
-          <a href="#">
+          <Link href="/">
             <h2 className="text-2xl uppercase font-[900]">Skilline</h2>
-          </a>
+          </Link>
 
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             {footerMenu.map((item, index) => {
               return (
-                <a
+                <Link
                   key={index}
                   href={item.link}
                   className="md:mx-4 mx-2 font-[300] text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 >
                   {item.label}
-                </a>
+                </Link>
               );
             })}
           </div>
