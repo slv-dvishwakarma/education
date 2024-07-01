@@ -14,3 +14,4 @@ export * from "./Courses";
 export * from "./Contact";
 export * from "./Pillars";
 export * from "./HomeContactUs";
+export * from "./AccordionPageTemplate";

@@ -14,6 +14,7 @@ import {
   Courses,
   Contact,
   HomeContactUs,
+  AccordionPageTemplate,
 } from "@/components/home";
 import { Pillars } from "@/components/home-v2";
 
@@ -35,6 +36,7 @@ export default function Home() {
       <Courses />
       <HomeContactUs />
       <Blog />
+      <AccordionPageTemplate />
       {/* <Contact /> */}
     </main>
   );
