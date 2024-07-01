@@ -63,7 +63,7 @@ export const HeroSlider = () => {
       //   target: "_self",
       // },
       image: {
-        src: "/images/banner-4.png",
+        src: "/images/banner-5.png",
         width: 400,
         height: 428,
         alt: "",
