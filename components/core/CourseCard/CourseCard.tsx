@@ -56,7 +56,7 @@ export const CourseCard = ({
             level == "High"
               ? "bg-[rgba(254,137,91,0.15)] text-[#feb55b]"
               : "bg-[rgba(247,105,105,0.15)] text-[#d33434]"
-          }  text-[13px] leading-[1.38] w-[35%] text-center px-2.5 py-0.5 rounded-sm`}
+          }  text-[13px] leading-[1.38] w-[40%] text-center px-2.5 py-0.5 rounded-sm`}
         >
           {level}
         </div>
