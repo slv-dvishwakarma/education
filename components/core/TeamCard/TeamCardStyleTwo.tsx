@@ -27,7 +27,7 @@ export const TeamCardStyleTwo = ({
             />
           </div>
           <div className="text-center mt-5 space-y-2 px-4">
-            <h3 className="text-[20px] font-semibold text-dark dark:text-white">
+            <h3 className="text-[22px] font-semibold text-dark dark:text-white">
               {name}
             </h3>
             <Paragraph className="!leading-7">{profession}</Paragraph>

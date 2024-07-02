@@ -83,7 +83,7 @@ export const Footer = () => {
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-          <p className="text-balance text-[14px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
+          <p className="text-[18px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
             © Copyright 2024. All Rights Reserved.
           </p>
 

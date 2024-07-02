@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Paragraph } from "../Paragraph";
 type CardBox = {
   title: string;
   description: string;
@@ -83,20 +84,21 @@ export const CardBox = ({
 
             <h3
               className={cn(
-                "text-md font-normal  line-clamp-2 ",
+                isFeatured ? "text-xl" : "",
+                "text-[18px] leading-[30px]  line-clamp-2 ",
                 isFeatured ? "text-xl" : ""
               )}
             >
               {title}
             </h3>
-            <p
+            <Paragraph
               className={cn(
                 "mt-3 text-gray-500 font-light line-clamp-3",
                 isFeatured ? "tracking-wide leading-7" : ""
               )}
             >
               {description}
-            </p>
+            </Paragraph> 
 
             <div className="text-md font-[300] mt-4 text-slate-500">Author : <span className="text-black font-[500]">{author}</span></div>
             {isFeatured ? (

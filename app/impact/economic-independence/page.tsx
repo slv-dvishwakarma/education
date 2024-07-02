@@ -37,7 +37,7 @@ const EconomicIndependence = () => {
               src="/impact/economic-independence-0.jpg"
               width={700}
               height={700}
-              alt=""
+              alt="Economic Independence"
               className="rounded-xl"
             />
           </div>

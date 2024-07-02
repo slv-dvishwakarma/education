@@ -37,7 +37,7 @@ const GlobalRecognition = () => {
               src="/impact/global-recognition-2.jpg"
               width={700}
               height={700}
-              alt=""
+              alt="Global Recognition"
               className="rounded-xl"
             />
           </div>
@@ -87,7 +87,7 @@ const GlobalRecognition = () => {
               src="/impact/global-recognition-3.jpg"
               width={700}
               height={700}
-              alt="The Importance of Economic Independence"
+              alt="Global Recognition"
               className="rounded-xl"
             />
           </div>

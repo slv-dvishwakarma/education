@@ -102,7 +102,7 @@ export const Slider = ({ data }: SliderType) => {
                             return <span key={index}>{headingItem}</span>;
                           })}
                         </h2>
-                        <div className="text-[15px] leading-[28px] md:text-[20px] md:leading-[39px] proxima text-slate-700 text-balance">
+                        <div className="text-[18px] leading-[35px] md:text-[22px] md:leading-[39px] proxima text-slate-700 text-balance">
                           {descriptionArray.map(
                             (headingItem: string, index) => {
                               return <span key={index}>{headingItem}</span>;

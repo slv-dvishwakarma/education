@@ -60,7 +60,7 @@ const AboutUs = () => {
       </div>
       <OurVision />
       <OurApproach />
-      <About2 />
+      {/* <About2 /> */}
     </div>
   );
 };
