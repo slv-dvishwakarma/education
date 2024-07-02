@@ -68,7 +68,7 @@ export const Stories = () => {
             >
               <CarouselContent className="-mt-1 h-[400px]">
                 {data.map((item, index) => {
-                  const { name, city, image, story, link, id } = item;
+                  const { name, city, image, story, link, id, linkdin, content } = item;
                   return (
                     <CarouselItem key={index} className="pt-1 md:basis-1/2">
                       <div className="p-1 mb-4">
@@ -79,6 +79,8 @@ export const Stories = () => {
                           name={name}
                           story={story}
                           id={id}
+                          linkdin={linkdin}
+                          content={content}
                         />
                       </div>
                     </CarouselItem>

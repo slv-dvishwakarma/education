@@ -190,90 +190,267 @@ export const blogData = [
 
 export const storiesData = [
   {
-    name: "Maharaju",
+    name: "Maharaju Yamala",
     city: "Hyderabad",
-    image: "/story/maharaju.png",
+    image: "/story/maharaju.jpg",
     story: `Maharaju was working with Genpact and was in operations, data entry. With our offline program he is now tripled his salary in a year and a efficient react developer.
   
     Maharaju, formerly employed in operations and data entry at Genpact, has undergone a remarkable transformation thanks to our offline program. In just one year, he has tripled his salary and emerged as an efficient React developer. This incredible progress showcases the effectiveness of our program in empowering individuals to significantly advance their careers and achieve new professional heights.
       `,
     link: {
       label: "Read more",
-      url: "/stories/#maharaju",
+      url: "/stories/#maharaju-yamala",
       target: "_self",
     },
-    id: "maharaju",
+    id: "maharaju-yamala",
+    linkdin: "https://www.linkedin.com/in/maharajuyamala",
+    content: [
+      {
+        heading: "Beginnings in Hyderabad",
+        description: "Maharaju's story begins in Hyderabad, where he worked in operations and data entry at Genpact. Although the job provided stability, Maharaju yearned for more—both professionally and financially. He sought a way to break out of the routine and elevate his career."
+      },
+      {
+        heading: "Discovering Skill Line",
+        description: "Maharaju found his opportunity through Skill Line's offline program. Eager to learn and grow, he enrolled in courses designed to equip him with the latest skills in web development. The program's hands-on approach and supportive environment were exactly what he needed."
+      },
+      {
+        heading: "From Operations to React Development",
+        description: "Through rigorous training and dedication, Maharaju mastered React, a powerful JavaScript library for building user interfaces. His transformation from a data entry operator to an efficient React developer was nothing short of extraordinary. He learned to build complex, dynamic web applications, showcasing his newfound skills."
+      },
+      {
+        heading: "Tripling His Salary",
+        description: "Maharaju's hard work paid off in a big way. Within a year, he managed to triple his salary, a testament to the effectiveness of Skill Line's program and his own determination. The leap in his earnings reflected not only his new technical skills but also his increased confidence and value in the job market."
+      },
+      {
+        heading: "Achieving New Professional Heights",
+        description: "Maharaju's journey is a powerful example of how skill development can lead to significant career advancements. His ability to transition from operations and data entry to a high-demand field like React development demonstrates the potential for growth and success through continuous learning and dedication."
+      },
+      {
+        heading: "Inspiring Others",
+        description: "Maharaju's remarkable progress serves as an inspiration to many. His story highlights the transformative impact of Skill Line's offline program and the possibilities that open up when one commits to personal and professional development. Maharaju's success is a beacon of hope for anyone looking to advance their career and achieve new heights."
+      },
+      {
+        heading: "Conclusion",
+        description: "Maharaju's journey from data entry at Genpact to becoming a highly efficient React developer showcases the power of education and resilience. Through Skill Line's offline program, he found the tools and support needed to transform his career and significantly improve his life. His story is a testament to the incredible potential that lies within each individual, ready to be unlocked with the right guidance and effort."
+      },
+    ]
   },
   {
-    name: "Kishore ",
+    name: "Rama Kishore",
     city: "Andhra Pradesh",
-    image: "/story/kishore.jpg",
+    image: "/story/rama-kishore.png",
     story: `Kishore was from Andhra, pass-out with 2 years gap, working with Mindmaster Singapore in operations job as he is not meant for programming. Pass-outs got Job working for Mindmaster Singapore.
 
     Kishore, hailing from Andhra, experienced a two-year gap after graduation before securing a position at Mindmaster Singapore. Although he initially worked in an operations role, feeling that programming was not his forte, he has now found his place within the company. Despite the challenges faced by many recent graduates, Kishore successfully landed a job with Mindmaster Singapore, demonstrating his resilience and determination.`,
     link: {
       label: "Read more",
-      url: "/stories/#kishore",
+      url: "/stories/#ram-kishore",
       target: "_self",
     },
-    id: "kishore",
+    id: "ram-kishore",
+    linkdin: "https://www.linkedin.com/in/rama-kishore-/",
+    content: [
+      {
+        heading: "Origin in Andhra Pradesh",
+        description: "Kishore's journey began in Andhra Pradesh, where he encountered a two-year gap post-graduation. Like many recent graduates, securing a job in his desired field proved challenging. Eventually, Kishore joined Mindmaster Singapore in an operations role, initially feeling that programming wasn't his forte."
+      },
+      {
+        heading: "Overcoming Adversity",
+        description: "Despite the shift, Kishore was resolute in proving himself and maximizing his opportunity. His resilience and dedication were evident as he committed wholeheartedly to his role and the company."
+      },
+      {
+        heading: "Uncovering Strengths",
+        description: "At Mindmaster Singapore, Kishore began to uncover his strengths and potential. Despite initial reservations about programming, exposure to various facets of the tech industry ignited his interest and curiosity in coding."
+      },
+      {
+        heading: "Embracing New Horizons",
+        description: "Encouraged by mentors and colleagues, Kishore embraced programming further. Leveraging training and resources provided by the company, he steadily honed his coding skills and grew in confidence."
+      },
+      {
+        heading: "Achieving Milestones",
+        description: "Kishore's perseverance bore fruit as he successfully transitioned from operations to a role aligned with his evolving skills and interests. His journey from uncertainty in programming to finding his niche within the company underscores his adaptability and determination."
+      },
+      {
+        heading: "Inspiring Others",
+        description: "Kishore's story serves as a beacon of inspiration for recent graduates navigating career uncertainties. His journey highlights that with resilience and support, overcoming challenges and achieving professional growth is attainable."
+      },
+      {
+        heading: "Conclusion",
+        description: "From Andhra Pradesh to Mindmaster Singapore, Kishore's story exemplifies resilience and seizing opportunities. His evolution within the company reflects adaptability and tenacity, offering hope and inspiration to those navigating early career challenges."
+      }
+    ]
   },
   {
-    name: "Avinesh",
+    name: "Avinesh Kumar",
     city: "Hyderabad",
-    image: "/story/avinesh.jpeg",
+    image: "/story/avinesh-kumar.jpg",
     story: `8 years of gap, not meant for programming skilled and working in operations job in Singapore
     
     Kishore, from Andhra, had an eight-year gap after graduation before securing a position at Mindmaster Singapore. Although he felt he was not meant for programming, he utilized his skills to excel in an operations role. Despite the challenges of such a long gap, Kishore's determination and hard work led him to a successful career in operations at a prestigious company in Singapore.`,
     link: {
       label: "Read more",
-      url: "/stories/#avinesh",
+      url: "/stories/#avinesh-kumar",
       target: "_self",
     },
-    id: "avinesh",
+    id: "avinesh-kumar",
+    linkdin: "https://www.linkedin.com/in/avinesh-kumar-04b7ab147/",
+    content: [
+      {
+        heading: "Early Days in Hyderabad",
+        description: "Avinesh's journey started in Hyderabad, where he faced an eight-year gap after graduation. During this time, he navigated through various challenges and opportunities before finding his path to success."
+      },
+      {
+        heading: "Securing a Position at Mindmaster Singapore",
+        description: "Despite feeling that programming was not his forte, Avinesh landed a position at Mindmaster Singapore. Recognizing his skills and potential, he began his career in an operations role within the company."
+      },
+      {
+        heading: "Excelling in Operations",
+        description: "Avinesh's determination and hard work enabled him to excel in his operations role at Mindmaster Singapore. He leveraged his skills and experience gained during the gap years to contribute effectively to the company's operations and growth."
+      },
+      {
+        heading: "Overcoming Career Challenges",
+        description: "Navigating through an eight-year gap after graduation can be daunting, but Avinesh's resilience and commitment to his career goals paid off. He demonstrated adaptability and a willingness to learn, which were essential in overcoming the challenges he faced."
+      },
+      {
+        heading: "Finding Success",
+        description: "Avinesh's journey to success at Mindmaster Singapore is a testament to his perseverance and dedication. Despite initial doubts about his career path, he carved out a fulfilling role for himself and made significant contributions to the company."
+      },
+      {
+        heading: "Inspiring Others",
+        description: "Avinesh's story serves as an inspiration to others who may face career uncertainties or extended gaps in their professional journey. His determination to succeed in operations, despite initial hesitations about programming, shows that with persistence and hard work, one can achieve their career aspirations."
+      },
+      {
+        heading: "Conclusion",
+        description: "Avinesh's journey from Hyderabad to Mindmaster Singapore highlights the power of perseverance and adaptability in achieving career success. His ability to excel in operations after navigating through an eight-year gap demonstrates his resilience and commitment to professional growth. Avinesh's story is a reminder that with determination and the right mindset, one can overcome challenges and thrive in their chosen career path."
+      }
+    ]
   },
   {
-    name: "Sonu",
+    name: "Sonu Verma",
     city: "Indore",
-    image: "/story/sonu.jpeg",
-    story: `Son of a labour, was not able to complete his degree. Working in Indore in Php HTML. Now he is full stack developer and created proprietary state of the art document processing modules matching international standards and best software products using cutting edge Next JS.
-    
-    The son of a laborer, Kishore faced significant challenges and was unable to complete his degree. However, he began his career in Indore, working with PHP and HTML. Through determination and continuous learning, he has now evolved into a full stack developer. Kishore has created proprietary, state-of-the-art document processing modules that match international standards and developed top-tier software products using cutting-edge Next.js technology.`,
+    image: "/story/sonu-verma.jpg",
+    story: `Sonu Verma, from a middle-class family in Indore, transformed his career through Skilline's training, becoming a full-stack developer recognized for his innovative software products. His journey is a testament to the power of education and perseverance.`,
     link: {
       label: "Read more",
-      url: "/stories/#sonu",
+      url: "/stories/#sonu-verma",
       target: "_self",
     },
-    id: "sonu",
+    id: "sonu-verma",
+    linkdin: "https://www.linkedin.com/in/sonu-verma-23566675/",
+    content: [
+      {
+        heading: "Humble Beginnings",
+        description: "In the bustling city of Indore, Sonu Verma's story began within a modest middle-class family. Despite his aspirations, financial constraints prevented him from completing his degree. However, his journey was far from over."
+      },
+      {
+        heading: "Early Career Struggles",
+        description: "Determined to succeed in the tech industry, Sonu started his career with PHP and HTML in Indore. His first job was a crucial stepping stone, where he honed his skills, often working late into the night."
+      },
+      {
+        heading: "The Turning Point",
+        description: "Sonu's life changed when he discovered Skilline, a company dedicated to skills training. He enrolled in various courses, learning new technologies and frameworks. Skilline's comprehensive training programs gave him the knowledge and confidence to tackle complex projects."
+      },
+      {
+        heading: "Rising Through the Ranks",
+        description: "With newfound skills and determination, Sonu transitioned into a full-stack developer role. Leveraging his training from Skilline, he began creating proprietary, state-of-the-art document processing modules."
+      },
+      {
+        heading: "Achieving Excellence",
+        description: "Sonu's dedication paid off as he developed top-tier software products using Next.js technology. His innovative work set new industry benchmarks and was recognized for its excellence."
+      },
+      {
+        heading: "Inspiring Others",
+        description: "Today, Sonu Verma is a testament to the transformative power of education and perseverance. From a middle-class background in Indore to becoming a full-stack developer, his journey inspires many. Sonu's story exemplifies how Skilline's training can empower individuals to overcome challenges and achieve their dreams."
+      }
+    ]
   },
   {
-    name: "Dilip",
+    name: "Dilip Vishwakarma",
     city: "Indore",
-    image: "/story/dilip.jpeg",
-    story: `Same as Sonu, his colleague, working on primitive technology now upskilled and groomed as one of the industry best.
-
-    Dilip, Sonu's colleague, began his career working with primitive technologies. Through dedicated effort and continuous learning, Dilip has now upskilled and groomed himself to become one of the industry's best. His journey exemplifies how persistence and a commitment to professional development can lead to significant achievements and recognition in the tech field.
-    `,
+    image: "/story/dilipv.jpg",
+    story: `Dilip's journey from a middle-class background in Indore to becoming an industry-recognized tech expert showcases the transformative power of Skilline's training programs. His story inspires others by demonstrating that perseverance and continuous learning can lead to remarkable career achievements.`,
     link: {
       label: "Read more",
-      url: "/stories/#dilip",
+      url: "/stories/#dilip-vishwakarma",
       target: "_self",
     },
-    id: "dilip",
+    id: "dilip-vishwakarma",
+    linkdin: "https://www.linkedin.com/in/dilip-vishwakarma-2115291ab/",
+    content: [
+      {
+        heading: "Early Days in Indore",
+        description: "In Indore, Dilip's tech journey began alongside his colleague, Sonu Verma. Both from middle-class backgrounds, they faced significant challenges but were determined to succeed."
+      },
+      {
+        heading: "Initial Career Struggles",
+        description: "Dilip started with primitive technologies, working long hours with limited resources. These challenges fueled his desire to learn and grow."
+      },
+      {
+        heading: "Embracing Continuous Learning",
+        description: "Discovering Skilline was a turning point for Dilip. He enrolled in courses, learning the latest technologies and frameworks, which helped him tackle more advanced projects."
+      },
+      {
+        heading: "Rising Through the Ranks",
+        description: "With Skilline's support and his determination, Dilip transitioned from working with outdated technologies to mastering cutting-edge tools and frameworks."
+      },
+      {
+        heading: "Achieving Industry Recognition",
+        description: "Dilip's dedication paid off as he developed innovative, high-quality software products, gaining industry recognition for his work."
+      },
+      {
+        heading: "Inspiring Colleagues and Peers",
+        description: "Dilip's journey from primitive technologies to industry leader showcases the power of persistence and continuous learning, inspiring colleagues and peers."
+      },
+      {
+        heading: "Conclusion",
+        description: "Dilip's story is a powerful example of how Skilline's training can transform careers, serving as an inspiration to aspiring tech professionals."
+      }
+    ]
   },
   {
-    name: "Deepti",
+    name: "Deepti Shukla",
     city: "Hyderabad",
-    image: "/story/dipti.jpeg",
+    image: "/story/dipti-shukla.jpg",
     story: `10 years gaps after motherhood from underconfident to a confident python developer.
 
     Dipti faced a 10-year gap in her career due to motherhood, which initially left her feeling underconfident. However, through determination and continuous learning, she transformed herself into a confident Python developer. Dipti's journey from overcoming self-doubt to excelling in her field showcases the power of resilience and the ability to thrive despite significant career interruptions.
     `,
     link: {
       label: "Read more",
-      url: "/stories/#deepti",
+      url: "/stories/#deepti-shukla",
       target: "_self",
     },
-    id: "deepti",
+    id: "deepti-shukla",
+    linkdin: "http://linkedin.com/in/deepti-shukla-8457b5264",
+    content: [
+      {
+        heading: "The Challenge of a Career Gap",
+        description: "Deepti's story begins in the vibrant city of Hyderabad. After taking a 10-year break from her career to focus on motherhood, she found herself feeling underconfident about re-entering the workforce. The long gap left her uncertain about her skills and prospects."
+      },
+      {
+        heading: "A Turning Point",
+        description: "Determined to regain her professional identity, Deepti decided to pursue her passion for technology. She discovered Skill Line, a company dedicated to skills training and career advancement. Enrolling in courses focused on Python development, Deepti began her journey of continuous learning."
+      },
+      {
+        heading: "Overcoming Self-Doubt",
+        description: "The comprehensive training programs at Skill Line played a crucial role in rebuilding Deepti's confidence. Through hands-on projects, supportive instructors, and a community of like-minded learners, she gradually overcame her self-doubt. Each new skill she mastered brought her one step closer to her goal."
+      },
+      {
+        heading: "Becoming a Python Developer",
+        description: "With perseverance and dedication, Deepti transformed herself into a skilled Python developer. Her ability to tackle complex coding challenges and develop efficient solutions showcased her growing expertise. Deepti's journey from feeling underconfident to excelling in her field was a testament to her resilience and determination."
+      },
+      {
+        heading: "Excelling in Her Field",
+        description: "Deepti's hard work paid off as she began to develop high-quality Python applications that were both innovative and efficient. Her contributions to projects gained recognition and respect within the industry. Deepti's transformation was complete—she had become a confident, proficient Python developer."
+      },
+      {
+        heading: "Inspiring Others",
+        description: "Deepti's journey is an inspiring example of how determination and continuous learning can lead to personal and professional growth. Her story resonates with many, especially those who have faced career interruptions and are striving to re-enter the workforce. Deepti's success shows that it's never too late to pursue your passions and achieve your goals."
+      },
+      {
+        heading: "Conclusion",
+        description: "Deepti's journey from an under confident mother to a confident Python developer highlights the transformative power of education and resilience. Through Skill Line's training programs, she found the support and resources needed to revive her career. Deepti's story serves as a beacon of hope and inspiration for anyone looking to overcome career interruptions and thrive in their chosen field."
+      }
+    ]
   },
 ];
