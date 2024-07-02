@@ -17,7 +17,7 @@ export const GuidingPrinciple = () => {
             <h2 className="text-[30px] leading-[29px] md:text-[50px] md:leading-[40px] text-white font-[500]">
               {data.title}
             </h2>
-            <div className="md:text-[20px] text-[15px] leading-[28px] md:leading-[34px] font-light text-white tracking-[_0.4px]">
+            <div className="md:text-[22px] text-[15px] leading-[28px] md:leading-[34px] font-light text-white tracking-[_0.4px]">
               {data.description}
             </div>
           </div>

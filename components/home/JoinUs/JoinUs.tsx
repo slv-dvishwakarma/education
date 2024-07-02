@@ -32,10 +32,10 @@ export const JoinUs = () => {
             columnMerge={1}
             className='xl:space-y-2 lg:space-y-2 md:space-y-2 space-y-1 xl:pl-5 lg:pl-5 md:pl-5 before:content-[""] before:w-[3px] before:left-0 before:h-full before:absolute before:bg-[#141C98]before:content-[""] before:w-[3px] before:left-0 before:h-full before:absolute xl:before:bg-[#141C98] lg:before:bg-[#141C98] md:before:bg-[#141C98] relative'
           >
-            <h3 className="text-[20px] leading-[29px] md:text-[40px] md:leading-[40px] text-white font-[500]">
+            <h3 className="text-[22px] leading-[29px] md:text-[40px] md:leading-[40px] text-white font-[500]">
               {data.title}
             </h3>
-            <div className="text-balance md:text-[20px] md:leading-[34px] text-[14px] leading-[28px] font-light text-white tracking-[_0.4px]">
+            <div className="text-balance md:text-[22px] md:leading-[34px] text-[14px] leading-[28px] font-light text-white tracking-[_0.4px]">
               {data.label}
             </div>
           </GridBox.GridItem>
