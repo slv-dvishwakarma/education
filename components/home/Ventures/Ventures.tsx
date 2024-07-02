@@ -104,7 +104,7 @@ export const Ventures = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-[80px] mt-[50px] relative">
+    <div className="bg-gray-100 md:py-[80px] py-[50px]  relative">
       <div className="absolute left-0 top-0 w-full h-full">
         <Image
           src="/images/edumall-shape-01.png"

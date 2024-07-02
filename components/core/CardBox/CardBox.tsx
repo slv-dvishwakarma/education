@@ -8,6 +8,7 @@ type CardBox = {
   title: string;
   description: string;
   image: string;
+  author: string;
   link: {
     url: string;
     target: "_blank" | "_self";
@@ -19,6 +20,7 @@ export const CardBox = ({
   title,
   description,
   image,
+  author,
   link,
   isFeatured,
 }: any) => {
@@ -45,7 +47,7 @@ export const CardBox = ({
             <h3
               className={cn(
                 "text-md font-normal  line-clamp-2 ",
-                isFeatured ? "text-xl" : "group-hover:text-primary"
+                isFeatured ? "text-xl" : ""
               )}
             >
               {title}
@@ -58,6 +60,7 @@ export const CardBox = ({
             >
               {description}
             </p>
+            <div className="text-md font-[300] mt-4 text-slate-500">Author : <span className="text-black font-[500]">{author}</span></div>
             <Button size="default" asChild={true} className="mt-3 py-1">
               <Link href={link.url} target={link.target}>
                 Read More
@@ -78,10 +81,12 @@ export const CardBox = ({
           </div>
 
           <div className="mt-4 mb-6 px-4">
+
             <h3
               className={cn(
-                "text-[18px] leading-[30px] font-normal  line-clamp-2 ",
-                isFeatured ? "text-xl" : "group-hover:text-primary"
+                isFeatured ? "text-xl" : "",
+                "text-[18px] leading-[30px]  line-clamp-2 ",
+                isFeatured ? "text-xl" : ""
               )}
             >
               {title}
@@ -93,7 +98,9 @@ export const CardBox = ({
               )}
             >
               {description}
-            </Paragraph>
+            </Paragraph> 
+
+            <div className="text-md font-[300] mt-4 text-slate-500">Author : <span className="text-black font-[500]">{author}</span></div>
             {isFeatured ? (
               <Button size="default" asChild={true} className="mt-3 py-1">
                 <Link href={link.url}>Read More</Link>

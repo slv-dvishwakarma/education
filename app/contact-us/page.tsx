@@ -53,7 +53,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="w-full md:w-[60%]">
-            <Card className="p-10">
+            <Card className="md:p-10 p-5">
               <Heading className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
                 Send a Message
               </Heading>

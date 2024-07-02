@@ -9,17 +9,19 @@ type ItemType = {
   title: string;
   description: string;
   image: string;
+  author: string;
   link: { url: string; target: "_blank" | "_self" };
 };
 
 export const Blog = () => {
   const data: ItemType[] = blogData as any;
+  const limitedData = data.slice(0, 4);
   return (
     <div className="py-[70px] bg-[#F8F8F8]">
       <div className="container space-y-10">
         <Heading className="text-center">News & Article</Heading>
-        <div className="grid-item xl:col-span-2 lg:col-span-2 md:col-span-2 col-span-1 xl:flex lg:flex md:flex block gap-5 xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5">
-          {data.map((item: ItemType, index: number) => {
+        <div className="sm:grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 items-start xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-4">
+          {limitedData.map((item: ItemType, index: number) => {
             const { link, description, image, title } = item;
             return (
               <CardBox
@@ -27,6 +29,7 @@ export const Blog = () => {
                 title={title}
                 description={description}
                 image={image}
+                author={item.author}
                 link={link}
               />
             );
