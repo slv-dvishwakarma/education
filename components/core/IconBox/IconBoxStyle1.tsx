@@ -41,12 +41,8 @@ export const IconBoxStyle1 = ({
           height={100}
           alt={title}
         />
-        <h3 className="text-[19px] leading-[28px] mt-3 group-hover:text-primary">
-          {title}
-        </h3>
-        <Paragraph className="text-[15px] text-[rgb(105,105,105)] leading-[28px] font-[300]">
-          {description}
-        </Paragraph>
+        <h3 className="text-[19px] leading-[28px] mt-3">{title}</h3>
+        <Paragraph>{description}</Paragraph>
       </Link>
     </div>
   );

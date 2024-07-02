@@ -20,7 +20,7 @@ export const GuidingPrinciple = () => {
             <h2 className="text-[30px] leading-[29px] md:text-[50px] md:leading-[40px]  font-[500]">
               {data.title}
             </h2>
-            <Paragraph className="md:text-[20px] text-[15px] leading-[28px] md:leading-[34px] font-light  tracking-[_0.4px]">
+            <Paragraph className=" font-light  tracking-[_0.4px]">
               {data.description}
             </Paragraph>
             <Button asChild={true}>

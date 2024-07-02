@@ -62,10 +62,10 @@ export const CourseCard = ({
         </div>
         <div className="space-y-1 mt-3">
           <div className="text-slate-400">{language}</div>
-          <h2 className="text-lg leading-[1.67] text-black line-clamp-2 ">
+          <h2 className="text-lg leading-[1.67] text-black line-clamp-2  text-balance">
             {title}
           </h2>
-          <div className="line-clamp-3 text-balance md:text-[15px] md:leading-[1.86] text-[15px] font-light text-[rgb(105,105,105)] tracking-normal">
+          <div className="line-clamp-3 text-balance text-[18px] leading-[1.86]  font-light text-[rgb(105,105,105)] tracking-normal">
             {label}
           </div>
         </div>

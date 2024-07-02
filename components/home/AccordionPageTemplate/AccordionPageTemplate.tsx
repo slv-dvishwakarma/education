@@ -3,6 +3,7 @@ import { GridBox } from "@/components/core/GridBox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
+import { RiQuestionMark } from "react-icons/ri";
 
 export const AccordionPageTemplate = () => {
   const data = {
@@ -89,8 +90,11 @@ export const AccordionPageTemplate = () => {
         >
           <GridBox.GridItem
             columnMerge={1}
-            className="space-y-4 sticky top-[80px]"
+            className="space-y-4 md:sticky md:top-[100px]"
           >
+            <div className="bg-[#e9ecfb] w-[60px] h-[60px] hidden md:inline-flex items-center justify-center rounded-full ">
+              <RiQuestionMark className="text-[#3750e0]" size={30} />
+            </div>
             <Heading>{data.title}</Heading>
             <Paragraph className="xl:w-6/12 lg:w-full md:w-full w-full">
               {data.label}

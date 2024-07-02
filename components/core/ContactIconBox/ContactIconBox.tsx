@@ -78,7 +78,7 @@ export const ContactIconBox = ({
         <h4 className="mb-1 text-xl font-[500] text-dark dark:text-white">
           {title}
         </h4>
-        <p className="text-base text-body-color dark:text-dark-6 text-slate-700 font-[300]">
+        <p className="text-[18px] text-body-color dark:text-dark-6 text-slate-700 font-[300]">
           {children}
         </p>
       </div>

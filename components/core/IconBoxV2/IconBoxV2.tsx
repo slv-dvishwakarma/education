@@ -21,7 +21,7 @@ export const IconBoxV2 = ({
         <Image src={icon} width={40} height={40} alt={title} />
         <h3 className="text-[20px]">{title}</h3>
       </div>
-      <div className="text-balance mt-4 font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
+      <div className="text-[18px] mt-4 font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
         {children}
       </div>
     </div>
