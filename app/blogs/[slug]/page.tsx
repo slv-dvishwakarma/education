@@ -23,18 +23,18 @@ const BlogDetails = ({ params: { slug } }: any) => {
     );
   };
 
-  const isMobileDevice = () => {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  };
+  // const isMobileDevice = () => {
+  //   return /Mobi|Android/i.test(navigator.userAgent);
+  // };
 
-  const shareOnInstagram = () => {
-    if (isMobileDevice()) {
-      const url = encodeURIComponent(window.location.href);
-      window.open(`https://www.instagram.com/?url=${url}`, "_blank");
-    } else {
-      alert("Please use Instagram mobile app to share this post.");
-    }
-  };
+  // const shareOnInstagram = () => {
+  //   if (isMobileDevice()) {
+  //     const url = encodeURIComponent(window.location.href);
+  //     window.open(`https://www.instagram.com/?url=${url}`, "_blank");
+  //   } else {
+  //     alert("Please use Instagram mobile app to share this post.");
+  //   }
+  // };
 
   const shareOnLinkedIn = () => {
     const url = encodeURIComponent(window.location.href);
@@ -128,7 +128,7 @@ const BlogDetails = ({ params: { slug } }: any) => {
                 <FaLinkedinIn />
               </li>
             </Tooltip>
-            <Tooltip text="Share With Instagram">
+            {/* <Tooltip text="Share With Instagram">
               <li
                 className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex text-[white] rounded-[50%]"
                 style={{
@@ -139,7 +139,7 @@ const BlogDetails = ({ params: { slug } }: any) => {
               >
                 <FaInstagram />
               </li>
-            </Tooltip>
+            </Tooltip> */}
             <Tooltip text="Copy Link">
               <li
                 className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex bg-[#2887E1] text-[white] rounded-[50%]"
