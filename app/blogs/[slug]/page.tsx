@@ -23,6 +23,19 @@ const BlogDetails = ({ params: { slug } }: any) => {
     );
   };
 
+  const isMobileDevice = () => {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  };
+
+  const shareOnInstagram = () => {
+    if (isMobileDevice()) {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://www.instagram.com/?url=${url}`, "_blank");
+    } else {
+      alert("Please use Instagram mobile app to share this post.");
+    }
+  };
+
   const shareOnLinkedIn = () => {
     const url = encodeURIComponent(window.location.href);
     window.open(
@@ -31,10 +44,6 @@ const BlogDetails = ({ params: { slug } }: any) => {
     );
   };
 
-  const shareOnInstagram = () => {
-    // Instagram sharing typically needs to be done via mobile app
-    alert("Please use Instagram mobile app to share this post.");
-  };
 
   const copyLink = () => {
     navigator.clipboard
@@ -93,12 +102,16 @@ const BlogDetails = ({ params: { slug } }: any) => {
                 dangerouslySetInnerHTML={createMarkup()}
               />
             </Paragraph>
+            <span className="w-full  gap-7  md:px-[10%]">Author: <strong>{currentData?.author}</strong></span>
           </div>
+          
         </div>
+        
       </div>
+      
       <div className="">
         <div className="container">
-          <ul className="flex pb-[60px] w-full  gap-7  md:px-[10%]">
+          <ul className="flex py-[60px] w-full  gap-7  md:px-[10%]">
             <Tooltip text="Share With Facebook">
               <li
                 className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex bg-[#486CB4] text-[white] rounded-[50%]"
