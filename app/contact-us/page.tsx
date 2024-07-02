@@ -3,6 +3,8 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Controller, useForm } from "react-hook-form";
+import { ContactForm } from "./ContactForm";
 
 const ContactUs = () => {
   const breadcrumb = [
@@ -57,91 +59,7 @@ const ContactUs = () => {
               <Heading className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
                 Send a Message
               </Heading>
-              <form>
-                <div className="grid gap-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label
-                        htmlFor="hs-firstname-contacts-1"
-                        className="sr-only"
-                      >
-                        First Name
-                      </label>
-                      <input
-                        type="text"
-                        name="hs-firstname-contacts-1"
-                        id="hs-firstname-contacts-1"
-                        className={InputClass}
-                        placeholder="First Name"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="hs-lastname-contacts-1"
-                        className="sr-only"
-                      >
-                        Last Name
-                      </label>
-                      <input
-                        type="text"
-                        name="hs-lastname-contacts-1"
-                        id="hs-lastname-contacts-1"
-                        className={InputClass}
-                        placeholder="Last Name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="hs-email-contacts-1" className="sr-only">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="hs-email-contacts-1"
-                      id="hs-email-contacts-1"
-                      className={InputClass}
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="hs-phone-number-1" className="sr-only">
-                      Phone Number
-                    </label>
-                    <input
-                      type="text"
-                      name="hs-phone-number-1"
-                      id="hs-phone-number-1"
-                      className={InputClass}
-                      placeholder="Phone Number"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="hs-about-contacts-1" className="sr-only">
-                      Details
-                    </label>
-                    <textarea
-                      id="hs-about-contacts-1"
-                      name="hs-about-contacts-1"
-                      className={cn(InputClass, "h-[150px]")}
-                      placeholder="Details"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div className="mt-4 grid">
-                  <Button
-                    type="submit"
-                    className="w-max"
-                    // className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
-                  >
-                    Send inquiry
-                  </Button>
-                </div>
-              </form>
+              <ContactForm />
             </Card>
           </div>
         </div>
