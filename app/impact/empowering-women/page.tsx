@@ -34,7 +34,7 @@ const EmpoweringWomen = () => {
         <div className="flex py-10 items-center md:flex-row flex-col gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <Image
-              src="/impact/women-empowering.jpg"
+              src="/impact/women-2.jpg"
               width={700}
               height={700}
               alt="Empowering Women"

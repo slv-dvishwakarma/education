@@ -81,7 +81,7 @@ const BlogDetails = ({ params: { slug } }: any) => {
             <Heading className="mt-2 mb-8">{currentData?.title}</Heading>
             <Image
               src={currentData?.image || ""}
-              className="rounded-xl shadow-xl max-h-[500px] object-cover"
+              className="rounded-xl shadow-xl max-h-[500px] md:w-[1301px] w-full object-cover"
               width={1400}
               height={500}
               alt=""

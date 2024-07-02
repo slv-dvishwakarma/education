@@ -9,7 +9,7 @@ export const GuidingPrinciple = () => {
     title: "Our Guiding Principle",
     description:
       "“Skilling, reskilling, and upskilling, focusing on the multidimensional approach to make our youth more competitive, is the biggest need of the hour. These endeavours are aimed at making the youngsters flexible and adaptable in the current fast-changing job market.”",
-    image: "/images/Narendra-modis.png",
+    image: "/images/5.png",
   };
 
   return (
@@ -29,16 +29,16 @@ export const GuidingPrinciple = () => {
           </div>
           <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex">
             <Image
-              className="float-left relative  pt-10 md:w-[300px] mx-auto w-[50%]"
-              // src={data.image}
-              src={"/images/vission.png"}
+              className="xl:block lg:block md:block hidden absolute w-[30%] right-0"
+              src="/images/dotted-wave.png"
               alt={data.title}
               width={1200}
               height={894}
             />
             <Image
-              className="xl:block lg:block md:block hidden absolute w-[30%] right-0"
-              src="/images/dotted-wave.png"
+              className="float-left relative  pt-10 md:w-[500px] mx-auto w-[50%]"
+              // src={data.image}
+              src={"/images/5.png"}
               alt={data.title}
               width={1200}
               height={894}
