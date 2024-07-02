@@ -27,7 +27,7 @@ export const GuidingPrinciple = () => {
               <Link href="/challenges-and-strategies">Read More</Link>
             </Button>
           </div>
-          <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex">
+          <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex xl:pb-0 lg:pb-0 md:pb-0 pb-10">
             <Image
               className="xl:block lg:block md:block hidden absolute w-[30%] right-0"
               src="/images/dotted-wave.png"

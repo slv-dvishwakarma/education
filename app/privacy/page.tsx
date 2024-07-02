@@ -56,8 +56,8 @@ const Page = () => {
                     <h3>7. Contact Us</h3>
                     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
                     <ul>
-                        <li><strong>Email:</strong> <Link href="mailto:info@gmail.com">info@gmail.com</Link></li>
-                        <li><strong>Address:</strong> ahamdabd</li>
+                        <li><strong>Email:</strong> <Link href="mailto:info@skilline.ai">info@skilline.ai</Link></li>
+                        <li><strong>Address:</strong> 1800 Abbot Kinney Blvd. Unit D & E Venice</li>
                     </ul>
                 </Article>
             </div>

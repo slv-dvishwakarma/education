@@ -166,7 +166,7 @@ export const blogData = [
       "Empowering Rural Youth through Vocational Training: Success Stories and Strategies",
     description:
       "Vocational training is a critical component in empowering rural youth, offering them practical skills and pathways to employment that traditional education often overlooks.",
-    image: "/blogs/9a8ab0f7-a705-4d0a-be9b-eefd171a729d.png",
+    image: "/blogs/Empowering-Rural-Youth.jpg",
     author: "Skilline Tech",
     link: {
       url: "/blogs/empowering-rural-youth-through-vocational-training-success-stories-and-strategies",
@@ -180,7 +180,7 @@ export const blogData = [
       "The Importance of Mother-Tongue Education in Multilingual Societies",
     description:
       "In multilingual societies like India, mother-tongue education is crucial for preserving linguistic diversity and enhancing cognitive and cultural development.",
-    image: "/blogs/9a8ab0f7-a705-4d0a-be9b-eefd171a729d.png",
+      image: "/blogs/The-Importance-of-Mother-Tongue.jpg",
     author: "Skilline Tech",
     link: {
       url: "/blogs/the-importance-of-mother-tongue-education-in-multilingual-societies",
