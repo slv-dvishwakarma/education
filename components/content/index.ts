@@ -33,14 +33,14 @@ export const blogData = [
     <p>Stay tuned for more updates and insights on education and other important issues. Don't forget to subscribe to our blog for the latest news and analysis.</p>
     <h4>References</h4>
     <ul>
-    <li>UNESCO Report on Mother-Tongue Education: [UNESCO] <a href="https://www.unesco.org/en" target="_blank">www.unesco.org/en</a> </li>
-    <li>The Hindu Article on Multilingual Education: [The Hindu] <a href="https://www.thehindu.com/" target="_blank">www.thehindu.com</a></li>
-    <li>Azim Premji University Report on Multilingual Classrooms: [Azim Premji University] <a href="https://azimpremjiuniversity.edu.in/" target="_blank">azimpremjiuniversity.edu.in/</a></li>
-    <li>ASER 2023 Report: [ASER Centre] <a href="https://asercentre.org/wp-content/uploads/2022/12/ASER-2023-Report-1.pdf" target="_blank">asercentre.org/wp-content/uploads/2022/12/ASER-2023-Report-1.pdf</a></li>
+    <li><a href="https://www.unesco.org/en" target="_blank">UNESCO Report on Mother-Tongue Education: [UNESCO] </a> </li>
+    <li><a href="https://www.thehindu.com/" target="_blank">The Hindu Article on Multilingual Education: [The Hindu] </a></li>
+    <li><a href="https://azimpremjiuniversity.edu.in/" target="_blank">Azim Premji University Report on Multilingual Classrooms: [Azim Premji University] </a></li>
+    <li><a href="https://asercentre.org/wp-content/uploads/2022/12/ASER-2023-Report-1.pdf" target="_blank">ASER 2023 Report: [ASER Centre] </a></li>
     </ul>
     `,
   },
-  
+
   {
     title: "ASER 2023 Report: Insights into Rural Youth Education and Skills",
     description:
@@ -159,7 +159,8 @@ export const blogData = [
     `,
   },
   {
-    title: "Empowering Rural Youth through Vocational Training: Success Stories and Strategies",
+    title:
+      "Empowering Rural Youth through Vocational Training: Success Stories and Strategies",
     description:
       "Vocational training is a critical component in empowering rural youth, offering them practical skills and pathways to employment that traditional education often overlooks.",
     image: "/blogs/9a8ab0f7-a705-4d0a-be9b-eefd171a729d.png",
@@ -172,7 +173,8 @@ export const blogData = [
     `,
   },
   {
-    title: "The Importance of Mother-Tongue Education in Multilingual Societies",
+    title:
+      "The Importance of Mother-Tongue Education in Multilingual Societies",
     description:
       "In multilingual societies like India, mother-tongue education is crucial for preserving linguistic diversity and enhancing cognitive and cultural development.",
     image: "/blogs/9a8ab0f7-a705-4d0a-be9b-eefd171a729d.png",

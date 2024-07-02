@@ -32,7 +32,8 @@ export const ImageBoxStyleOne = ({ data }: ImageWithTextProps) => {
       <GridBox
         gap={10}
         className={cn(
-          "container  xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 items-center xl:bg-transparent lg:bg-transparent pt-[50px] pb-[70px] mt-10"
+          "container  xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 items-center xl:bg-transparent lg:bg-transparent",
+          "pt-[0px] pb-[0px] mt-10"
         )}
         columns={2}
       >

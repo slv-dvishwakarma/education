@@ -4,7 +4,7 @@ import React from "react";
 
 export const HomeContactUs = () => {
   return (
-    <div className="container pt-5 pb-[50px]">
+    <div className="container md:pt-5 pb-[50px]">
       <Heading className="text-center">Contact us</Heading>
       <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10">
         <ContactIconBox title="Phone Number" icon="phone">

@@ -158,19 +158,22 @@ html,
   scroll-padding: 6em 0.5em 1em 1em;
 }
 
-
 #blog-template h3 {
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 #blog-template a {
   font-size: 18px;
   font-weight: 500;
-  color: #2887E1;
+}
+
+#blog-template a:hover {
+  color: black;
 }
 
 #blog-template h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }

@@ -35,7 +35,7 @@ export const OurRoadmap = () => {
     },
   ];
   return (
-    <div className="md:pb-[50px] pt-[40px]">
+    <div className="md:pb-[80px] md:pt-[20px] pt-[60px]">
       <div className="container">
         <Heading className="mb-10 md:text-center">Our Roadmap</Heading>
         <div className=" grid xl:grid-cols-3 grid-cols-1">

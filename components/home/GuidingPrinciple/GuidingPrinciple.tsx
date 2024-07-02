@@ -29,7 +29,7 @@ export const GuidingPrinciple = () => {
           </div>
           <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex">
             <Image
-              className="float-left relative z-[1] pt-10 w-[300px] mx-auto"
+              className="float-left relative  pt-10 md:w-[300px] mx-auto w-[50%]"
               // src={data.image}
               src={"/images/vission.png"}
               alt={data.title}
