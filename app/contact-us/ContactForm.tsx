@@ -1,10 +1,12 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
+import axios from 'axios';
 
 export const ContactForm = () => {
+  const [message, setMessage] = useState<string | null>(null);
   const {
     handleSubmit,
     control,
@@ -12,9 +14,22 @@ export const ContactForm = () => {
     reset,
   } = useForm();
 
-  const onSubmit = (data: any) => {
-    console.log(data);
-    reset();
+  const onSubmit = async (data: any) => {
+    try {
+      const response = await axios.post("https://bareillydeals.com/send-mail.php", data);
+      if (response.status === 200) {
+        setMessage("success");
+        setTimeout(() => {
+          setMessage(null);
+          reset();
+        }, 3000);
+      } else {
+        setMessage("failed");
+      }
+    } catch (error) {
+      setMessage("failed");
+      console.error('Error submitting form:', error);
+    }
   };
 
   const InputClass =
@@ -45,6 +60,11 @@ export const ContactForm = () => {
                 />
               )}
             />
+            <div>
+              {errors["firstName"] && (
+                <span className="text-red-500 text-sm ">Please Enter Your First Name</span>
+              )}
+            </div>
           </div>
 
           <div>
@@ -69,6 +89,11 @@ export const ContactForm = () => {
                 />
               )}
             />
+            <div>
+              {errors["lastName"] && (
+                <span className="text-red-500 text-sm ">Please Enter Your Last Name</span>
+              )}
+            </div>
           </div>
         </div>
 
@@ -93,6 +118,11 @@ export const ContactForm = () => {
               />
             )}
           />
+          <div>
+            {errors["email"] && (
+              <span className="text-red-500 text-sm ">Please Enter Your Email</span>
+            )}
+          </div>
         </div>
 
         <div>
@@ -111,11 +141,19 @@ export const ContactForm = () => {
                 id="hs-phone-number-1"
                 className={InputClass}
                 placeholder="Phone Number"
-                onChange={onChange}
+                onChange={(e) => {
+                  const newValue = e.target.value.replace(/\D/g, "");
+                  onChange(newValue.slice(0, 10));
+                }}
                 value={value}
               />
             )}
           />
+          <div>
+            {errors["phone"] && (
+              <span className="text-red-500 text-sm ">Please Enter Your Phone Number</span>
+            )}
+          </div>
         </div>
 
         <div>
@@ -146,11 +184,16 @@ export const ContactForm = () => {
         <Button
           type="submit"
           className="w-max"
-          // className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
+        // className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
         >
           Send inquiry
         </Button>
       </div>
+      {message && (
+        <div className={`mt-4 ${message === "success" ? "text-green-500" : "text-red-500"}`}>
+          {message === "success" ? "Message Sent Successfully" : "Message Not Sent"}
+        </div>
+      )}
     </form>
   );
 };
