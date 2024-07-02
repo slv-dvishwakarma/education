@@ -7,6 +7,7 @@ type ItemType = {
   title: string;
   description: string;
   image: string;
+  author: string;
   link: { url: string; target: "_blank" | "_self" };
   content?: string;
 };
@@ -42,6 +43,7 @@ const Blog = () => {
                 title={title}
                 description={description}
                 image={image}
+                author={item.author}
                 link={link}
                 isFeatured={true}
               />
