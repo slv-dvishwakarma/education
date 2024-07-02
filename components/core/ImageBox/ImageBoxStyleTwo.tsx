@@ -20,7 +20,10 @@ export const ImageBoxStyleTwo: React.FC<ImageTextProps> = ({
   imageAlign,
 }: ImageTextProps) => {
   return (
-    <div className="xl:mt-32 lg:mt-32 md:mt-32 mt-10 xl:mb-20 lg:mb-20 md:mb-20 mb-10" id="about-us">
+    <div
+      className="xl:mt-32 lg:mt-32 md:mt-32 mt-10 xl:mb-20 lg:mb-20 md:mb-20"
+      id="about-us"
+    >
       {imageAlign === "right" ? (
         <div className="container flex-col-reverse md:flex-row xl:flex lg:flex md:flex flex flex-wrap  items-center xl:bg-transparent lg:bg-transparent md:bg-[#F4F9FF] bg-[#F4F9FF]  xl:bg-[linear-gradient(90deg,#F4F9FF_70%,#FFFFFF_30%)] lg:bg-[linear-gradient(90deg,#F4F9FF_70%,#FFFFFF_30%)] md:bg-[linear-gradient(90deg,#F4F9FF_70%,#FFFFFF_30%)] pb-[50px] pt-[50px]">
           <div className="xl:pl-8 lg:pl-8 md:pl-8 xl:pt-0 lg:pt-0 md:pt-0 pt-8 xl:w-[35%] lg:w-[35%] md:w-[35%] w-full space-y-5">
