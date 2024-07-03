@@ -23,7 +23,7 @@ const ChallengesAndStrategies = () => {
       </Breadcrumb>
       <div className="container">
         <div className="flex flex-col md:flex-row md:pt-[80px] pt-[20px]">
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-1/2 w-full md:sticky top-[100px] h-full">
             <Image
               src="/images/skill-gap-in-India.jpg"
               alt=""

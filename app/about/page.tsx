@@ -24,7 +24,7 @@ const AboutUs = () => {
       </Breadcrumb>
       <About />
       <div className="container ">
-        <div className="md:text-center md:px-[15%] md:pt-[130px] md:pb-[100px] pt-[50px] space-y-6">
+        <div className="md:text-center md:px-[15%] md:pt-[130px] md:pb-[50px] pt-[50px] space-y-6">
           <Heading>
             The Leading Global Marketplace for Learning and Instruction
           </Heading>
@@ -32,7 +32,7 @@ const AboutUs = () => {
           It is a transformative platform harnessing AI and gamification to empower rural youth, job seekers, and educational institutions. Skilline offers comprehensive modules in Vedic education, cleanliness awareness, government policy, and more, aligned with national skill development initiatives like Skill India Digital and Atma-Nirbhar Bharat.
           </Paragraph>
         </div>
-        <div className="md:mt-10 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">
+        <div className="md:mt-3 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">
           <ExperienceIcon
             title=""
             description="Years of Language Education Experience"

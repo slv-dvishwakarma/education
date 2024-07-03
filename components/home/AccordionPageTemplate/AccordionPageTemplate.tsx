@@ -81,7 +81,7 @@ export const AccordionPageTemplate = () => {
   };
 
   return (
-    <div className="py-10">
+    <div className="pt-10 pb-[70px]">
       <div className="container">
         <GridBox
           columns={2}

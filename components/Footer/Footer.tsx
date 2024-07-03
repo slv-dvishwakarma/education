@@ -55,7 +55,7 @@ export const Footer = () => {
   return (
     <footer
       className={cn(
-        " dark:bg-gray-900 border-t-gray-200 border-t border-solid mt-[100px]",
+        " dark:bg-gray-900 border-t-gray-200 border-t border-solid mt-[50px]",
         pathname === "/" ? "bg-white" : "bg-gray-50"
       )}
     >
