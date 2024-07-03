@@ -44,7 +44,7 @@ const Stories = () => {
                       alt={item.name}
                       className=" rounded-full md:w-[150px] md:h-[150px] w-[70px] h-[70px] object-cover"
                     />
-                    <div className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex bg-[#087EBB] text-[white] rounded-[50%] mt-2 absolute ml-[-103px] bottom-[77px] z-[1]">
+                    <div className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex bg-[#087EBB] text-[white] rounded-[50%] mt-12 xl:mt-2 lg:mt-2 md:mt-2 absolute xl:ml-[-103px] lg:ml-[-103px] md:ml-[-103px] ml-0 xl:bottom-[77px] lg:bottom-[77px] md:bottom-[77px] z-[1]">
                     <Link href={item.linkdin} target="_blank" ><FaLinkedinIn /></Link>
                     </div>
                     <div className="md:pt-5 text-left md:text-center md:pl-0 pl-5">

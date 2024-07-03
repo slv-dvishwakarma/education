@@ -53,8 +53,8 @@ const ChallengesAndStrategies = () => {
             </div>
           </div>
         </div>
-        <div className="pt-[100px] pb-[80px] flex flex-col md:flex-row">
-          <div className="md:w-1/2 w-full">
+        <div className="pt-[100px] pb-[80px] flex flex-col md:flex-row  flex-col-reverse">
+          <div className="md:w-1/2 w-full xl:pt-0 lg:pt-0 md:pt-0 pt-5">
             <Heading>Solutions</Heading>
             <Paragraph className="space-y-8 pt-5">
               <div>

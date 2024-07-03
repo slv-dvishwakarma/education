@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Controller, useForm } from "react-hook-form";
 import { ContactForm } from "./ContactForm";
+import Link from "next/link";
 
 const ContactUs = () => {
   const breadcrumb = [
@@ -50,7 +51,7 @@ const ContactUs = () => {
                 icon="/images/email-1.png"
                 title="Email"
               >
-                info@skilline.ai
+                <Link href="mailto:info@skilline.ai">info@skilline.ai</Link>
               </IconBoxV2>
             </div>
           </div>

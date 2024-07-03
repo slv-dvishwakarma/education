@@ -1,5 +1,6 @@
 import { Heading } from "@/components/core";
 import { ContactIconBox } from "@/components/core/ContactIconBox";
+import Link from "next/link";
 import React from "react";
 
 export const HomeContactUs = () => {
@@ -15,7 +16,7 @@ export const HomeContactUs = () => {
         </ContactIconBox>
 
         <ContactIconBox title="Email Address" icon="email">
-          info@skilline.ai
+        <Link href="mailto:info@skilline.ai">info@skilline.ai</Link>
         </ContactIconBox>
       </div>
     </div>
