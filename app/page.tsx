@@ -34,7 +34,7 @@ export default function Home() {
       <Ventures />
       <JoinUs />
       <Courses />
-      <HomeContactUs />
+      {/* <HomeContactUs /> */}
       <Blog />
       <AccordionPageTemplate />
       {/* <Contact /> */}
