@@ -32,7 +32,7 @@ const AboutUs = () => {
           It is a transformative platform harnessing AI and gamification to empower rural youth, job seekers, and educational institutions. Skilline offers comprehensive modules in Vedic education, cleanliness awareness, government policy, and more, aligned with national skill development initiatives like Skill India Digital and Atma-Nirbhar Bharat.
           </Paragraph>
         </div>
-        <div className="md:mt-3 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">
+        {/* <div className="md:mt-3 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">
           <ExperienceIcon
             title=""
             description="Years of Language Education Experience"
@@ -53,7 +53,7 @@ const AboutUs = () => {
             description="Innovative Foreign Language Courses"
             icon="4"
           />
-        </div>
+        </div> */}
       </div>
       <SkillGap />
       <AIDriven />

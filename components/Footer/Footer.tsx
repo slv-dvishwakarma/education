@@ -35,23 +35,23 @@ export const Footer = () => {
     },
   ];
 
-  const social = [
-    {
-      label: "Facebook",
-      link: "https://www.facebook.com/",
-      icon: "facebook",
-    },
-    {
-      label: "Linkedin",
-      link: "https://in.linkedin.com/",
-      icon: "linkedin",
-    },
-    {
-      label: "Instagram",
-      link: "https://www.instagram.com/",
-      icon: "instagram",
-    },
-  ];
+  // const social = [
+  //   {
+  //     label: "Facebook",
+  //     link: "https://www.facebook.com/",
+  //     icon: "facebook",
+  //   },
+  //   {
+  //     label: "Linkedin",
+  //     link: "https://in.linkedin.com/",
+  //     icon: "linkedin",
+  //   },
+  //   {
+  //     label: "Instagram",
+  //     link: "https://www.instagram.com/",
+  //     icon: "instagram",
+  //   },
+  // ];
   return (
     <footer
       className={cn(
@@ -82,19 +82,19 @@ export const Footer = () => {
 
         <hr className="my-5 border-gray-200 md:my-5 dark:border-gray-700" />
 
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+        <div className="text-center">
           <p className="text-[18px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
             © Copyright 2023. All Rights Reserved.
           </p>
 
-          <div className="flex mt-3 md:mt-0 gap-3">
+          {/* <div className="flex mt-3 md:mt-0 gap-3">
             {social.map((item, index) => {
               const { icon, label, link } = item;
               return (
                 <SocialIcon key={index} icon={icon} label={label} link={link} />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
