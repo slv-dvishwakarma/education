@@ -10,9 +10,9 @@ export const ContactForm = () => {
   const {
     handleSubmit,
     control,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     reset,
-  } = useForm();
+} = useForm();
 
   const onSubmit = async (data: any) => {
     try {
@@ -135,7 +135,13 @@ export const ContactForm = () => {
             name="phone"
             control={control}
             defaultValue=""
-            rules={{ required: true }}
+            rules={{
+              required: true,
+              pattern: {
+                value: /^\d{10}$/,
+                message: "Phone number must be 10 digits long",
+              },
+            }}
             render={({ field: { onChange, value } }) => (
               <input
                 type="text"
@@ -152,8 +158,8 @@ export const ContactForm = () => {
             )}
           />
           <div>
-            {errors["phone"] && (
-              <span className="text-red-500 text-sm ">Please Enter Your Phone Number</span>
+          {errors["phone"] && (
+              <span className="text-red-500 text-sm ">Please Enter Phone Number</span>
             )}
           </div>
         </div>
@@ -186,9 +192,8 @@ export const ContactForm = () => {
         <Button
           type="submit"
           className="w-max"
-        // className="inline-flex w-max items-center justify-center whitespace-nowrap rounded-md font-[500] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:text-white shadow hover:bg-primary md:h-[52px] h-[42px] px-[20px] md:px-[25px] py-0 text-[13px] md:text-[15px]"
         >
-          Send inquiry
+          {isSubmitting ? <span className="w-[30px] h-[30px] animate-spin rounded-[50%] border-t-[#3498db] border-2 border-solid border-[#f3f3f3]"></span> : <span>Send inquiry</span>}
         </Button>
       </div>
       {message && (

@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import axios from 'axios';
@@ -13,7 +13,7 @@ export const Newsletter = () => {
         reset,
     } = useForm();
 
-      const onSubmit = async (data: any) => {
+    const onSubmit = async (data: any) => {
         try {
             const response = await axios.post(
                 "https://bareillydeals.com/newsletter.php",
@@ -21,11 +21,15 @@ export const Newsletter = () => {
                 { headers: { 'Content-Type': 'application/json' } }
             );
             if (response.status === 200) {
-                setMessage("success");
-                setTimeout(() => {
-                    setMessage(null);
-                    reset();
-                }, 3000);
+                if (response.data === "Email already exists") {
+                    setMessage("already_subscribed");
+                } else {
+                    setMessage("success");
+                    setTimeout(() => {
+                        setMessage(null);
+                        reset();
+                    }, 3000);
+                }
             } else {
                 setMessage("failed");
             }
@@ -34,7 +38,6 @@ export const Newsletter = () => {
             console.error('Error submitting form:', error);
         }
     };
-    // https://bareillydeals.com/newsletter.php
 
     return (
         <>
@@ -58,7 +61,13 @@ export const Newsletter = () => {
                     />
                 </div>
                 <div>
-                    <button className='flex w-[50px] h-[51px] rounded-[0px_8px_8px_0px] text-[white] text-3xl justify-center items-center bg-[#141C98]'><FaLongArrowAltRight /></button>
+                    <button
+                        type="submit"
+                        className='flex w-[50px] h-[51px] rounded-[0px_8px_8px_0px] text-[white] text-3xl justify-center items-center bg-[#141C98]'
+                        disabled={isSubmitting}
+                    >
+                        {isSubmitting ? <span className="w-[30px] h-[30px] animate-spin rounded-[50%] border-t-[#3498db] border-2 border-solid border-[#f3f3f3]"></span> : <FaLongArrowAltRight />}
+                    </button>
                 </div>
             </form>
             <div>
@@ -66,9 +75,9 @@ export const Newsletter = () => {
             </div>
             {message && (
                 <div className={`mt-4 ${message === "success" ? "text-green-500" : "text-red-500"}`}>
-                    {message === "success" ? "Thanks for subscribing to us." : "Not Subscribed"}
+                    {message === "success" ? "Thanks for subscribing to us." : message === "already_subscribed" ? "You have already subscribed." : "Not Subscribed"}
                 </div>
             )}
         </>
-    )
-}
+    );
+};
