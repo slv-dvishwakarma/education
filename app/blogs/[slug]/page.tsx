@@ -4,7 +4,8 @@ import { blogData } from "@/components/content";
 import Link from "next/link";
 import { Heading, Paragraph, Tooltip } from "@/components/core";
 import Image from "next/image";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaLink } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaLink } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const BlogDetails = ({ params: { slug } }: any) => {
   const currentData = useMemo(() => {
@@ -15,6 +16,17 @@ const BlogDetails = ({ params: { slug } }: any) => {
     return { __html: currentData?.content || "" };
   }
 
+  const shareOnTwitter = () => {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(currentData?.title || 'Check out this blog post!');
+    const image = encodeURIComponent(currentData?.image || 'URL_of_your_default_image');
+  
+    window.open(
+      `https://twitter.com/intent/tweet?url=${url}&text=${text}&media=${image}`,
+      "_blank"
+    );
+  };
+
   const shareOnFacebook = () => {
     const url = encodeURIComponent(window.location.href);
     window.open(
@@ -23,18 +35,6 @@ const BlogDetails = ({ params: { slug } }: any) => {
     );
   };
 
-  // const isMobileDevice = () => {
-  //   return /Mobi|Android/i.test(navigator.userAgent);
-  // };
-
-  // const shareOnInstagram = () => {
-  //   if (isMobileDevice()) {
-  //     const url = encodeURIComponent(window.location.href);
-  //     window.open(`https://www.instagram.com/?url=${url}`, "_blank");
-  //   } else {
-  //     alert("Please use Instagram mobile app to share this post.");
-  //   }
-  // };
 
   const shareOnLinkedIn = () => {
     const url = encodeURIComponent(window.location.href);
@@ -128,18 +128,14 @@ const BlogDetails = ({ params: { slug } }: any) => {
                 <FaLinkedinIn />
               </li>
             </Tooltip>
-            {/* <Tooltip text="Share With Instagram">
+            <Tooltip text="Share With Twitter">
               <li
-                className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex text-[white] rounded-[50%]"
-                style={{
-                  background:
-                    "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-                }}
-                onClick={shareOnInstagram}
+                className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex text-[white] rounded-[50%] bg-[#25A4F3]"
+                onClick={shareOnTwitter}
               >
-                <FaInstagram />
+                <FaXTwitter />
               </li>
-            </Tooltip> */}
+            </Tooltip> 
             <Tooltip text="Copy Link">
               <li
                 className="cursor-pointer list-none text-xl w-[35px] h-[35px] justify-center items-center flex bg-[#2887E1] text-[white] rounded-[50%]"

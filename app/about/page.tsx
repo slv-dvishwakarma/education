@@ -1,6 +1,6 @@
-import About2 from "@/components/About2/About2";
+import { AIDriven, SkillGap } from "@/components/About";
 import { Breadcrumb, Heading, Paragraph } from "@/components/core";
-import { About, OurVision, OurApproach } from "@/components/home";
+import { About} from "@/components/home";
 import React from "react";
 
 const AboutUs = () => {
@@ -29,38 +29,34 @@ const AboutUs = () => {
             The Leading Global Marketplace for Learning and Instruction
           </Heading>
           <Paragraph>
-            Neque convallis a cras semper auctor. Libero id faucibus nisl
-            tincidunt egetnvallis a cras semper auctonvallis a cras semper
-            aucto. Neque convallis a cras semper auctor. Liberoe convallis a
-            cras semper atincidunt egetnval
+          It is a transformative platform harnessing AI and gamification to empower rural youth, job seekers, and educational institutions. Skilline offers comprehensive modules in Vedic education, cleanliness awareness, government policy, and more, aligned with national skill development initiatives like Skill India Digital and Atma-Nirbhar Bharat.
           </Paragraph>
         </div>
         <div className="md:mt-10 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">
           <ExperienceIcon
-            title="15"
+            title=""
             description="Years of Language Education Experience"
             icon="1"
           />
           <ExperienceIcon
-            title="253,085"
-            description="Learners Enrolled in EduMall Courses"
+            title=""
+            description="Learners Enrolled in Courses"
             icon="2"
           />
           <ExperienceIcon
-            title="135"
+            title=""
             description="Qualified teachers and language experts"
             icon="3"
           />
           <ExperienceIcon
-            title="2,500+"
+            title=""
             description="Innovative Foreign Language Courses"
             icon="4"
           />
         </div>
       </div>
-      <OurVision />
-      <OurApproach />
-      {/* <About2 /> */}
+      <SkillGap />
+      <AIDriven />
     </div>
   );
 };

@@ -15,7 +15,7 @@ export const HeroSlider = () => {
       //   target: "_self",
       // },
       image: {
-        src: "/images/banner-1.png",
+        src: "/image/Slider/1.png",
         width: 400,
         height: 428,
         alt: "",
@@ -31,7 +31,7 @@ export const HeroSlider = () => {
       //   target: "_self",
       // },
       image: {
-        src: "/images/banner-2.png",
+        src: "/image/Slider/2.png",
         width: 400,
         height: 428,
         alt: "",
@@ -47,7 +47,7 @@ export const HeroSlider = () => {
       //   target: "_self",
       // },
       image: {
-        src: "/images/banner-3.png",
+        src: "/image/Slider/3.png",
         width: 400,
         height: 428,
         alt: "",

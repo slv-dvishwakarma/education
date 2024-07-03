@@ -13,13 +13,13 @@ const ChallengesAndStrategies = () => {
             isActive: false,
           },
           {
-            label: "Challenges & Strategies",
-            link: "/",
+            label: "Our Guiding Principle",
+            link: "/our-guiding-principle",
             isActive: true,
           },
         ]}
       >
-        Challenges & Strategies
+        Our Guiding Principle
       </Breadcrumb>
       <div className="container">
         <div className="flex flex-col md:flex-row md:pt-[80px] pt-[20px]">

@@ -55,14 +55,14 @@ export const Footer = () => {
   return (
     <footer
       className={cn(
-        " dark:bg-gray-900  ",
+        " dark:bg-gray-900 border-t-gray-200 border-t border-solid mt-[100px]",
         pathname === "/" ? "bg-white" : "bg-gray-50"
       )}
     >
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
           <Link href="/">
-            <h2 className="text-2xl uppercase font-[900]">Skilline</h2>
+          <Image src="/images/logo.png" className="w-[20%] m-auto" alt="" width={1496} height={512} />
           </Link>
 
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
@@ -80,11 +80,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+        <hr className="my-5 border-gray-200 md:my-5 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <p className="text-[18px] leading-[28px] font-light text-[rgb(105,105,105)] tracking-[_0.4px]">
-            © Copyright 2024. All Rights Reserved.
+            © Copyright 2023. All Rights Reserved.
           </p>
 
           <div className="flex mt-3 md:mt-0 gap-3">

@@ -24,7 +24,7 @@ export const GuidingPrinciple = () => {
               {data.description}
             </Paragraph>
             <Button asChild={true}>
-              <Link href="/challenges-and-strategies">Read More</Link>
+              <Link href="/our-guiding-principle">Read More</Link>
             </Button>
           </div>
           <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex xl:pb-0 lg:pb-0 md:pb-0 pb-10">

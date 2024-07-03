@@ -26,7 +26,7 @@ const Policies = () => {
           },
         ]}
       >
-        Policies
+        Alignment with Government Policies
       </Breadcrumb>
       <div className="container">
         <div className="flex flex-col md:flex-row md:py-[80px] py-[50px]">
@@ -41,25 +41,11 @@ const Policies = () => {
           </div>
           <div className="md:w-1/2 w-full ">
             <div className="space-y-6 mt-5 md:mt-0 md:pl-10">
-              <Heading className="">Government Policies</Heading>
+              <Heading className="">Empowering Indias Future Through Government-Aligned Education Initiatives</Heading>
               <Paragraph className="!whitespace-normal">
-                Here we need to connect the dots and mention how the effort is
-                aligning with the Government policies and intiative{" "}
+              Skilline is strategically aligned with several pivotal Indian government initiatives, including Atma-Nirbhar Bharat, Skill India Digital, NSDC campaigns, and the IndiaAI Mission. Our educational modules are meticulously designed to adhere to government board curricula, ensuring full compliance and relevance to national skill development goals.{" "}
               </Paragraph>
-              <Paragraph className="!whitespace-normal">
-                Skilline aligns with the PM’s Atma-Nirbhar Bharat, Skill India
-                Digital, NSDC campaigns, and the IndiaAI Mission. Our
-                cutting-edge courses are planned to adhere to government board
-                curricula and fully compliant.
-              </Paragraph>
-              <Paragraph className="!whitespace-normal">
-                Based on results from our offline pilot courses, individuals not
-                only have better placement opportunities but also demonstrate
-                improved skills such as enhanced communication, critical
-                thinking, problem-solving abilities, adaptability to change,
-                better performance, technical proficiency, and increased
-                self-confidence.
-              </Paragraph>
+              
             </div>
           </div>
         </div>

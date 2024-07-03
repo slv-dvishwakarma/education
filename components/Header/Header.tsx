@@ -7,6 +7,7 @@ import { MobileMenu } from "./MobileMenu";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+import Image from "next/image";
 
 export const Header = () => {
   const pathName = usePathname();
@@ -41,10 +42,8 @@ export const Header = () => {
       <div className="bg-white sticky top-0 z-[2] bg-opacity-75 backdrop-blur-[15px] shadow-md">
         <div className="container">
           <div className="flex justify-between items-center lg:py-5 py-5">
-            <div>
-              <h1 className="text-2xl uppercase font-[900]">
-                <Link href={"/"}>Skilline</Link>
-              </h1>
+            <div className="xl:w-[25%] lg:w-[25%] md:w-[25%] w-full">
+                <Link href={"/"}><Image src="/images/logo.png" className="w-3/5" alt="" width={1496} height={512} /></Link>
             </div>
             <div className="flex lg:gap-5 items-center">
               <div className="hidden lg:flex gap-10 mr-3 items-center">

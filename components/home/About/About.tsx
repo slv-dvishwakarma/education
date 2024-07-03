@@ -5,7 +5,7 @@ export const About = () => {
     image: "/images/about-us.jpg",
     title: "About Us",
     description:
-      "Skilline is more than just an education platform. It's a movement aimed at transforming the landscape of education and skill development in India. We believe in the power of technology, particularly AI, to democratize access to quality education and skills. Our mission is to empower rural youth, job seekers, corporate employees, and educational institutions by providing affordable, gamified, and industry-relevant training courses. We also support policymakers in enhancing governance and scaling education policies for the betterment of society.",
+      "Welcome to Skilline, an innovative and affordable gamified education platform currently in development. We specialize in creating cutting-edge, AI-powered training courses tailored to meet the demands of tech, manufacturing, and other high-demand sectors. Our mission is to empower rural youth, job seekers, corporate employees, and educational institutions by providing niche resources and fostering skill development.",
   };
   return (
     <div className="md:pt-10">

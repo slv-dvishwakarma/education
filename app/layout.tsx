@@ -30,9 +30,10 @@ import "./globals.css";
 import { Cookies, ScrollToTop } from "@/components/core";
 
 export const metadata: Metadata = {
-  title: "Skilline - Education",
-  description:
-    "Transforming Education and Skill Development for an Empowered India",
+  title: "Skilline - Transforming Education and Skill Development in India",
+  description: "Skilline Education offers AI-driven, gamified learning solutions to enhance skills and job readiness in India. Our platform provides personalized courses, focusing on economic empowerment through upskilling and reskilling.",
+  keywords: "Skill development, AI education, gamified learning, India, Atma Nirbhar Bharat, Skill India, India AI Mission",
+  authors: [{ name: "Skilline Education Team" }],
 };
 
 export default function RootLayout({

@@ -61,7 +61,7 @@ export const Pillars = () => {
             through upskilling, improving employment and self-employment
             opportunities, and establishing itself as a global brand.
           </Paragraph>
-          <UnorderedList className="space-y-6 text-slate-600 mb-3 inline-block">
+          <UnorderedList className="space-y-0 text-slate-600 mb-3 inline-block grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-7">
             {data.map((item: any, index) => {
               return (
                 <UnorderedList.Item key={index}>
