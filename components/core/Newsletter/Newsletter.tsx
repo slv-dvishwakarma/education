@@ -1,16 +1,40 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { Controller, useForm } from 'react-hook-form';
 import { FaLongArrowAltRight } from "react-icons/fa";
+import axios from 'axios';
 
 export const Newsletter = () => {
+    const [message, setMessage] = useState<string | null>(null);
+    const {
+        handleSubmit,
+        control,
+        formState: { errors, isSubmitting },
+        reset,
+    } = useForm();
 
-    const { handleSubmit, control, formState: { errors }, reset } = useForm();
-
-    const onSubmit = (data: any) => {
-        console.log(data);
-        reset();
+      const onSubmit = async (data: any) => {
+        try {
+            const response = await axios.post(
+                "https://bareillydeals.com/newsletter.php",
+                { email: data.newsletter },
+                { headers: { 'Content-Type': 'application/json' } }
+            );
+            if (response.status === 200) {
+                setMessage("success");
+                setTimeout(() => {
+                    setMessage(null);
+                    reset();
+                }, 3000);
+            } else {
+                setMessage("failed");
+            }
+        } catch (error) {
+            setMessage("failed");
+            console.error('Error submitting form:', error);
+        }
     };
+    // https://bareillydeals.com/newsletter.php
 
     return (
         <>
@@ -40,6 +64,11 @@ export const Newsletter = () => {
             <div>
                 {errors["newsletter"] && <span className="text-red-500 text-sm">Please Enter Your Email</span>}
             </div>
+            {message && (
+                <div className={`mt-4 ${message === "success" ? "text-green-500" : "text-red-500"}`}>
+                    {message === "success" ? "Thanks for subscribing to us." : "Not Subscribed"}
+                </div>
+            )}
         </>
     )
 }
