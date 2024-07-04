@@ -7,8 +7,8 @@ export const HomeContactUs = () => {
   return (
     <div className="container md:pt-5 pb-[50px]">
       <Heading className="text-center">Contact us</Heading>
-      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-5">
-        <div className="xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-3">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-5 mt-10 xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5">
+        <div className="flex flex-col gap-5">
         <ContactIconBox title="Phone Number" icon="phone">
           (+91) xxxx xxx xxx
         </ContactIconBox>
