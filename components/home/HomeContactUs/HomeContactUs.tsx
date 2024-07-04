@@ -17,7 +17,7 @@ export const HomeContactUs = () => {
         </ContactIconBox>
         </div>
         <ContactIconBox title="Our Location" icon="map">
-          594, Road No. 34, Survey Of India Ayyappa Society, Ayyappa Society, Chanda Naik Nagar, Madhapur, Hyderabad, Telangana 500081
+          594, Road No. 34, Survey Of India Ayyappa Society, Chanda Naik Nagar, Madhapur, Hyderabad, Telangana 500081
         </ContactIconBox>
       </div>
     </div>
