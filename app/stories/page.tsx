@@ -57,12 +57,8 @@ const Stories = () => {
                   </div>
                   <div className="md:border md:border-t-0 md:border-r-0 md:border-b-0 w-full md:w-[calc(100%-240px)]">
                     <div className="mt-5 md:mt-0 md:px-10">
-                      {/* <Paragraph className="!whitespace-normal">
-                        {item.story}
-                      </Paragraph> */}
                       {item.content.map((story, index) => (
-                        <div key={index}>
-                          
+                        <div key={index}>  
                           <Paragraph className="pb-7"><h3 className="font-semibold">{story.heading}</h3> {story.description}</Paragraph>
                         </div>
                       ))} 

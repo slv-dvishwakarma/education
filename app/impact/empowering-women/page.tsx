@@ -22,13 +22,13 @@ const EmpoweringWomen = () => {
             link: "/impact",
           },
           {
-            label: "Empowering Women",
+            label: "Empowerment of women",
             link: "/",
             isActive: true,
           },
         ]}
       >
-        Empowering Women
+        Empowerment of women
       </Breadcrumb>
       <div className="container md:py-10 py-0">
         <div className="flex py-10 items-center md:flex-row flex-col gap-10 md:gap-0">
@@ -43,18 +43,13 @@ const EmpoweringWomen = () => {
           </div>
           <div className="md:w-1/2 w-full">
             <div className="space-y-5 md:pl-[50px]">
-              <Heading>Empowering Women</Heading>
+              <Heading>Empowerment of women</Heading>
               <Paragraph>
-                Achieving economic independence is at the core of our mission.
-                We empower individuals and businesses to reach their full
-                potential by providing the tools, resources, and opportunities
-                necessary for financial self-sufficiency and growth.
+              {`Having an income is the long-term objective that will realize the two organizations' goals and objectives. Our business is to empower members of society with the instruments, support, and tools that will allow customers to achieve financial sustainability and business success.`}
               </Paragraph>
 
               <Paragraph>
-                Our holistic approach addresses the diverse needs of our
-                clients, fostering an environment where innovation and
-                entrepreneurship can thrive.
+              The approach meets the various needs of the clients and fosters a culture of innovation and enterprise.
               </Paragraph>
             </div>
           </div>
@@ -62,7 +57,7 @@ const EmpoweringWomen = () => {
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
-              <Heading>Our initiatives focus on</Heading>
+              <Heading>Our programs are focused on</Heading>
               <UnorderedList>
                 {[
                   "Skill Development",

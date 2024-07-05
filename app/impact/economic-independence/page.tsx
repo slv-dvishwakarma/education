@@ -45,30 +45,25 @@ const EconomicIndependence = () => {
             <div className="space-y-5 md:pl-[50px]">
               <Heading>Economic Independence</Heading>
               <Paragraph>
-                Economic independence is the state of having sufficient personal
-                resources to live without financial assistance. This crucial
-                aspect of life empowers individuals and communities to make
-                choices that lead to sustainable development, improved quality
-                of life, and overall well-being.
+              Sustainability can be described as the capability to provide for economic aspects, which makes a person independent when it comes to support from others. This bare necessity of life empowers people and populations to make choices that would bring about the actualization of sustainable development, improved quality, and affluence.
               </Paragraph>
 
               <Paragraph>
-                Achieving economic independence involves various factors,
-                including education, employment opportunities, financial
-                literacy, and supportive policies.
+              Economic independence, therefore, is based on a few aspects that are crucial for enhancing the quality of a woman’s life. These include education and demand for labor, the ability to manage financial services, demand for labor and its productivity, and legislation in the economy.
               </Paragraph>
             </div>
           </div>
         </div>
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
-            <div className="space-y-10  md:pr-[50px]">
+            <div className="space-y-5  md:pr-[50px]">
               <Heading>The Importance of Economic Independence</Heading>
+              <Paragraph>The emphasis is on how one obtains economic independence at a micro level as well as why economic systems such as socialism, communism, and sovereign states are ineffective for a macro economy.</Paragraph>
               <UnorderedList>
                 {[
-                  "Personal Freedom and Security",
+                  "Personal freedom and security",
                   "Improved Quality of Life",
-                  "Empowerment and Confidence",
+                  "Empowerment and confidence",
                   "Social and Economic Contributions",
                 ].map((item: string, index: number) => {
                   return (

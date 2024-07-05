@@ -5,7 +5,7 @@ export const Courses = () => {
   const data = {
     title: "Courses",
     description:
-      "Join us on the Skilline journey. Together, we can create a skilled and empowered India. Whether you're a learner seeking new opportunities, an institution aiming to enhance education, or a policymaker striving to improve governance, Skilline is here to support you.",
+      "Be a Part of the Skilline Story. We can together build a skilled and empowered India. Skilline is committed to providing support for learners seeking new opportunities, institutions trying to improve the quality of education, and policymakers attempting to make governance more effective.",
     course: [
       {
         image: "/course/pu-02.jpg",

@@ -4,7 +4,7 @@ import {
   Paragraph,
   UnorderedList,
 } from "@/components/core";
-import { Pillars } from "@/components/home-v2";
+import { Pillars } from "@/components/Policies/Pillars";
 import Image from "next/image";
 import React from "react";
 import { IoCheckmark } from "react-icons/io5";
@@ -29,7 +29,7 @@ const Policies = () => {
         Alignment with Government Policies
       </Breadcrumb>
       <div className="container">
-        <div className="flex flex-col md:flex-row md:py-[80px] py-[50px]">
+        <div className="flex flex-col md:flex-row md:py-[80px] py-[50px] items-center">
           <div className="md:w-1/2 w-full">
             <Image
               src="/images/policy-2.jpg"
@@ -41,9 +41,9 @@ const Policies = () => {
           </div>
           <div className="md:w-1/2 w-full ">
             <div className="space-y-6 mt-5 md:mt-0 md:pl-10">
-              <Heading className="">Empowering Indias Future Through Government-Aligned Education Initiatives</Heading>
+              <Heading className="">Boosting the Future of India Through Government Backed Education Initiatives</Heading>
               <Paragraph className="!whitespace-normal">
-              Skilline is strategically aligned with several pivotal Indian government initiatives, including Atma-Nirbhar Bharat, Skill India Digital, NSDC campaigns, and the IndiaAI Mission. Our educational modules are meticulously designed to adhere to government board curricula, ensuring full compliance and relevance to national skill development goals.{" "}
+              Skilline is well aligned with numerous groundbreaking Indian government campaigns like Atma-Nirbhar Bharat, Skill India Digital, NSDC campaigns, and the biggest one: 100 Days AI Mission by the Institute Of The NITI Aayog. Our modules are carefully built to comply with government board curriculums, and they match national goals for skill development completely.{" "}
               </Paragraph>
               
             </div>
@@ -55,13 +55,7 @@ const Policies = () => {
         <div className="md:text-center space-y-5 md:pt-[60px] md:px-[10%]">
           <Heading className="">Empower Skill India</Heading>
           <Paragraph className="!whitespace-normal">
-            {`Empower Skill India seeks to bridge the skill gap with a more
-                organized, multilingual, and AI-powered approach. By leveraging
-                AI, we offer personalized, real-time learning in multiple
-                languages, ensuring accessibility for all. This initiative aims
-                to equip India's workforce with essential skills for the digital
-                age, enhancing employability and fostering a competitive
-                economy.`}
+            {`Skilling in an organized, multilingual, and AI-powered method. We provide personalized learning in real-time for everyone, using AI technology and available on all screens. This initiative is aimed at enabling a world-class resource pool of professionals who can not only build solutions but also help provide the essential skills for India's workforce in this digital age, thereby increasing employability and contributing to developing economies.`}
           </Paragraph>
         </div>
         <div className="flex flex-col md:flex-row pt-[20px] pb-[80px] items-center">
@@ -80,30 +74,24 @@ const Policies = () => {
 
               <UnorderedList>
                 <UnorderedList.Item>
-                  Corporate and Skilled Worker
+                Corporate & Worker Platform for offline training and monitoring
                 </UnorderedList.Item>
 
                 <UnorderedList.Item>
-                  Platform for offline training and monitoring
+                Teacher Facilitation, Training process
                 </UnorderedList.Item>
                 <UnorderedList.Item>
-                  Facilitate Teachers and Organise Training process
+                In demand Skills. Youth in Manufacturing
                 </UnorderedList.Item>
 
                 <UnorderedList.Item>
-                  In demand skills and youth
+                Skilled Assessed Pool of Workers
                 </UnorderedList.Item>
                 <UnorderedList.Item>
-                  Skilled assessed pool of workers in Manufacturing
+                Quality Education
                 </UnorderedList.Item>
                 <UnorderedList.Item>
-                  Quality Education and Kids
-                </UnorderedList.Item>
-                <UnorderedList.Item>
-                  Quality Education and Kids
-                </UnorderedList.Item>
-                <UnorderedList.Item>
-                  Multi lingual, Rural , In general
+                Multi-lingual, Rural, Ultimately
                 </UnorderedList.Item>
               </UnorderedList>
               {/* <div className="space-y-5 text-slate-600">

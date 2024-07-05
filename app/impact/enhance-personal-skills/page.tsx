@@ -43,23 +43,13 @@ const EnhancePersonalSkills = () => {
           </div>
           <div className="md:w-1/2 w-full">
             <div className="space-y-5 md:pl-[50px]">
-              <Heading>Master Your Personal Skillset</Heading>
+              <Heading>Mastering Your Skill Set</Heading>
               <Paragraph>
-                {`In today's competitive world, enhancing personal skills is not
-                just an advantage; it's a necessity. Whether you're aiming for
-                career advancement, personal growth, or improved social
-                interactions, developing your skills can open doors to new
-                opportunities and a more fulfilling life.`}
+                {`In the new age of highly competitive times, personal skills are not an option but rather a necessity. It is personal self-improvement that brings career promotions, individual growth, or better social lives. By evolving your personal skills, you are given numerous life opportunities. This better satisfies human life.`}
               </Paragraph>
 
               <Paragraph>
-                The rapidly evolving job market demands a versatile skill set
-                that goes beyond technical expertise, emphasizing the importance
-                of adaptability and continuous learning. Personal skills such as
-                effective communication, emotional intelligence, and
-                problem-solving not only make you a valuable asset in
-                professional settings but also enrich your personal
-                relationships and overall well-being.
+              This is because the volatile job market calls for skills beyond plain basic technical expertise and demands an individual be able to roll with the change amidst the learning landscape. Personal skills, in the form of effective communication, emotional intelligence, and problem solving, among others, make you great in professional settings. It also significantly impacts your personal relationships and, in general, sets the tone for life.
               </Paragraph>
             </div>
           </div>
@@ -67,17 +57,17 @@ const EnhancePersonalSkills = () => {
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
-              <Heading>Steps to Enhance Personal Skills</Heading>
+              <Heading>How to Improve Personal Skills</Heading>
               <UnorderedList>
                 {[
-                  "Identify Your Strengths and Weaknesses",
-                  "Set Clear Goals",
-                  "Pursue Continuous Learning",
-                  "Practice, Practice, Practice",
-                  "Seek Feedback and Mentorship",
-                  "Embrace Challenges and Step Out of Your Comfort Zone",
-                  "Cultivate Soft Skills",
-                  "Reflect and Adjust",
+                  "Identify your strengths and weaknesses.",
+                  "Create clear goals.",
+                  "Be a lifelong learner.",
+                  "Learn and practice.",
+                  "Collect feedback and find someone to mentor.",
+                  "Face challenges and step out of your comfort zone.",
+                  "Build soft skills.",
+                  "Reflect and adjust.",
                 ].map((item: string, index: number) => {
                   return (
                     <UnorderedList.Item key={index}>{item}</UnorderedList.Item>

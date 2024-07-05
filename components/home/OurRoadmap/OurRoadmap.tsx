@@ -11,7 +11,7 @@ export const OurRoadmap = () => {
       type: "image",
       src: "/images/building.png",
       description:
-        "Establishing our offline presence, building a strong advisory board, and laying the foundation for our tech platform.",
+        "Establishing a strong presence offline, building an influential advisory board, and laying the groundwork for our tech platform - ONGOING!",
     },
     {
       variant: "purple",
@@ -21,7 +21,7 @@ export const OurRoadmap = () => {
       type: "image",
       src: "/images/rocket.png",
       description:
-        "Launching our online platform with a focus on low-code/no-code development, AI/ML integration, and beta testing with a wide audience.",
+        "Launching the first iteration of our online platform with a special focus on low-code/no-code development and AI/ML integration, and beta testing this version with a high number of users.",
     },
     {
       variant: "green",
@@ -31,7 +31,7 @@ export const OurRoadmap = () => {
       type: "image",
       src: "/images/scalable.png",
       description:
-        "Expanding our course offerings, forging strategic partnerships with educational institutions, and reaching out to a broader demographic, including rural areas and schools.",
+        "Expanding our course offerings, partnering with prospective educational institutions, and broadening demographic reach to include rural areas and schools.",
     },
   ];
   return (

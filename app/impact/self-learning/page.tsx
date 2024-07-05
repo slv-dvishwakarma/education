@@ -45,19 +45,11 @@ const SelfLearning = () => {
             <div className="space-y-5 md:pl-[50px]">
               <Heading>Self-Directed Education</Heading>
               <Paragraph>
-                Self learning, also known as autonomous learning or
-                self-directed education, empowers individuals to take control of
-                their own learning journey. It is a proactive approach where
-                learners independently seek knowledge, skills, and understanding
-                without direct instruction from a teacher or formal classroom
-                setting.
+              It is educational control over the learning processes of oneself, which others may also refer to as autonomous or self-directed learning. This self-initiated process by learners deliberately seeks knowledge, skills, and understanding in the absence of a teacher or formal classroom set-up.
               </Paragraph>
 
               <Paragraph>
-                {`This method of learning is increasingly valuable in
-                today's rapidly changing world, where the ability to adapt and
-                acquire new knowledge independently is crucial for personal and
-                professional growth.`}
+                {`This kind of learning is considered to be increasing in its power in the world of the present, which is fast-changing, and that necessarily calls for an adaptive nature and the ability to gain self-growth of knowledge.`}
               </Paragraph>
             </div>
           </div>
@@ -65,16 +57,16 @@ const SelfLearning = () => {
         <div className="flex py-10 items-center md:flex-row flex-col-reverse gap-10 md:gap-0">
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
-              <Heading>Strategies for Effective Self Learning</Heading>
+              <Heading>An Effective Self-Learning Strategy</Heading>
 
               <UnorderedList>
                 {[
-                  "Set Clear Goals",
-                  "Utilize Diverse Resources",
-                  "Create a Learning Schedule",
-                  "Practice Active Learning",
-                  "Join Learning Communities",
-                  "Seek Feedback",
+                  "Establishment of Specific Goals",
+                  "Increased Utilization of Varied Resources",
+                  "Formulation of a Learning Schedule",
+                  "Active Learning Practice",
+                  "Engagement in the Learning Community",
+                  "Solicitation of Feedback",
                 ].map((item: string, index: number) => {
                   return (
                     <UnorderedList.Item key={index}>{item}</UnorderedList.Item>

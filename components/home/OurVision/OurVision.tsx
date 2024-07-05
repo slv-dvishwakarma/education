@@ -9,7 +9,7 @@ export const OurVision = () => {
           image: "/images/our-vision.jpg",
           title: "Our Vision",
           description:
-            "To create an India where every individual, regardless of their geographical, economic, or linguistic background, has the opportunity to acquire skills that not only secure their future but also contribute to the nation's growth. We envision a self-reliant India, powered by a skilled and confident workforce.",
+            "To skill that one individual of the nation with an equitable opportunity - in sync to their economic, geographical, or linguistic background so as his life becomes not just a mere living life like others but adds up courage for India's needlessly growth. We Need it!! We all want to dream India in which every person gets employed by their own hard work and self-sufficient, confident industrious workforce.",
           style: "style-1",
         }}
         type="style-2"

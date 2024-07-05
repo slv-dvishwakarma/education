@@ -53,10 +53,10 @@ export const Pillars = () => {
             <IoMdRibbon className="text-[#3750e0]" size={30} />
           </div>
           <Heading>
-          Fulfill One of 5 Pillars Atma Nirbhar{" "}
+          Fulfilling Atma-Nirbhar 5 Pillars{" "}
           </Heading>
           <Paragraph>
-          {`Skilline's raison d'etre for loading on skills. Skilline excels in quality and productivity at Fram Co-operative and manufacturing in India. Through its affordable, AI-driven courses in technology and high-demand sectors that come with assured job opportunities from India's leading recruitment and technology companies, Skilline aims to empower learners on a national scale for skill development.`}
+          Seeks to build up national self-reliance and accelerate economic growth by providing skill development opportunities that will enhance both employment as well as entrepreneurial enterprise, developing India into a global brand.
           </Paragraph>
           <UnorderedList className="space-y-0 text-slate-600 mb-3 inline-block grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-7">
             {data.map((item: any, index) => {

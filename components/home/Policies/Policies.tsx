@@ -4,9 +4,9 @@ import React from "react";
 export const Policies = () => {
   const data = {
     image: "/images/Policies.jpg",
-    title: "Alignment with Government Policies",
+    title: "Government Prefective Support",
     description:
-      "Skilline is proud to support the Government of India's initiatives, including Atma Nirbhar Bharat, Skill India, and the India AI Mission. Our courses are crafted to align with the Right to Education Act, Sarva Shiksha Abhiyan, and Beti Bachao, Beti Padhao, ensuring our contributions advance the nation's educational objectives.",
+      "Demonstrates ability to fulfill government policies Skilline is proud to support the Government of India's initiatives like Atma Nirbhar Bharat, Skill India as well as that aligned with #IndiaAIMission. The courses we offer and all the different aspects of it use to be done by engaging with Government policies like Rte Act, Sarva Shiksha abhiyan, Beti bachao beti padhao in humble help from our end for promoting overall educational mission in entire India.",
     button: {
       label: "Read More",
       links: "/policies",

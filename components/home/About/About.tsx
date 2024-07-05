@@ -5,7 +5,7 @@ export const About = () => {
     image: "/images/about-us.jpg",
     title: "About Us",
     description:
-      "Welcome to Skilline, an innovative and affordable gamified education platform currently in development. We specialize in creating cutting-edge, AI-powered training courses tailored to meet the demands of tech, manufacturing, and other high-demand sectors. Our mission is to empower rural youth, job seekers, corporate employees, and educational institutions by providing niche resources and fostering skill development.",
+      "Welcome to Skilline, the revolutionary and cost-effective gamified edu platform under development. We design innovative, AI-driven training programs for industries like tech, manufacturing and other high growth sectors. Who We Are - Our aim is to be a one stop solution for rural youth, job seekers, corporates and educational institutions focusing on niche resources and skill development.",
   };
   return (
     <div className="md:pt-10">

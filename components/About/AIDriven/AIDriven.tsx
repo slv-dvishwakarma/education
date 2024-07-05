@@ -9,7 +9,7 @@ export const AIDriven = () => {
           image: "/image/images/AI_Big Data.jpg",
           title: "AI-Driven Learning Experience",
           description:
-            "Our platform utilizes AI to provide real-time, personalized feedback in multiple Indian languages, ensuring inclusivity and accessibility. Rural users benefit from video and audio learning options, enhancing their educational experience.",
+            "Our platform uses AI to provide instant, customized feedback in various Indian languages making it inclusive and accessible. The rural user can learn through video and audio learning which is a great thing of benefits over there educational experience.",
           style: "style-2",
         }}
         type="style-2"

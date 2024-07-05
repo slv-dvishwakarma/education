@@ -7,8 +7,7 @@ import React from "react";
 export const GuidingPrinciple = () => {
   const data = {
     title: "Our Guiding Principle",
-    description:
-      "“Skilling, reskilling, and upskilling, focusing on the multidimensional approach to make our youth more competitive, is the biggest need of the hour. These endeavours are aimed at making the youngsters flexible and adaptable in the current fast-changing job market.”",
+    description: "A total skilling, reskilling, and upskilling with a multifaceted approach to make our youth more competitive is the topmost need of today's time. The initiatives are part of the joint goal to prepare young people for an agile and uncertain future job market.",
     image: "/images/5.png",
   };
 

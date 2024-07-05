@@ -1,6 +1,5 @@
-import { AIDriven, SkillGap } from "@/components/About";
+import { About, AIDriven, SkillGap } from "@/components/About";
 import { Breadcrumb, Heading, Paragraph } from "@/components/core";
-import { About} from "@/components/home";
 import React from "react";
 
 const AboutUs = () => {
@@ -26,10 +25,10 @@ const AboutUs = () => {
       <div className="container ">
         <div className="md:text-center md:px-[15%] md:pt-[130px] md:pb-[50px] pt-[50px] space-y-6">
           <Heading>
-            The Leading Global Marketplace for Learning and Instruction
+          The Largest Global Marketplace for Learning and Instruction
           </Heading>
           <Paragraph>
-          It is a transformative platform harnessing AI and gamification to empower rural youth, job seekers, and educational institutions. Skilline offers comprehensive modules in Vedic education, cleanliness awareness, government policy, and more, aligned with national skill development initiatives like Skill India Digital and Atma-Nirbhar Bharat.
+          An AI/ML and gamified platform built as an NGO catering for rural youth, job seekers & educational spectrum. Detailed module lessons on Ayurveda, Yoga and Sanskrit along with cleanliness awareness initiative by Government of India to bridge Skill education through Vedic learnings as well under national skilling initiatives like Skill India Digital for Atma-Nirbhar Bharat.
           </Paragraph>
         </div>
         {/* <div className="md:mt-3 gap-8 grid lg:grid-cols-4 md:gap-4 md:grid-cols-2 grid-cols-1 justify-center">

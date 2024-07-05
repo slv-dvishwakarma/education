@@ -7,35 +7,35 @@ const FulfillingAtmaNirbhar5Pillars = () => {
     {
       title: "Economy",
       description:
-        "Skilline aims to foster national self-reliance and economic growth through upskilling, improving employment and self-employment opportunities, and establishing itself as a global brand.",
+        "Skilline is a platform that seeks to train the workforce here in the country in the most innovative ways, with the main goal being maximum productivity to make the country self-sufficient, increase the economy by providing more employment and self-employment opportunities, and promote a so-called “Skilline, the Youth of India'' brand to the world.",
       image: "/images/Economy-2.png",
       color: "orange",
     },
     {
       title: "Infrastructure",
       description:
-        "Skilline leverages the IndiaAI Mission, utilizing AI and Gen AI servers for knowledge base ingestion and tailored education with scalability. Our platform aims to boost inclusion, innovation, and social impact, reinforcing India's global presence. Our vision is to establish a self-sustaining Indigenous University, transforming learning.",
+        "Skilline will take advantage of the India AI Mission with technology that consists of AI and Gen AI servers for building up data banks of knowledge and an individualized pedagogy solution that can scale. Inclusivity, innovation, and social impact should expand, thereby reinforcing the country's global influence. One of our long-term aims is to establish a self-sustaining Indigenous University so that what is learned becomes the real commodity in this country.",
       image: "/images/Infrastructure-2.png",
       color: "green",
     },
     {
       title: "System",
       description:
-        "Skilline will serve as an ecosystem and energy source for learning in the nation’s languages, utilizing AI and Gen AI server foundations for knowledge base ingestion. System intelligence caters to unique educational needs, ensuring future generations benefit from today's innovations.",
+        "The fact that Skilline is conceptualized as an energy repository and educational ecosystem where students can learn in their languages, not only AI but also Gen AI knowledge servers, will allow knowledge base ingestion to be the first of all the dispersed machines. The system-obtained knowledge will occur in sync with the demands of each student, making them well-acquainted with ideas about today's and most future innovative technologies.",
       image: "/images/System.png",
       color: "blue",
     },
     {
-      title: "Vibrant Demography",
+      title: "Vibrant Demography Skills",
       description:
-        "Skilline, a national education platform facilitating learning in multiple languages, caters to diverse groups including youth, office workers, rural residents, corporates, manufacturing hubs, government, and policymakers. We are already partnering with award-winning Australian businesses and certified Australian entrepreneurs for global expansion.",
+        "The national educational platform that offers bilingual education services caters to different target audiences, including youth, office workers, rural residents, corporations, manufacturing centers, the government, and policymakers. The company is already in partnership with award-winning businesses in Australia and with Australian entrepreneurs who are certified for global expansion.",
       image: "/images/Vibrant-Demography.png",
       color: "yellow",
     },
     {
       title: "Demand",
       description:
-        "Skilline is a market-leading platform for on-demand skills and training courses, supporting our nation in acquiring the necessary skills, qualifications, and experience for employment or self-employment. We aspire to serve as the nation’s premier guide for discovering, assessing, and enrolling in interactive, personalized courses on demand.",
+        "Skilline is the leading supplier of on-demand skills and training courses, which is part of our country's effort to train employees on the job or in vocational schools to a level that guarantees employment or entrepreneurship. Our ultimate goal is to become one of the top course providers for a learning experience where students get to explore, validate, and enroll in personalized courses on demand.",
       image: "/images/Demand.png",
       color: "gray",
     },
@@ -50,13 +50,13 @@ const FulfillingAtmaNirbhar5Pillars = () => {
             isActive: false,
           },
           {
-            label: "Fulfilling Atma Nirbhar 5 Pillars",
+            label: "Fulfilling Atma Nirbhar 5 PillarsEconomy",
             link: "/",
             isActive: true,
           },
         ]}
       >
-        Fulfilling Atma Nirbhar 5 Pillars
+        Fulfilling Atma Nirbhar 5 PillarsEconomy
       </Breadcrumb>
       <div className="container py-[50px]">
         <div className="space-y-10">

@@ -46,20 +46,11 @@ const GlobalRecognition = () => {
               <Heading>Global Recognition</Heading>
 
               <Paragraph>
-                Our skilled workforce has consistently delivered exceptional
-                results for international clients, demonstrating our commitment
-                to excellence and innovation. We have optimized operations and
-                reduced costs for esteemed companies such as Mindmaster
-                Singapore and XULifestyle, showcasing our ability to understand
-                and meet the unique needs of diverse markets.
+              For international customers, we have always had a competent team of employees who have always provided the best services as per our quality and creativity policy. The business operation and cost-cutting have been made easy for many reputed agencies like Mindmaster Singapore and XU Lifestyle, which establishes versatility in serving the particular needs of each sector.
               </Paragraph>
 
               <Paragraph>
-                At the heart of our success is a dedicated team of professionals
-                who bring expertise, creativity, and a problem-solving mindset
-                to every project. By leveraging cutting-edge technologies and
-                industry best practices, we ensure our clients achieve their
-                business goals efficiently and effectively.
+              Above all, there is a staff of true professionals who provide experience, creativity, and a fix it ‘til it’s broken mentality to every job. The ability to put into practice the available technologies as well as the practices in the current market ensures that our clients realize their business visions as intended and without a lot of hassles.
               </Paragraph>
             </div>
           </div>
@@ -68,17 +59,10 @@ const GlobalRecognition = () => {
           <div className="md:w-1/2 w-full">
             <div className="space-y-10  md:pr-[50px]">
               <Paragraph>
-                Our collaboration with Mindmaster Singapore has resulted in
-                streamlined processes and significant cost savings, enabling
-                them to enhance their competitive edge in the market. Similarly,
-                our partnership with XULifestyle has driven operational
-                efficiencies, allowing them to focus on their core business
-                objectives and deliver superior value to their customers.
+              {`This has led to an improved strategy and a broader scope of price-cutting measures that have been seen to improve Mindmaster Singapore's competitive advantage in the market. On the same path, the relationship between our business and XU Lifestyle has created tension in the functional activities that want them to provide better commercial business value to their clients.`}
               </Paragraph>
               <Paragraph>
-                We take pride in our global recognition and remain committed to
-                delivering world-class solutions that drive growth and success
-                for our clients around the world.
+              This Babson is a global company, and we will continue to strive to offer international-prestige contents that empower organizations, companies, institutions, individuals, and so forth, all over the world, to grow and succeed.
               </Paragraph>
             </div>
           </div>

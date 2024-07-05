@@ -115,15 +115,9 @@ export const Ventures = () => {
         />
       </div>
       <div className="container relative">
-        <Heading className="mb-5 text-center">Our Team</Heading>
+        <Heading className="mb-5 text-center">Team at Skilline</Heading>
         <Paragraph className="text-center mb-10 md:px-10">
-          {`At Skilline, our team is the driving force behind our success.
-          With over 200 years of combined experience across multiple domains, we
-          are a diverse and talented group dedicated to delivering exceptional
-          results for our clients. Our team blends academic and industrial
-          expertise, ensuring we bring both innovative thinking and practical
-          solutions to every project. Meet the team that's committed to
-          excellence and ready to help you achieve your goals.`}
+          {`The heart beats to the rhythm set by a team that runs with us into the future. Together, our team of experts brings with them more than 200 years of combined experience in a variety of areas and are dedicated to achieving excellent outcomes for our clients. Our team professorialists alongside actual work experience on every deal. Type - The variety of capabilities excellent to meet your needs.`}
         </Paragraph>
         <div className=" grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-10 mt-3">
           {data.map((item: any, index: number) => {

@@ -7,8 +7,9 @@ import { RiQuestionMark } from "react-icons/ri";
 
 export const AccordionPageTemplate = () => {
   const data = {
-    title: "Any Question? We have Answers!",
-    label: "Don't find your answer here? just send us a message for any query.",
+    title: "Any Questions? We have Answers!",
+    label: "Don't find your answer here?",
+    description: "just send us a message for any query.",
     Link: {
       label: "Contact Us",
       url: "/contact-us",
@@ -16,29 +17,29 @@ export const AccordionPageTemplate = () => {
     },
     faq: [
       {
-        question: "What is Skilline's primary mission?",
+        question: "What is the principal objective of Skilline?",
         answer:
-          "Skilline aims to democratize education and empower the workforce through AI-driven, job-guaranteed training in high-demand sectors, supporting Atma-Nirbhar Bharat's vision.",
+          "Intending to democratize education and enable workforce through AI-backed training on high-demand job sectors supported by Atma-Nirbhar Bharat vision where learners are guaranteed employment.",
       },
       {
-        question: "How does Skilline contribute to economic growth?",
+        question: "How is Skilline helping in economic growth?",
         answer:
-          "Skilline enhances economic self-reliance by providing scalable, affordable education solutions that match market demands and foster entrepreneurship.",
+          "To promote economic independence by providing scalable affordable educational solutions that are based on market needs matching while at the same time stimulating entrepreneurship",
       },
       {
-        question: "What sets Skilline apart from other educational platforms?",
+        question: "Makes Skilline different from other educational platforms?",
         answer:
-          "Skilline integrates gamification to engage learners and empower educators, ensuring adaptive learning experiences tailored to individual and industry needs, with a 100% job guarantee.",
+          "The platform makes education fun for students while simplifying work for teachers; it ensures personalized learning experiences both for individuals and industries through adaptive technologies with 100% placement assurance. All this is achieved thanks to the use of gamification which has never been tried elsewhere.",
       },
       {
-        question: "How does Skilline support government initiatives?",
+        question: "How is Skilline aligned with the government’s objectives?",
         answer:
-          "Skilline collaborates with governments to enhance policy execution and governance through data-driven insights and stakeholder coordination via our platform's dashboard.",
+          "Data is power, and our platform knows this best. We help in the execution of policies by building capacities among public officers through training programs informed by real-time information collected from different stakeholders using interactive dashboards that can be accessed at any time or place.",
       },
       {
-        question: "What courses and modules does Skilline offer?",
+        question: "What subjects does Skilline teach?",
         answer:
-          "Skilline offers modules in Vedic Education, Cleanliness Awareness, Government Policy, and Responsible Citizen Awareness. Our platform's first-year goal is to launch interactive training courses focusing on DSA, Python, Java, React, Angular, Test Automation, DevOps (GCP/AWS/Azure), AI/ML, professional development, micro-credentials. In year two, we expand to rural areas, integrate AI into governance and education, and focus on Manufacturing Hubs (e.g., Electronics) to enhance job opportunities. By year three, Skilline plans to establish a self-sustaining indigenous university, preparing skilled professionals for high-impact roles with global leaders like Bill Gates and Elon Musk.",
+          "During its first year launch, the system will provide modules on Vedic Education, Cleanliness Awareness Government Policy and Responsible Citizen Awareness. Additionally, there are plans to introduce a DSA (Data Structures &amp; Algorithms) course among others under the IT training category.",
       },
       {
         question:
@@ -57,25 +58,25 @@ export const AccordionPageTemplate = () => {
           "Gen AI servers empower Skilline's AI-driven platform to create personalized learning pathways, facilitate scalable knowledge analytics, and deliver audio and video learning benefits to rural areas.",
       },
       {
-        question: "How does Skilline measure success and impact?",
+        question: "What are some metrics Skilline uses for success and impact?",
         answer:
-          "Skilline tracks metrics such as Number of signups for upskilling, employment rates, number of self employment, learner satisfaction, and policy outcomes to continually refine and enhance our educational offerings and societal impact. Projections for success Measure",
+          "Continuous success measures include number of sign-ups for upskilling, employment rates, self-employment numbers, student satisfaction as well as policy outcomes projected success measures.",
       },
       {
         question:
-          "How can investors and stakeholders get involved with Skilline?",
+          "How can I be part of Skilline as an investor or stakeholder?",
         answer:
-          "Investors and stakeholders can partner with Skilline to expand our reach, enhance technological capabilities, and scale operations to empower more individuals and communities.",
+          "To reach more people by partnering with us on our technological competence building drive; this will also entail scaling up operations aimed at empowering individuals and communities through education.",
       },
       {
-        question: "What is Skilline's vision for the future?",
+        question: "What does Skilline hope to achieve in the future?",
         answer:
-          "Skilline envisions a future where every individual in Bharat has access to innovative, personalized education that unlocks their full potential, contributing to a prosperous and self-sufficient nation.",
+          "Every person should have access to a creative education system that will make them realize their potential and become self-reliant thereby fostering prosperity within Bharat is our vision for Skilline.",
       },
       {
-        question: "How do you protect my data?",
+        question: "How will my information be kept safe?",
         answer:
-          "We take data security very seriously. We have robust measures in place to protect personal information & data, and we're compliant with all relevant data protection regulations.",
+          "We believe data is power and we take its security very seriously so much so that all measures have been put in place for protecting personal information including being fully compliant with relevant laws governing this area.",
       },
     ],
   };
@@ -96,9 +97,10 @@ export const AccordionPageTemplate = () => {
               <RiQuestionMark className="text-[#3750e0]" size={30} />
             </div>
             <Heading>{data.title}</Heading>
-            <Paragraph className="xl:w-6/12 lg:w-full md:w-full w-full">
+            <Heading className=" md:text-[25px]">
               {data.label}
-            </Paragraph>
+            </Heading>
+            <Paragraph>{data.description}</Paragraph>
             <Button asChild={true}>
               <Link href={data.Link.url} target={data.Link.target}>
                 {data.Link.label}

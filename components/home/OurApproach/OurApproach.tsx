@@ -9,7 +9,7 @@ export const OurApproach = () => {
           image: "/images/our-approach.jpg",
           title: "Our Approach",
           description:
-            "Using AI and gamification, we provide personalized, inclusive learning experiences that cater to each learner's needs and aspirations. Our platform supports high-quality education in various languages, focusing on mastery-based learning to ensure job readiness and confidence. We continuously innovate to stay at the forefront of educational technology.",
+            "With the help of AI and gamification, we offer a unique learning journey personalized to each learner's desire and need. Our platform provides high-quality bilingual education with a unique competency-driven model tailored to career experience and confidence. We are new learning technology innovators.",
           style: "style-2",
         }}
         type="style-2"
